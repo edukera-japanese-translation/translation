@@ -1461,7 +1461,9 @@
 <div key="text_app_square_bounded">
  <!--TODO-->
 </div>
-<div key="text_appdef"></div>
+<div class="toolbox-text custom pedagogic appdef" key="text_appdef">
+ <p>A function is defined by the formula "Let f be defined on ... by f (x) = ...", as in the example below: </p>
+</div>
 <div key="text_apply_forall">
  <!--TODO-->
 </div>
@@ -1496,7 +1498,9 @@
  <p>Several versions of equivalence are available, in deduction and justification:</p>
  <p> </p>
 </div>
-<div key="text_binrel"></div>
+<div class="toolbox-text custom pedagogic" key="text_binrel">
+ <p> A binary relation connects two elements of the same set. </p>
+</div>
 <div class="toolbox-text custom pedagogic" key="text_bound_conj">
  <p>Double inequaliy is translated to two inequality statements.</p>
 </div>
@@ -1521,7 +1525,9 @@
 <div class="toolbox-text custom pedagogic comb" key="text_combadd">
  <p></p>
 </div>
-<div key="text_combinaison"></div>
+<div class="toolbox-text custom pedagogic comb" key="text_combinaison">
+ <p>Two equalities can be combined by addition or subtraction of left and right sides.</p>
+</div>
 <div class="toolbox-text custom pedagogic" key="text_combine_cmp_minus">
  <p> </p>
 </div>
@@ -1617,8 +1623,12 @@
 <div class="toolbox-text custom pedagogic" key="text_def_rtrans">
  <p>A binary relation is transitive if:</p>
 </div>
-<div key="text_disjonction"></div>
-<div key="text_distrib"></div>
+<div class="toolbox-text custom pedagogic" key="text_disjonction">
+ <p>The disjunction of two propositions A and B, denoted "A ∨ B" and read "A or B" is true if A is true or B is true.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_distrib">
+ <p>The multiplication is distributive over addition.</p>
+</div>
 <div key="text_elim_comp">
  <!--TODO-->
 </div>
@@ -1735,9 +1745,15 @@
 <div key="text_eqfun">
  <!--TODO-->
 </div>
-<div key="text_eqrel"></div>
-<div key="text_eqset"></div>
-<div key="text_equiv"></div>
+<div class="toolbox-text custom pedagogic eqrel" key="text_eqrel">
+ <p>Equality is a transitive and symmetrical relation.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_eqset">
+ <p>Two sets A and B are equal if being element of A involves be element of B, and vice versa; that is to say that A is included in B and conversely B is included in A (by definition of inclusion). Equality is simply noté "A = B". </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_equiv">
+ <p>When statements "A ⇒ B" and "B ⇒ A" are both true, ie when "(A ⇒ B) ∧ (B ⇒ A)" is true, we say that A is equivalent to B and we note "A ⇔ B". </p>
+</div>
 <div class="toolbox-text custom pedagogic" key="text_equiv_rtrans">
  <p>Set formulation of a transitive relation:</p>
 </div>
@@ -1751,7 +1767,13 @@
   <!--{type="prop" sci="true" input="exists (x:O1U), app_prop O1U F x"}--> . </p>
  <!-- <p>Trouver un témoin consiste à trouver une valeur pour l'<span class="stress">inconnue de raisonnement</span> <span class="evar" style="font-size:15px">x?</span> </p> -->
 </div>
-<div key="text_exists"></div>
+<div class="toolbox-text custom pedagogic" key="text_exists">
+ <p> The statement that F is true for an element x is denoted
+  <!--{type="prop" sci="true" input="app_prop U F x"}--> and read "F of x". </p>
+ <p> The existence of an element x such that F (x) is true, denoted
+  <!--{type="prop" sci="true" input="exists (x:O1U), app_prop O1U F x"}--> and read "there exists x such that x F" is true if, for a value t, we can prove
+  <!--{type="prop" sci="true" input="app_prop U F t"}--> . The operator ∃ is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Quantificateur_(logique)" target="_blank">existential quantifier</a></span> . </p>
+</div>
 <div class="toolbox-text custom pedagogic" key="text_expand">
  <p>Full development of product of factors.</p>
 </div>
@@ -1770,7 +1792,11 @@
   <li>When Pigs Fly ...</li>
  </ul>
 </div>
-<div key="text_forall"></div>
+<div class="toolbox-text custom pedagogic" key="text_forall">
+ <p> The statement that F is true for every value x, denoted
+  <!--{type="prop" sci="true" input="forall (x:O1U), (app_prop O1U F x)"}--> and read "for every x, F x" is true if we can prove
+  <!--{type="prop" sci="true" input="app_prop O1U F x"}--> for any element x. The operator ∀ is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Quantificateur_(logique)" target="_blank">universal quantifier</a></span> . </p>
+</div>
 <div key="text_funop">
  <!--TODO-->
 </div>
@@ -1786,7 +1812,9 @@
 <div key="text_geo_series">
  <!--TODO-->
 </div>
-<div key="text_implication"></div>
+<div class="toolbox-text custom pedagogic" key="text_implication">
+ <p>Implication from A to B, denoted "A ⇒ B" and read "A implies B" or "if A then B" means that B can not be false when A is true.</p>
+</div>
 <div class="toolbox-text custom pedagogic" key="text_inclusionsimpl">
  <p> One can simplify the intersection (or the union) of two sets if one of two sets is included in the other. </p>
 </div>
@@ -1796,19 +1824,30 @@
 <div key="text_ind_init">
  <!--TODO-->
 </div>
-<div key="text_induction"></div>
+<div class="toolbox-text custom pedagogic" key="text_induction">
+ <p>In general statetments beginning with "For every integer n ..." is proved by induction. </p>
+</div>
 <div class="toolbox-text custom pedagogic" key="text_ineq_sym_rew">
  <p>A comparison can be rewritten by changing the order of values ​​and replacing the comparison by its reciprocal. For example
   <!--{type="prop" sci="true" style="vertical-align:-3px;" input="ExprLT a b"}--> rewrites to
   <!--{type="prop" sci="true" style="vertical-align:-3px;" input="ExprGT b a"}--> . </p>
 </div>
-<div key="text_ineqapp"></div>
-<div key="text_ineqbound"></div>
-<div key="text_ineqcomb"></div>
+<div class="toolbox-text custom pedagogic appdef" key="text_ineqapp">
+ <p>A function can be applied to the left and right sides of an inequality, without changing its sense, if the left and right sides values belong to the domain of definition of f, and the f is increasing on this domain.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_ineqbound">
+ <p>Double inequality is equivalent to two inequalities. </p>
+ <p>Left and right sides operations for inequalities are also available for double inequality.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_ineqcomb">
+ <p>Two inequalities can be combined by addition or subtraction of left and right sides.</p>
+</div>
 <div key="text_ineqconv">
  <!--TODO-->
 </div>
-<div key="text_ineqrel"></div>
+<div class="toolbox-text custom pedagogic" key="text_ineqrel">
+ <p>Comparisons are transitive relations. The reciprocal relation allows to rewrite inequality by changing the order of compared values. </p>
+</div>
 <div class="toolbox-text custom pedagogic" key="text_intro_false">
  <p> We can deduce a contradiction from a statement and its negation.</p>
 </div>
@@ -1821,9 +1860,16 @@
 <div key="text_intro_sqrt_square">
  <!--TODO-->
 </div>
-<div key="text_leftright"></div>
-<div key="text_leftright_ineq"></div>
-<div key="text_leftright_neq"></div>
+<div class="toolbox-text custom pedagogic leftright" key="text_leftright">
+ <p>Equality is preserved by applying an operation to the left and right sides (addition, subtraction, multiplication, division).</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_leftright_ineq">
+ <p>The left and right operations (addition, subtraction, multiplication, division) can transform an inequality (or double inequality) on the left and right sides. </p>
+ <p>Four forms of comparison (superiority or inferiority, strict or not), and four forms of double inequality are considered.</p>
+</div>
+<div class="toolbox-text custom pedagogic appdef" key="text_leftright_neq">
+ <p>As for equality, inequality is preserved by applying the same operation (addition, subtraction, multiplication, division) to the left and right sides.</p>
+</div>
 <div key="text_limfinite">
  <!--TODO-->
 </div>
@@ -1853,7 +1899,9 @@
  </ul>
  <p></p>
 </div>
-<div key="text_logicothers"></div>
+<div class="toolbox-text custom pedagogic" key="text_logicothers">
+ <p> In the early 20 <span class="sup">th</span> century, the mathematical current <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Constructivisme_(math%C3%A9matiques)" target="_blank">constructivist</a></span> considered that a valid proof of "A ∨ B" should allow to know which of the two statements is true, and therefore it rejected the use of the excluded middle principle. We speak of <span class="stress">constructivist logic</span> (or intuitionistic) when the excluded middle is not admitted, and <span class="stress">classical logic</span> when admitted. </p>
+</div>
 <div class="toolbox-text custom pedagogic leftright" key="text_lradd">
  <p>Addition to left and right sides. This allows to pass a term from one side of an equality to the other (with sign change).</p>
 </div>
@@ -1866,7 +1914,9 @@
 <div key="text_lradd_neq">
  <!--TODO-->
 </div>
-<div key="text_lrapply"></div>
+<div class="toolbox-text custom pedagogic lrapply" key="text_lrapply">
+ <p>A function f can be applied to the left and right sides of an equality, if the value belongs to the domain of f. Four major functions are introduced: square, square root, opposite function and inverse function.</p>
+</div>
 <div class="toolbox-text custom pedagogic leftright" key="text_lrdiv">
  <p>Division by a value of left and right sides. The argument should be different from zero.</p>
 </div>
@@ -1915,7 +1965,9 @@
 <div key="text_multiple">
  <!--TODO-->
 </div>
-<div key="text_negation"></div>
+<div class="toolbox-text custom pedagogic" key="text_negation">
+ <p> The negation of a statement A is noted "¬ A" and reads "not A". </p>
+</div>
 <div key="text_neq_symmetry">
  <!--TODO-->
 </div>
@@ -1976,14 +2028,24 @@
  <p>Getting to the common denominator of a sum of fractions.</p>
  <p></p>
 </div>
-<div key="text_relops"></div>
-<div key="text_relothers"></div>
-<div key="text_relprop"></div>
+<div class="toolbox-text custom pedagogic" key="text_relops">
+ <p>operators</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_relothers">
+ <p>remarkable</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_relprop">
+ <p>relations</p>
+</div>
 <div key="text_relset">
  <!--TODO-->
 </div>
-<div key="text_remid"></div>
-<div key="text_rewops"></div>
+<div class="toolbox-text custom pedagogic" key="text_remid">
+ <p>Remarkable identities allow to factorize terms with simple specific forms, common in the calculations. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_rewops">
+ <p> Rewriting operations appy an operation and its reciprocal to rewrite a term into an equal term.</p>
+</div>
 <div key="text_rewprops">
  <!--TODO-->
 </div>
@@ -2035,7 +2097,9 @@
 <div class="toolbox-text custom pedagogic" key="text_set_neutral">
  <p> The empty set is the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/%C3%89l%C3%A9ment_neutre" target="_blank">neutral element</a></span> of the union and the universe is the neutral element of the intersection (as 1 is the neutral element of the multiplication, and 0 is the neutral element of addition ). </p>
 </div>
-<div key="text_set_rewriting"></div>
+<div class="toolbox-text custom pedagogic" key="text_set_rewriting">
+ <p> Rewriting operations allow to replace a term A by another term B, if statement A = B can be proved. Known algebraic properties (commutative, associative, ...) of set operations (intersection, union, ...) are invoked directly, without justification. </p>
+</div>
 <div key="text_set_union_comb">
  <!--TODO-->
 </div>
@@ -2054,10 +2118,29 @@
 <div class="toolbox-text custom pedagogic" key="text_setfactorize">
  <p> Intersection and union operations are distributive over one another. </p>
 </div>
-<div key="text_setfun"></div>
-<div key="text_setgraph"></div>
-<div key="text_setops"></div>
-<div key="text_sigma"></div>
+<div class="toolbox-text custom pedagogic" key="text_setfun">
+ <p> A function is a formula with a variable x in a universe A. This formulation is denoted
+  <!--{type="expr" input="app_fun f x"}--> and read 'f of x'. A function f maps an element x of A to an element y of B called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Fonction_(math%C3%A9matiques_%C3%A9l%C3%A9mentaires)#Image.2C_ant.C3.A9c.C3.A9dent" target="_blank">the image</a></span> of x by f. The element x is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Ant%C3%A9c%C3%A9dent_(math%C3%A9matiques)" target="_blank">the antecedent</a></span> of y f. Such a function is declared by the formula f: A → B 'read' f is a function from A to B '. </p>
+ <!--  <p>
+    La nature de cette association est telle que la <span class="exturl">
+      <a href="https://fr.wikipedia.org/wiki/Relation_(math%C3%A9matiques)"
+   target="_blank">relation</a></span> définie sur A×B par "f(x) = y" est
+    fonctionnelle : un élément de A a une et une seule image par f. Une
+    fonction peut être assimilée à une relation fonctionnelle.
+  </p> -->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_setgraph">
+ <p> The set of couples
+  <!--{type="expr" input="upair U U x y"}--> in relation by R is denoted "
+  <!--{type="prop" sci="true" input="gen_app_rel U U A B R x y"}--> ". This set is the <span class="stress">graph</span> of the relation R. The graph is a subset of the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Produit_cart%C3%A9sien" target="_blank">Cartesian product</a></span>
+  <!--{type="expr" input="(pprod U (ExSet U) A B)"}--> . </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_setops">
+ <p>If the universe is the set of points of the plane, a set may be represented by a set of all points inside a closed border, ie by a surface. In this case, set operations may be represented by the blue surfaces below. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_sigma">
+ <p>Rewriting properties result from the associative and distributive properties of addition and multiplication.</p>
+</div>
 <div class="toolbox-text custom pedagogic" key="text_sigmadecompl">
 </div>
 <div key="text_sigmadef">
@@ -2074,7 +2157,9 @@
   <!--{type="expr" input="lambda"}--> below only if
   <!--{type="expr" input="lambda"}--> does not depend on k.</p>
 </div>
-<div key="text_sigmarem"></div>
+<div class="toolbox-text custom pedagogic" key="text_sigmarem">
+ <p>Remarkable sums are available to solve exercises.</p>
+</div>
 <div key="text_sigmaresult1">
  <!--TODO-->
 </div>
@@ -2100,9 +2185,14 @@
 <div key="text_slimfinite_inf_elim">
  <!--TODO-->
 </div>
-<div key="text_slteq"></div>
-<div key="text_somesets"></div>
-<div key="text_sophiehattheory"></div>
+<div class="toolbox-text custom pedagogic" key="text_slteq">
+ <p>A set A is included in another set B, if being element of A implies being element of B.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_somesets">
+</div>
+<div class="toolbox-text custom pedagogic appdef" key="text_sophiehattheory">
+ <p>The protagonists of this story are called hat wearers.</p>
+</div>
 <div class="toolbox-text custom pedagogic" key="text_square_diff">
  <p>The factorization of the difference of squares is given by the formula: </p>
  <p>
