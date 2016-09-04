@@ -902,175 +902,177 @@
  <!-- 	(( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2)
 	by Backward select of select ( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2 (sigmasimpl)
  -->
- <div expr="(( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="(( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2)" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))">
  <!-- 	((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))
 	by Backward (elim_true_at_rank)
  -->
- <div expr="((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))">
  <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))
 	by Section
  -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)">
  <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)
 	by Forward select of ( sigma( k, zero, n + 1, k)) = select (((n * (n + 1)) / 2 + n) + 1) (reducedenom)
  -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)">
  <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)
 	by Forward select of ( sigma( k, zero, n + 1, k)) = select ((n + 2) * (n + 1)) / 2 (commutativity)
  -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)">
  <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)
 	by Forward select of ( sigma( k, zero, n + 1, k)) = select (n * (n + 1) + 2 * (n + 1)) / 2 (factorize)
  -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)">
  <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)
 	by Forward lradd)
  -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),(( sigma( k, zero, n, k)) + n) + 1 = ((n * (n + 1)) / 2 + n) + 1,sigmadef,0)">
  <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),(( sigma( k, zero, n, k)) + n) + 1 = ((n * (n + 1)) / 2 + n) + 1,sigmadef,0)
 	by Forward select of select ((( sigma( k, zero, n, k)) + n) + 1) = ((n * (n + 1)) / 2 + n) + 1 (sigmadef)
  -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),(( sigma( k, zero, n, k)) + n) + 1 = ((n * (n + 1)) / 2 + n) + 1,sigmadef,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),(( sigma( k, zero, n, k)) + n) + 1 = ((n * (n + 1)) / 2 + n) + 1,sigmadef,0)" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))">
  <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))
 	by Backward (red_true_at_rank)
  -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)">
  <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)
 	by Forward red_true_at_rank)
  -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n))">
  <!-- 	((forall n : Nvar, true_at_rank P n))
 	by Backward (ind_basic_forall)
  -->
- <div expr="((forall n : Nvar, true_at_rank P n))" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n))" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_(true_at_rank P zero)">
  <!-- 	(true_at_rank P zero)
 	by Backward (red_true_at_rank)
  -->
- <div expr="(true_at_rank P zero)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ <div class="pedagogic slide" expr="(true_at_rank P zero)" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_logic_connector_tuto_01_(and B A)">
  <!-- 	(and B A)
 	by Backward (conj)
  -->
- <div expr="(and B A)" class="pedagogic slide" exercise="logic_connector_tuto_01">
+ <div class="pedagogic slide" expr="(and B A)" exercise="logic_connector_tuto_01">
  </div>
 </div>
 <div key="slide_logic_connector_tuto_02_(and A B,elim_conj_left,0)">
  <!--   (and A B,elim_conj_left,0)
   by Forward elim_conj_left)
  -->
- <div expr="(and A B,elim_conj_left,0)" class="pedagogic slide" exercise="logic_connector_tuto_02">
+ <div class="pedagogic slide" expr="(and A B,elim_conj_left,0)" exercise="logic_connector_tuto_02">
  </div>
 </div>
 <div key="slide_logic_connector_tuto_02_(and A B,elim_conj_right,0)">
  <!--   (and A B,elim_conj_right,0)
   by Forward elim_conj_right)
  -->
- <div expr="(and A B,elim_conj_right,0)" class="pedagogic slide" exercise="logic_connector_tuto_02">
+ <div class="pedagogic slide" expr="(and A B,elim_conj_right,0)" exercise="logic_connector_tuto_02">
  </div>
 </div>
 <div key="slide_logic_connector_tuto_02_(and B A)">
  <!--   (and B A)
   by Backward (conj)
  -->
- <div expr="(and B A)" class="pedagogic slide" exercise="logic_connector_tuto_02">
+ <div class="pedagogic slide" expr="(and B A)" exercise="logic_connector_tuto_02">
   <p>
-   <!--<span class="light-bulb">ń</span>--> As in the previous example, the conjunction
-   <!--{type="tag" input="s1"}--> is justified by invoking the rule <span class="buttontheo">by conjunction</span>. </p>
+   <!--<span class="light-bulb">ń</span>--> As in the previous example, we justify conjunction
+   <!--{type="tag" input="s1"}--> by invoking <span class="buttontheo">conjunction by</span> rule. </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_03_(or A B)">
  <!--   (or A B)
   by Backward (intro_or_right)
  -->
- <div expr="(or A B)" class="pedagogic slide" exercise="logic_connector_tuto_03">
+ <div class="pedagogic slide" expr="(or A B)" exercise="logic_connector_tuto_03">
   <p>
-   <!--<span class="light-bulb">ń</span>--> The choice between using A and B to prove
-   <!--{type="tag" input="s1"}--> <span class="buttontheo">by disjonction</span> is simple because only the proposition B is provided in hypothesis
-   <!--{type="tag" input="s0"}-->. </p>
+   <!--<span class="light-bulb">ń</span>--> The choice between A and B to prove
+   <!--{type="tag" input="s1"}--> <span class="buttontheo">by disjunction</span> is simple, because statement B is provided as an assumption
+   <!--{type="tag" input="s0"}--> . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_04_(case P (or Q P))">
  <!--   (case P (or Q P))
   by Section
  -->
- <div expr="(case P (or Q P))" class="pedagogic slide" exercise="logic_connector_tuto_04">
-  <p> Proving Q ∨ P when <span class="stress">P is true</span> requires creating a <span class="stress">logical scope</span> in which P is a hypothesis and Q ∨ P is a conclusion, with button <span class="buttonscope-wrapper"> <span class="buttonscope">↵</span></span>. </p>
+ <div class="pedagogic slide" expr="(case P (or Q P))" exercise="logic_connector_tuto_04">
+  <p>
+   <!--<span class="light-bulb">ń</span>-->To Prove Q ∨ P if <span class="stress">P is true</span>, we need to open a <span class="stress">logical scope</span> with the <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> button. In this scope, P is a hypothesis and Q ∨ P is the conclusion, . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_04_(case P (or Q P),or Q P)">
  <!--   (case P (or Q P),or Q P)
   by Backward (intro_or_right)
  -->
- <div expr="(case P (or Q P),or Q P)" class="pedagogic slide" exercise="logic_connector_tuto_04">
+ <div class="pedagogic slide" expr="(case P (or Q P),or Q P)" exercise="logic_connector_tuto_04">
   <p>
-   <!--<span class="light-bulb">ń</span>--> Within this scope, we now find ourselves in exactly the same situation as in the previous exercise. The disjunction
-   <!--{type="tag" input="s2_1"}--> is demonstrated by choosing P which is true by hypothesis
-   <!--{type="tag" input="s2_0"}-->. </p>
+   <!--<span class="light-bulb">ń</span>--> In this scope, the situation is the same as in the previous exercise. The proof of the disjunction
+   <!--{type="tag" input="s2_1"}--> is by choosing P, which is true by hypothesis
+   <!--{type="tag" input="s2_0"}--> . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_04_(case Q (or Q P))">
  <!--   (case Q (or Q P))
   by Section
  -->
- <div expr="(case Q (or Q P))" class="pedagogic slide" exercise="logic_connector_tuto_04">
-  <p> Proving Q ∨ P when <span class="stress">Q is true</span> requires creating a <span class="stress">logical scope</span> in which Q is a hypothesis and Q ∨ P is a conclusion, with button <span class="buttonscope-wrapper"> <span class="buttonscope">↵</span></span>. </p>
+ <div class="pedagogic slide" expr="(case Q (or Q P))" exercise="logic_connector_tuto_04">
+  <p>
+   <!--<span class="light-bulb">ń</span>-->To Prove Q ∨ P if <span class="stress">Q is true</span>, we need to open a <span class="stress">logical scope</span> with the <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> button. In this scope, Q is a hypothesis and Q ∨ P is the conclusion, . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_04_(case Q (or Q P),or Q P)">
  <!--   (case Q (or Q P),or Q P)
   by Backward (intro_or_left)
  -->
- <div expr="(case Q (or Q P),or Q P)" class="pedagogic slide" exercise="logic_connector_tuto_04">
+ <div class="pedagogic slide" expr="(case Q (or Q P),or Q P)" exercise="logic_connector_tuto_04">
   <p>
-   <!--<span class="light-bulb">ń</span>--> Within this scope, we now find ourselves in exactly the same situation as in the previous exercise. The disjunction
-   <!--{type="tag" input="s3_1"}--> is demonstrated by choosing P which is true by hypothesis
-   <!--{type="tag" input="s3_0"}-->. </p>
+   <!--<span class="light-bulb">ń</span>--> In this scope, the situation is the same as in the previous exercise. The proof of the disjunction
+   <!--{type="tag" input="s3_1"}--> is by choosing P, which is true by hypothesis
+   <!--{type="tag" input="s3_0"}--> . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_04_(or Q P)">
  <!--   (or Q P)
   by Backward (case_base)
  -->
- <div expr="(or Q P)" class="pedagogic slide" exercise="logic_connector_tuto_04">
+ <div class="pedagogic slide" expr="(or Q P)" exercise="logic_connector_tuto_04">
   <p>
-   <!--<span class="light-bulb">ń</span>-->Reasoning <span class="buttontheo">by disjunction of cases</span> can be used to justify a proposition when a disjunction is present. </p>
-  <p>
-   <!--{type="tag" input="s1"}--> is demonstrated with the help of the disjunction
+   <!--<span class="light-bulb">ń</span>--> The reasoning by <span class="buttontheo">disjunction of cases</span> is available to justify any statement when a disjunction is available. </p>
+  <p> It is shown that
+   <!--{type="tag" input="s1"}--> by using the disjunction
    <!--{type="tag" input="s0"}--> by disjunction of cases. </p>
  </div>
 </div>
@@ -1078,42 +1080,42 @@
  <!--   (A -> (B -> and A B))
   by Section
  -->
- <div expr="(A -> (B -> and A B))" class="pedagogic slide" exercise="logic_connector_tuto_06">
+ <div class="pedagogic slide" expr="(A -> (B -> and A B))" exercise="logic_connector_tuto_06">
   <p>
-   <!--<span class="light-bulb">ń</span>--> The button
-   <!--{type="button_section"}--> allows you to create the logical scope with A as assumption, and
-   <!--{type="prop" input="(B -> (and A B))"}--> as conclusion. </p>
+   <!--<span class="light-bulb">ń</span>--> button
+   <!--{type="button_section"}--> opens the logical scope with assumption A and conclusion
+   <!--{type="prop" input="(B -> (and A B))"}-->. </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_06_(A -> (B -> and A B),B -> and A B)">
  <!--   (A -> (B -> and A B),B -> and A B)
   by Section
  -->
- <div expr="(A -> (B -> and A B),B -> and A B)" class="pedagogic slide" exercise="logic_connector_tuto_06">
+ <div class="pedagogic slide" expr="(A -> (B -> and A B),B -> and A B)" exercise="logic_connector_tuto_06">
   <p>
-   <!--<span class="light-bulb">ń</span>--> Again, the button
-   <!--{type="button_section"}--> allows you to create the logical scope with A and B assumed and "A ∧ B" concluded. </p>
+   <!--<span class="light-bulb">ń</span>--> Again button
+   <!--{type="button_section"}--> creates the logical scope with A and B assumptions and "A ∧ B" in conclusion. </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_06_(B -> and A B,A -> (B -> and A B),and A B)">
  <!--   (B -> and A B,A -> (B -> and A B),and A B)
   by Backward (conj)
  -->
- <div expr="(B -> and A B,A -> (B -> and A B),and A B)" class="pedagogic slide" exercise="logic_connector_tuto_06">
+ <div class="pedagogic slide" expr="(B -> and A B,A -> (B -> and A B),and A B)" exercise="logic_connector_tuto_06">
   <p>
-   <!--<span class="light-bulb">ń</span>--> We are now back at the first exercise of this tutorial (prove a conjunction).
-   <!--{type="tag" input="s3_1"}--> is proved by conjunction with the help of hypotheses
+   <!--<span class="light-bulb">ń</span>--> We find ourselves in the situation of the first exercise of this tutorial (to prove a conjunction). We prove
+   <!--{type="tag" input="s3_1"}--> by conjunction with assumptions
    <!--{type="tag" input="s2_0"}--> and
-   <!--{type="tag" input="s3_0"}-->. </p>
+   <!--{type="tag" input="s3_0"}--> . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_07_(B)">
  <!--   (B)
   by Backward (modus_ponens)
  -->
- <div expr="(B)" class="pedagogic slide" exercise="logic_connector_tuto_07">
+ <div class="pedagogic slide" expr="(B)" exercise="logic_connector_tuto_07">
   <p>
-   <!--<span class="light-bulb">ń</span>--> B is deduced from the implication
+   <!--<span class="light-bulb">ń</span>--> We deduce B from implication
    <!--{type="tag" input="s0"}--> if A is true. </p>
  </div>
 </div>
@@ -1121,307 +1123,306 @@
  <!--   (A -> False,modus_ponens,0)
   by Forward modus_ponens)
  -->
- <div expr="(A -> False,modus_ponens,0)" class="pedagogic slide" exercise="logic_connector_tuto_085">
+ <div class="pedagogic slide" expr="(A -> False,modus_ponens,0)" exercise="logic_connector_tuto_085">
   <p>
-   <!--<span class="light-bulb">ń</span>--> The <span class="stress">modus ponens</span> allows you to deduce False from
-   <!--{type="tag" input="s3"}-->. </p>
+   <!--<span class="light-bulb">ń</span>--> <span class="stress">Modus ponens</span> allows us to deduce a contradiction
+   <!--{type="tag" input="s3"}--> . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_085_(~ A,elim_negation,0)">
  <!--   (~ A,elim_negation,0)
   by Forward elim_negation)
  -->
- <div expr="(~ A,elim_negation,0)" class="pedagogic slide" exercise="logic_connector_tuto_085">
+ <div class="pedagogic slide" expr="(~ A,elim_negation,0)" exercise="logic_connector_tuto_085">
   <p>
-   <!--<span class="light-bulb">ń</span>--> Translate the negation
-   <!--{type="tag" input="s0"}--> into an implication, by definition of negation. </p>
-  <p></p>
+   <!--<span class="light-bulb">ń</span>--> Translate negation
+   <!--{type="tag" input="s0"}--> into an implication of the false, by definition of negation. </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_08_(A -> False)">
  <!--   (A -> False)
   by Section
  -->
- <div expr="(A -> False)" class="pedagogic slide" exercise="logic_connector_tuto_08">
+ <div class="pedagogic slide" expr="(A -> False)" exercise="logic_connector_tuto_08">
   <p>
-   <!--<span class="light-bulb">ń</span>--> The button <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> allows you to create a new scope in which A is an assumption. </p>
+   <!--<span class="light-bulb">ń</span>--> The <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> button allows to create a scope in which A is a hypothesis.</p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_08_(A -> False,B)">
  <!--   (A -> False,B)
   by Backward (modus_ponens)
  -->
- <div expr="(A -> False,B)" class="pedagogic slide" exercise="logic_connector_tuto_08">
+ <div class="pedagogic slide" expr="(A -> False,B)" exercise="logic_connector_tuto_08">
   <p>
-   <!--<span class="light-bulb">ń</span>--> The <span class="stress">modus ponens</span> allows you to justify B by implication
-   <!--{type="tag" input="s0"}--> applied to assumption A. </p>
+   <!--<span class="light-bulb">ń</span>--> <span class="stress">Modus ponens</span> allows to justify the assumption B by using A
+   <!--{type="tag" input="s0"}--> . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_08_(A -> False,False)">
  <!--   (A -> False,False)
   by Backward (modus_ponens)
  -->
- <div expr="(A -> False,False)" class="pedagogic slide" exercise="logic_connector_tuto_08">
+ <div class="pedagogic slide" expr="(A -> False,False)" exercise="logic_connector_tuto_08">
   <p>
-   <!--<span class="light-bulb">ń</span>--> The <span class="stress">modus ponens</span> allows you to justify False by implication
-   <!--{type="tag" input="s2"}--> applied to assumption B. </p>
+   <!--<span class="light-bulb">ń</span>--> <span class="stress">Modus ponens</span> allows to justify the false assumption by B using
+   <!--{type="tag" input="s2"}--> . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_08_(~ A)">
  <!--   (~ A)
   by Backward (elim_negation)
  -->
- <div expr="(~ A)" class="pedagogic slide" exercise="logic_connector_tuto_08">
+ <div class="pedagogic slide" expr="(~ A)" exercise="logic_connector_tuto_08">
   <p>
-   <!--<span class="light-bulb">ń</span>--> Translate the negation
-   <!--{type="tag" input="s0"}--> into an implication, by definition of negation. </p>
+   <!--<span class="light-bulb">ń</span>--> Translate negation
+   <!--{type="tag" input="s0"}--> into an implication of the false, by definition of negation. </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_09_(A,intro_false,0)">
  <!--   (A,intro_false,0)
   by Forward intro_false)
  -->
- <div expr="(A,intro_false,0)" class="pedagogic slide" exercise="logic_connector_tuto_09">
-  <p> Clicking on <span class="context">Context</span> shows statements from upper scopes.
-   <!--<span class="light-bulb">ń</span>-->We find ourselves in exactly the same situation as in the previous exercise. It is possible to directly justify the contradiction
-   <!--{type="tag" input="s3"}--> by invoking the principle of <span class="buttontheo">non-contradiction</span>. </p>
+ <div class="pedagogic slide" expr="(A,intro_false,0)" exercise="logic_connector_tuto_09">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> Click <span class="context">Context</span> ('c' keyboard shortcut) displays statements from upper scopes. The situation is the same as in previous exercise. We can therefore justify the contradiction directly
+   <!--{type="tag" input="s3"}--> by invoking the principle of <span class="buttontheo">non-contradiction.</span> </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_09_(B)">
  <!--   (B)
   by Backward (falseall)
  -->
- <div expr="(B)" class="pedagogic slide" exercise="logic_connector_tuto_09">
+ <div class="pedagogic slide" expr="(B)" exercise="logic_connector_tuto_09">
   <p>
-   <!--<span class="light-bulb">ń</span>--> The clear contradiction of hypotheses
+   <!--<span class="light-bulb">ń</span>--> The obvious contradiction between
    <!--{type="tag" input="s0"}--> and
-   <!--{type="tag" input="s2"}--> leads us to justify B with <span class="buttontheo">ex falso quodlibet</span> rule. </p>
+   <!--{type="tag" input="s2"}--> invites to justify B with <span class="buttontheo">ex falso Quodlibet.</span> </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(case (~ A) (or A B))">
  <!--   (case (~ A) (or A B))
   by Section
  -->
- <div expr="(case (~ A) (or A B))" class="pedagogic slide" exercise="logic_connector_tuto_10">
+ <div class="pedagogic slide" expr="(case (~ A) (or A B))" exercise="logic_connector_tuto_10">
   <p>
-   <!--<span class="light-bulb">ń</span>--> When ¬ A is true, "A ∨ B" is demonstrated by choosing B, which is obtained by deduction from ¬ A with the help of
-   <!--{type="tag" input="s0"}-->. </p>
+   <!--<span class="light-bulb">ń</span>--> When ¬A is true, we prove "A ∨ B" by selecting B, obtained by deduction from obtained ¬A using
+   <!--{type="tag" input="s0"}--> . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(case (~ A) (or A B),or A B)">
  <!--   (case (~ A) (or A B),or A B)
   by Backward (intro_or_right)
  -->
- <div expr="(case (~ A) (or A B),or A B)" class="pedagogic slide" exercise="logic_connector_tuto_10">
+ <div class="pedagogic slide" expr="(case (~ A) (or A B),or A B)" exercise="logic_connector_tuto_10">
   <p>
-   <!--<span class="light-bulb">ń</span>--> When ¬ A is true, "A ∨ B" is demonstrated by choosing B, which is obtained by deduction from ¬ A with the help of
-   <!--{type="tag" input="s0"}-->. </p>
+   <!--<span class="light-bulb">ń</span>--> When ¬A is true, we prove "A ∨ B" by selecting B, obtained by deduction from ¬A using
+   <!--{type="tag" input="s0"}--> . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(case A (or A B))">
  <!--   (case A (or A B))
   by Section
  -->
- <div expr="(case A (or A B))" class="pedagogic slide" exercise="logic_connector_tuto_10">
+ <div class="pedagogic slide" expr="(case A (or A B))" exercise="logic_connector_tuto_10">
   <p>
-   <!--<span class="light-bulb">ń</span>--> When A is true, "A ∨ B" is demonstrated by choosing A. </p>
+   <!--<span class="light-bulb">ń</span>--> If A is true, we prove "A ∨ B" by choosing A. </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(case A (or A B),or A B)">
  <!--   (case A (or A B),or A B)
   by Backward (intro_or_left)
  -->
- <div expr="(case A (or A B),or A B)" class="pedagogic slide" exercise="logic_connector_tuto_10">
+ <div class="pedagogic slide" expr="(case A (or A B),or A B)" exercise="logic_connector_tuto_10">
   <p>
-   <!--<span class="light-bulb">ń</span>--> When A is true, "A ∨ B" is demonstrated by choosing A. </p>
+   <!--<span class="light-bulb">ń</span>--> If A is true, we prove "A ∨ B" by choosing A. </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(or A B)">
  <!--   (or A B)
   by Backward (case_base_binary)
  -->
- <div expr="(or A B)" class="pedagogic slide" exercise="logic_connector_tuto_10">
+ <div class="pedagogic slide" expr="(or A B)" exercise="logic_connector_tuto_10">
   <p>
-   <!--<span class="light-bulb">ń</span>--> The use of <span class="buttontheo">excluded middle</span> allows us to demonstrate
-   <!--{type="tag" input="s1"}--> : when A is true and when ¬ A is true. </p>
+   <!--<span class="light-bulb">ń</span>--> The law of <span class="buttontheo">the excluded middle</span> allows to consider two cases to prove
+   <!--{type="tag" input="s1"}--> : if A is true and when ¬ A is true. </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(~ A -> B,modus_ponens,0)">
  <!--   (~ A -> B,modus_ponens,0)
   by Forward modus_ponens)
  -->
- <div expr="(~ A -> B,modus_ponens,0)" class="pedagogic slide" exercise="logic_connector_tuto_10">
+ <div class="pedagogic slide" expr="(~ A -> B,modus_ponens,0)" exercise="logic_connector_tuto_10">
   <p>
-   <!--<span class="light-bulb">ń</span>--> We use
-   <!--{type="tag" input="s0"}--> as a <span class="buttontheo">local theorem</span>to justify B. This justification acts as the modus ponens. The only difference is that a "local theorem" extends the modus ponens to expressions containing quantifiers like "for every ..." (see the following section). </p>
+   <!--<span class="light-bulb">ń</span>--> Implication
+   <!--{type="tag" input="s0"}--> is available to justify B as <span class="buttontheo">local theorem.</span> It is noted that this justification acts here as modus ponens. The only difference is that the notion of local theorem extends the modus ponens to expressions containing quantifiers "for every ..." (see next chapter). </p>
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_01_((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))">
  <!-- 	((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))
 	by Section
  -->
- <div expr="((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))" class="pedagogic slide" exercise="logic_quantifier_tuto_01">
+ <div class="pedagogic slide" expr="((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))" exercise="logic_quantifier_tuto_01">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_01_((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))">
  <!-- 	((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))
 	by Section
  -->
- <div expr="((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))" class="pedagogic slide" exercise="logic_quantifier_tuto_01">
+ <div class="pedagogic slide" expr="((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))" exercise="logic_quantifier_tuto_01">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_01_(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))">
  <!-- 	(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))
 	by Backward (ex_intro)
  -->
- <div expr="(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))" class="pedagogic slide" exercise="logic_quantifier_tuto_01">
+ <div class="pedagogic slide" expr="(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))" exercise="logic_quantifier_tuto_01">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_01_(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))">
  <!-- 	(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))
 	by Backward (intro_or_left)
  -->
- <div expr="(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))" class="pedagogic slide" exercise="logic_quantifier_tuto_01">
+ <div class="pedagogic slide" expr="(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))" exercise="logic_quantifier_tuto_01">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_02_((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)">
  <!-- 	((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)
 	by Forward ex_elim)
  -->
- <div expr="((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)" class="pedagogic slide" exercise="logic_quantifier_tuto_02">
+ <div class="pedagogic slide" expr="((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)" exercise="logic_quantifier_tuto_02">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))">
  <!-- 	(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))
 	by Section
  -->
- <div expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))" class="pedagogic slide" exercise="logic_quantifier_tuto_02">
+ <div class="pedagogic slide" expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))" exercise="logic_quantifier_tuto_02">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))">
  <!-- 	(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))
 	by Backward (ex_intro)
  -->
- <div expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))" class="pedagogic slide" exercise="logic_quantifier_tuto_02">
+ <div class="pedagogic slide" expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))" exercise="logic_quantifier_tuto_02">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))">
  <!-- 	(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))
 	by Backward (intro_or_left)
  -->
- <div expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" class="pedagogic slide" exercise="logic_quantifier_tuto_02">
+ <div class="pedagogic slide" expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))">
  <!-- 	(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))
 	by Section
  -->
- <div expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))" class="pedagogic slide" exercise="logic_quantifier_tuto_02">
+ <div class="pedagogic slide" expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))" exercise="logic_quantifier_tuto_02">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))">
  <!-- 	(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))
 	by Backward (ex_intro)
  -->
- <div expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))" class="pedagogic slide" exercise="logic_quantifier_tuto_02">
+ <div class="pedagogic slide" expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))">
  <!-- 	(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))
 	by Backward (intro_or_right)
  -->
- <div expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" class="pedagogic slide" exercise="logic_quantifier_tuto_02">
+ <div class="pedagogic slide" expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_02_(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))">
  <!-- 	(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))
 	by Backward (case_base)
  -->
- <div expr="(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" class="pedagogic slide" exercise="logic_quantifier_tuto_02">
+ <div class="pedagogic slide" expr="(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))">
  <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))
 	by Section
  -->
- <div expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))" class="pedagogic slide" exercise="logic_quantifier_tuto_03">
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))" exercise="logic_quantifier_tuto_03">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)">
  <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)
 	by Forward apply_forall)
  -->
- <div expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)" class="pedagogic slide" exercise="logic_quantifier_tuto_03">
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)" exercise="logic_quantifier_tuto_03">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)">
  <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)
 	by Forward apply_forall)
  -->
- <div expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)" class="pedagogic slide" exercise="logic_quantifier_tuto_03">
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)" exercise="logic_quantifier_tuto_03">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))">
  <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))
 	by Backward (conj)
  -->
- <div expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))" class="pedagogic slide" exercise="logic_quantifier_tuto_03">
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))" exercise="logic_quantifier_tuto_03">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_03_(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)">
  <!-- 	(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)
 	by Forward elim_conj_left)
  -->
- <div expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)" class="pedagogic slide" exercise="logic_quantifier_tuto_03">
+ <div class="pedagogic slide" expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)" exercise="logic_quantifier_tuto_03">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_03_(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)">
  <!-- 	(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)
 	by Forward elim_conj_right)
  -->
- <div expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)" class="pedagogic slide" exercise="logic_quantifier_tuto_03">
+ <div class="pedagogic slide" expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)" exercise="logic_quantifier_tuto_03">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_04_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)">
  <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)
 	by Forward apply_forall)
  -->
- <div expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)" class="pedagogic slide" exercise="logic_quantifier_tuto_04">
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)" exercise="logic_quantifier_tuto_04">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U A x))">
  <!-- 	((forall x : O1U, app_prop O1U A x))
 	by Section
  -->
- <div expr="((forall x : O1U, app_prop O1U A x))" class="pedagogic slide" exercise="logic_quantifier_tuto_04">
+ <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U A x))" exercise="logic_quantifier_tuto_04">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)">
  <!-- 	((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)
 	by Forward elim_conj_left)
  -->
- <div expr="((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)" class="pedagogic slide" exercise="logic_quantifier_tuto_04">
+ <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)" exercise="logic_quantifier_tuto_04">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U B x))">
  <!-- 	((forall x : O1U, app_prop O1U B x))
 	by Section
  -->
- <div expr="((forall x : O1U, app_prop O1U B x))" class="pedagogic slide" exercise="logic_quantifier_tuto_04">
+ <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U B x))" exercise="logic_quantifier_tuto_04">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)">
  <!-- 	((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)
 	by Forward elim_conj_right)
  -->
- <div expr="((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)" class="pedagogic slide" exercise="logic_quantifier_tuto_04">
+ <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)" exercise="logic_quantifier_tuto_04">
  </div>
 </div>
 <div key="slide_logic_quantifier_tuto_04_(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))">
  <!-- 	(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))
 	by Backward (conj)
  -->
- <div expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))" class="pedagogic slide" exercise="logic_quantifier_tuto_04">
+ <div class="pedagogic slide" expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))" exercise="logic_quantifier_tuto_04">
  </div>
 </div>
 <div class="toolbox-text custom pedagogic confuse" key="text_Antonym1">
