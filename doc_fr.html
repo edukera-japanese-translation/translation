@@ -1167,18 +1167,18 @@
  <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
  </div>
 </div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) + (n + 1) = (n * (n + 1)) / 2 + (n + 1),sigmadef,0)">
+ <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) + (n + 1) = (n * (n + 1)) / 2 + (n + 1),sigmadef,0)
+	by Forward select of select ((( sigma( k, zero, n, k)) + n) + 1) = ((n * (n + 1)) / 2 + n) + 1 (sigmadef)
+ -->
+ <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) + (n + 1) = (n * (n + 1)) / 2 + (n + 1),sigmadef,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ </div>
+</div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)">
  <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)
 	by Forward lradd)
  -->
  <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),(( sigma( k, zero, n, k)) + n) + 1 = ((n * (n + 1)) / 2 + n) + 1,sigmadef,0)">
- <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),(( sigma( k, zero, n, k)) + n) + 1 = ((n * (n + 1)) / 2 + n) + 1,sigmadef,0)
-	by Forward select of select ((( sigma( k, zero, n, k)) + n) + 1) = ((n * (n + 1)) / 2 + n) + 1 (sigmadef)
- -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),(( sigma( k, zero, n, k)) + n) + 1 = ((n * (n + 1)) / 2 + n) + 1,sigmadef,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
  </div>
 </div>
 <div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))">
@@ -1720,6 +1720,34 @@
   <p>slide 2</p>
  </div>
 </div>
+<div key="slide_rew_tuto_fact2_((x + 1) * ((x - 3) + x) = 2,linearsimpl,0)">
+ <!-- 	((x + 1) * ((x - 3) + x) = 2,linearsimpl,0)
+	by Forward select of (x + 1) * select ((x - 3) + x) = 2 (linearsimpl)
+ -->
+ <div expr="((x + 1) * ((x - 3) + x) = 2,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
+ </div>
+</div>
+<div key="slide_rew_tuto_fact2_((x + 1) * (2 * (x - 3 / 2)) = 2,lrdiv,0)">
+ <!-- 	((x + 1) * (2 * (x - 3 / 2)) = 2,lrdiv,0)
+	by Forward lrdiv)
+ -->
+ <div expr="((x + 1) * (2 * (x - 3 / 2)) = 2,lrdiv,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
+ </div>
+</div>
+<div key="slide_rew_tuto_fact2_((x + 1) * (2 * x - 3) = 2,gen_factorize,0)">
+ <!-- 	((x + 1) * (2 * x - 3) = 2,gen_factorize,0)
+	by Forward select of (x + 1) * select (2 * x - 3) = 2 (gen_factorize)
+ -->
+ <div expr="((x + 1) * (2 * x - 3) = 2,gen_factorize,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
+ </div>
+</div>
+<div key="slide_rew_tuto_fact2_((x + 1) * (x - 3) + x * (x + 1) = 2,factorize,0)">
+ <!-- 	((x + 1) * (x - 3) + x * (x + 1) = 2,factorize,0)
+	by Forward select of select ((x + 1) * (x - 3) + x * (x + 1)) = 2 (factorize)
+ -->
+ <div expr="((x + 1) * (x - 3) + x * (x + 1) = 2,factorize,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
+ </div>
+</div>
 <div key="slide_rew_tuto_group_(E = (x + 1) * (2 * x + (3 + (y - 1))),expand,0)">
  <!-- 	(E = (x + 1) * (2 * x + (3 + (y - 1))),expand,0)
 	by Forward select of E = select (UIGroup (x + 1) * (UIGroup (2 * x + 3) + UIGroup (y - 1))) (expand)
@@ -1757,6 +1785,34 @@
    <!--{type="expr" input="pow (x+1) 2"}-->, d'après l'identité remarquable.</p>
   <p>On fait donc apparaître le développement du carré parfait
    <!--{type="expr" input="((pow x 2)+(2*x))+1"}-->, en ajouant 4 à droite et à gauche.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem2_((x - 3) * (x + 3) + (x + 3) = zero,factorize,0)">
+ <!-- 	((x - 3) * (x + 3) + (x + 3) = zero,factorize,0)
+	by Forward select of select (((x - 3) * (x + 3) + x) + 3) = zero (factorize)
+ -->
+ <div expr="((x - 3) * (x + 3) + (x + 3) = zero,factorize,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem2_((x - 3) * (x + 3) = - (x + 3),lradd,0)">
+ <!-- 	((x - 3) * (x + 3) = - (x + 3),lradd,0)
+	by Forward lradd)
+ -->
+ <div expr="((x - 3) * (x + 3) = - (x + 3),lradd,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem2_(x ^ 2 - 3 = - x + 3,lrsub,0)">
+ <!-- 	(x ^ 2 - 3 = - x + 3,lrsub,0)
+	by Forward lrsub)
+ -->
+ <div expr="(x ^ 2 - 3 = - x + 3,lrsub,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem2_(x ^ 2 - 9 = - (x + 3),square_diff,0)">
+ <!-- 	(x ^ 2 - 9 = - (x + 3),square_diff,0)
+	by Forward select of select (x ^ 2 - 9) = - (x + 3) (square_diff)
+ -->
+ <div expr="(x ^ 2 - 9 = - (x + 3),square_diff,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
  </div>
 </div>
 <div key="slide_rew_tuto_misc1_((x + 3) * ((x + 2) * (x + 1)) = zero,commutativity,0)">
@@ -1810,20 +1866,18 @@
    <!--{type="tag" input="s0"}-->.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_simpl2_(((x + 1) + 2 * (x - 2)) / ((x + 1) * (x - 2)) = zero,lrmul,0)">
- <!--   (((x + 1) + 2 * (x - 2)) / ((x + 1) * (x - 2)) = zero,lrmul,0)
-  by Forward lrmul)
+<div key="slide_rew_tuto_simpl2_((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)">
+ <!-- 	((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)
+	by Forward lrmul)
  -->
- <div expr="(((x + 1) + 2 * (x - 2)) / ((x + 1) * (x - 2)) = zero,lrmul,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
-  <p>Puisque 0 est le membre de droite, on peut éliminer le dénominateur en le multipliant à gauche et à droite.</p>
+ <div expr="((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
  </div>
 </div>
-<div key="slide_rew_tuto_simpl2_((x + 2 * (x - 2)) + 1 = zero,linearsimpl,0)">
- <!--   ((x + 2 * (x - 2)) + 1 = zero,linearsimpl,0)
-  by Forward select of select ((x + 2 * (x - 2)) + 1) = zero (linearsimpl)
+<div key="slide_rew_tuto_simpl2_((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)">
+ <!-- 	((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)
+	by Forward select of select ((x + 2 * (x - 2)) + 1) = zero (linearsimpl)
  -->
- <div expr="((x + 2 * (x - 2)) + 1 = zero,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
-  <p>On se retrouve dans une situation connue : isoler x à gauche avec un polynôme de degré 1 à simplifier.</p>
+ <div expr="((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
  </div>
 </div>
 <div key="slide_rew_tuto_simpl2_(2 / (x + 1) + 1 / (x - 2) = zero,reducedenom,0)">
@@ -1940,12 +1994,11 @@
    <!--{type="expr" input="pow x 4"}--> en fonction de a.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_varchange_(a ^ 2 = (x ^ 2) ^ 2,linearsimpl,0)">
- <!--   (a ^ 2 = (x ^ 2) ^ 2,linearsimpl,0)
-  by Forward select of a ^ 2 = select ((x ^ 2) ^ 2) (linearsimpl)
+<div key="slide_rew_tuto_varchange_(a ^ 2 = x ^ 4,linearsimpl,0)">
+ <!-- 	(a ^ 2 = x ^ 4,linearsimpl,0)
+	by Forward select of a ^ 2 = select ((x ^ 2) ^ 2) (linearsimpl)
  -->
- <div expr="(a ^ 2 = (x ^ 2) ^ 2,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
-  <p>On simplifie le membre de droite : le carré d'un carré est la puissance 4.</p>
+ <div expr="(a ^ 2 = x ^ 4,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
  </div>
 </div>
 <div key="text_Antonym1" class="toolbox-text custom pedagogic confuse">
