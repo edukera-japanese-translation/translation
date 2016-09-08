@@ -1,0 +1,2722 @@
+<div class="pedagogic paper" key="exercise_description_demo_bernoulli_1">
+ <!--{type="ex_title"}-->
+ <p> <span class="txtwrap slide" style="padding-top:15px"> <img src="./img/demo_bernoulli_1.png"> </span> </p>
+ <p> The powers of two are bound from above by the values of the exponent, i.e. that
+  <!--{type="expr" input="(pow 2 n) >= (plus n 1)"}-->, as is illustrated in the graph opposite. </p>
+ <center>
+  <table class="borderblue">
+   <colgroup>
+    <col width="60">
+    <col width="60">
+    <col width="60">
+   </colgroup>
+   <tbody>
+    <tr>
+     <td><span class="bold">
+       <!--{type="expr" input="n"}--></span></td>
+     <td><span class="bold">
+       <!--{type="expr" input="n+1"}--></span></td>
+     <td><span class="bold">
+       <!--{type="expr" input="2^n"}--></span></td>
+    </tr>
+    <tr>
+     <td>
+      <!--{type="expr" input="0"}--></td>
+     <td>
+      <!--{type="expr" input="1"}--></td>
+     <td>
+      <!--{type="expr" input="1"}--></td>
+    </tr>
+    <tr>
+     <td>
+      <!--{type="expr" input="1"}--></td>
+     <td>
+      <!--{type="expr" input="2"}--></td>
+     <td>
+      <!--{type="expr" input="2"}--></td>
+    </tr>
+    <tr>
+     <td>
+      <!--{type="expr" input="2"}--></td>
+     <td>
+      <!--{type="expr" input="3"}--></td>
+     <td>
+      <!--{type="expr" input="4"}--></td>
+    </tr>
+    <tr>
+     <td>
+      <!--{type="expr" input="3"}--></td>
+     <td>
+      <!--{type="expr" input="4"}--></td>
+     <td>
+      <!--{type="expr" input="8"}--></td>
+    </tr>
+    <tr>
+     <td>...</td>
+     <td>...</td>
+     <td>...</td>
+    </tr>
+   </tbody>
+  </table>
+ </center>
+ <p> This inequality is a specific example of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality" target="_blank">Bernoulli’s inequalities</a></span>, demonstrated in the following exercise: </p>
+ <p>
+  <!--{type="exercise" input="demo_bernoulli_2"}--> </p>
+ <p> <span class="light-bulb">ń</span> Use reasoning <span class="buttontheo">by induction</span>. </p>
+</div>
+<div class="pedagogic paper" key="exercise_description_demo_bernoulli_2">
+ <!--{type="ex_title"}-->
+ <p> These inequalities generalize the result see previously. They are attributed to the Swiss mathematician, <span class="exturl"><a href="https://en.wikipedia.org/wiki/Jacob_Bernoulli" target="_blank">Jacques Bernoulli</a></span>. We call them the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality" target="_blank">Bernoulli’s inequality</a></span>. </p>
+ <p> <span class="light-bulb">ń</span> Use reasoning by induction. </p>
+</div>
+<div class="pedagogic paper" key="exercise_description_ineq_ex_8">
+ <!--{type="ex_title"}-->
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_connector_abs_peirce">
+ <!--{type="ex_title"}-->
+ <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_01">
+ <!--{type="ex_title"}-->
+ <p>We can demonstrate that disjunction is distributive <span class="stress">over conjunction</span>.</p>
+ <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_02">
+ <!--{type="ex_title"}-->
+ <p> It can be shown that conjunction is distributive <span class="stress">over disjunction</span>. </p>
+ <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_06">
+ <!--{type="ex_title"}-->
+ <p> In this exercise, the universe of elements is made up of all <span class="exturl"><a href="https://en.wikipedia.org/wiki/Natural_number" target="_blank">natural numbers</a></span>. </p>
+ <p> The formulae are the <span class="stress">propositions defined on ℕ</span>, and the elements are the integers. </p>
+ <p> Note "
+  <!--{type="prop" sci="true" input="forall (x:Nvar), app_prop U P x"}-->" and "
+  <!--{type="prop" sci="true" input="exists (x:Nvar), app_prop U P x"}-->" quantifications on ℕ. </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_08">
+ <!--{type="ex_title"}-->
+ <a href="https://en.wikipedia.org/wiki/The_School_of_Athens" target="_blank"><img class="txtwrap" src="./img/aristote-raphael-ecole-d-athenes.jpg" height="30%" width="30%"></a>
+ <p> The <span class="exturl"><a href="https://en.wikipedia.org/wiki/Syllogism" target="_blank">syllogism</a></span> is a reasoning formalized in the 4<span class="sup">th</span> Century BC in <span class="exturl"><a href="https://en.wikipedia.org/wiki/Ancient_Greece" target="_blank">Ancient Greece</a></span> par <span class="exturl"><a href="https://en.wikipedia.org/wiki/Aristotle" target="_blank">Aristotle</a></span> who considered it a fundamental element of logic and reasoning. </p>
+ <p> The syllogism served, and continues to serve, as a logical foundation to <span class="exturl"><a href="https://en.wikipedia.org/wiki/Law" target="_blank">Legislation</a></span>, born in <span class="exturl"><a href="https://en.wikipedia.org/wiki/Ancient_Rome#Republic" target="_blank">Ancient Rome</a></span>. It is the scheme on which legal judgements are constructed in western tradition. </p>
+ <p>Let’s imagine, for example that a tribunal must respond to the question "Is Socrates mortal?". The answer lies in the discovery of un attribute "man". Let’s lay out the definitions:</p>
+ <table class="slide">
+  <colgroup>
+   <col width="150">
+   <col width="30">
+   <col width="150">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td style="padding-top: 10px; border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">Minor term</td>
+    <td style="padding-top: 10px; border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">A</td>
+    <td style="padding-top: 10px; border-bottom: 1px solid whitesmoke;">Socrates</td>
+   </tr>
+   <tr>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">Middle term</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">B</td>
+    <td style="border-bottom: 1px solid whitesmoke;">being a man</td>
+   </tr>
+   <tr>
+    <td style="border-right: 1px solid whitesmoke;">Major term</td>
+    <td style="border-right: 1px solid whitesmoke;">C</td>
+    <td>being mortal</td>
+   </tr>
+  </tbody>
+ </table>
+ <p>It is therefore judged following the schema below:</p>
+ <table class="slide">
+  <colgroup>
+   <col width="200">
+   <col width="90">
+   <col width="250">
+   <col width="250">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td style="padding-top: 10px; border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Major premise</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">B ⇒ C</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;"> All men are mortals. (man ⇒ mortal)</td>
+    <td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;">The rule of law</td>
+   </tr>
+   <tr>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Minor premise</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">A ⇒ B</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Socrates is a man.</td>
+    <td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;"> The legal qualification of the minor term (Socrates), which is subject to the proceedings.</td>
+   </tr>
+   <tr>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Conclusion</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">A ⇒ C</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Socrates is mortal.</td>
+    <td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;">The judgement</td>
+   </tr>
+  </tbody>
+ </table>
+ <p> The challenge the process presents is therefore qualifying (or not) the minor term (the accused) as a middle term. Learning the spirit of the laws (the meaning given to the laws) allows the judge to decide, by studying <span class="exturl"><a href="https://en.wikipedia.org/wiki/Case_law" target="_blank">case law</a></span> that is the set of court decisions. </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_12">
+ <!--{type="ex_title"}-->
+ <p>This implication is only true in classical logic. This poses no problem to its use in electronics : either the current flows or it doesn’t.</p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_13">
+ <!--{type="ex_title"}-->
+ <a href="./img/Diopsis.jpg" target="_blank"><img class="txtwrap" src="./img/Diopsis.jpg" height="30%" width="30%"></a>
+ <p>The <span class="exturl"><a href="https://en.wikipedia.org/wiki/De_Morgan%27s_laws" target="_blank">De Morgan's laws</a></span> are formulae that allow us to calculate the negation of any mathematical proposition.</p>
+ <p>We can demonstrate that the negation of a disjunction is the conjunction of the negations of the operands.</p>
+ <p>These laws are used in IT within the conception of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Logic_gate" target="_blank">logical functions</a></span> and and their physical materialization, notably in the form of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Integrated_circuit">integrated circuits</a></span>.</p>
+ <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_14">
+ <!--{type="ex_title"}-->
+ <p> A binary <span class="exturl"><a href="https://en.wikipedia.org/wiki/Operator_(mathematics)" target="_blank">operator</a></span> noted, for example, ★, is <span class="exturl"><a href="https://en.wikipedia.org/wiki/Associative_property" target="_blank">associative</a></span> if, whatever the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Operand" target="_blank">operands</a></span> a b c : </p>
+ <p>a ★ (b ★ c) = (a ★ b) ★ c</p>
+ <p>Since their position is not important; brackets can be omitted. Hence the value above is written a ★ b ★ c. It is, for example, the associativity of addition that allows us to write 3 + 5 + 8 without the need for brackets.</p>
+ <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
+ <div class="slide">
+  <p> <span class="light-bulb">ń</span> By definition, an equivalence is demonstrated by demonstrating two implications. Definition of <span class="buttontheo">equivalence</span> is chosen to demonstrate
+   <!--{type="tag" input="s0"}-->. </p>
+ </div>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_16">
+ <!--{type="ex_title"}-->
+ <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Contraposition" target="_blank">Contraposition</a></span>, or modus tollens, consists of demonstrating that A implies B, by demonstrating that the negation of B implies the negation of A: if B didn’t stand, A wouldn’t stand, therefore if A stands, then B stands. </p>
+ <p> This reasoning only applies within <span class="stress">classical logic</span>. However, the inverse implication,
+  <!--{type="prop" sci="true" input="(A -> B) -> (~B -> ~A)"}--> is true in constructive logic, as demonstrated in the following exercise. </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_17">
+ <!--{type="ex_title"}-->
+ <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+ <p>This way, the implication is demonstrated using constructive logic.</p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_27">
+ <!--{type="ex_title"}-->
+ <p>Associativity of conjunction is demonstrated in a similar way to associativity of disjunction.</p>
+ <div class="slide">
+  <p> <span class="light-bulb">ń</span> Demonstrating disjunction of
+   <!--{type="prop" sci="true" input="or A B"}--> requires <span class="stress">choosing</span> between the demonstration of A or B. </p>
+  <p>The method consists of choosing as late as possible, and then exploiting all hypotheses (by disjunction of cases) in order to obtain the maximum amount of information that allows us to make the choice.</p>
+ </div>
+ <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_31">
+ <!--{type="ex_title"}-->
+ <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Reductio_ad_absurdum" target="_blank">Ad absurdium reasoning</a></span> consists of demonstrating a proposition A by showing that if its negation, ¬ A, is true, then we obtain a contradiction: </p>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td><span class="def">Ad absurdium reasoning</span>
+     <!--{type="prop" sci="true" input="forall A:Prop, ((~(~A)) -> A)"}--></td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+ <p> In effect,
+  <!--{type="prop" sci="true" input="~(~A)"}--> can be re-written as
+  <!--{type="prop" sci="true" input="(~A -> False)"}--> by definition of negation. Ad absurdium reasoning is therefore a law of elimination of double negation. </p>
+ <p>This exercise demonstrates that the excluded middle involves ad absurdium reasoning.</p>
+ <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
+ <p>Reciprocal implication is demonstrated in the exercise below. As a result, ad absurdium reasoning is equivalent to the excluded middle, and is therefore not acknowledged by constructive logic:</p>
+ <p>
+  <!--{type="exercise" input="logic_quantifier_ex_le_48"}--> </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_32">
+ <!--{type="ex_title"}-->
+ <p>We can demonstrate that disjunction of two negations is the negation of conjunction of the propositions. This implication is made with constructive logic, but not the inverse implication, as shown in the next exercise.</p>
+ <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_33">
+ <!--{type="ex_title"}-->
+ <p>It can be demonstrated that disjunction is distributive <span class="stress">over implication</span>.</p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_34">
+ <!--{type="ex_title"}-->
+ <p>It can be demonstrated that conjunction is "half distributive" over implication.</p>
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_connector_peirce_abs_te">
+ <!--{type="ex_title"}-->
+ <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_connector_peirce_law">
+ <!--{type="ex_title"}-->
+ <a href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce" target="_blank"><img class="txtwrap" src="./img/peirce.jpg" height="30%" width="30%"></a>
+ <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Peirce%27s_law" target="_blank">Peirce's law</a></span> is true in classical logic. <span class="exturl"><a href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce" target="_blank">Charles Sanders Peirce</a></span> was an American philosopher, logician and mathematician. </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_connector_tuto_01">
+ <!--{type="ex_title"}-->
+ <p>What can be deduced from the conjunction "A ∧ B"?</p>
+ <p>Follow the instructions to solve the problem.</p>
+ <p> <span class="light-bulb">A</span>Each exercise has a conclusion and an initial context, which lays out the variables and the hypothesis. </p>
+ <p> <span class="light-bulb">A</span>The conclusion and the hypothesis are <span class="exturl"><a href="https://en.wikipedia.org/wiki/Statement_(logic)" target="_blank">mathematical statements</a></span>. The objective is to come up with a series of statements, which make up the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Mathematical_proof" target="_blank">proof</a></span> that the conclusion is true. </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_21">
+ <!--{type="ex_title"}-->
+ <p>In Scotland, a private club has the following rules:</p>
+ <ul>
+  <li>Every non-Scottish member wears red socks.</li>
+  <li>Every member wears a kilt or doesn't wear red socks.</li>
+  <li>The married members don't go out on Sunday.</li>
+  <li>A member goes out on Sunday if and only if he is Scottish.</li>
+  <li>Every member who wears a kilt is Scottish and married.</li>
+  <li>Every Scottish member wears a kilt.</li>
+ </ul>
+ <p>Now, we show that these rules are so strict that no one can be accepted!</p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_03">
+ <!--{type="ex_title"}-->
+ <p>It is demonstrated that the complement of a union is the intersection of the complements.</p>
+ <p>We call this formula a De Morgan law by analogy with the De Morgan laws established for conjunctions and disjunctions. There are indeed similarities between the properties (distributivity, associativity, commutativity) of the union, of the intersection and of the complement, and those of the disjunction, the conjunction and the negation respectively.</p>
+ <p>This is a consequence of the definition of the set operators: belonging to a union of two sets is the disjunction of membership to each of the two sets.</p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_07">
+ <!--{type="ex_title"}-->
+ <p>The demonstration of the distributivity of the existential quantifier over disjunction is concluded.</p>
+ <p> <span class="light-bulb">ń</span> It is necessary to generate the unknown witness variable <span class="button" style="font-family: 'Times New Roman'; font-weight: bold; font-size: 14px; padding: 3px;">x?</span> within the scope (or a sub-scope) that contains the variable(s) allowing us to figure out this unknown witness value. In this example, the witness value is provided within the scopes created <span class="buttontheo">by using disjunction of cases</span>. This reasoning is therefore used before reasoning <span class="buttontheo">by construction</span>. </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_09">
+ <!--{type="ex_title"}-->
+ <p>It can be shown that the empty set <span class="exturl"><a href="https://en.wikipedia.org/wiki/Subset" target="_blank">subset</a></span> of any set.</p>
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_easy_08">
+ <!--{type="ex_title"}-->
+ <p>What is the logical negation of a universal quantification?</p>
+ <p>The negation of "for every x, F (x)" is not "for every x, not F (x)", but "there exists x such that F (x)".</p>
+ <p>Here, one of the two implications is demonstrated.</p>
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_easy_09">
+ <!--{type="ex_title"}-->
+ <p>What is the logical negation of an existential quantification?</p>
+ <p>The negation of "there exists x, such that F (x)" is not "there exists x, such that not F (x)", but “for every value x, not F (x)".</p>
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_le_01">
+ <!--{type="ex_title"}-->
+ <p>The binary relation on ℕ "is less than", noted
+  <!--{type="prop" sci="true" input="app_rel rel_le x y"}-->, is defined in these exercises by an existential formula:</p>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td> <span class="def">Is less than</span>
+     <!--{type="prop" sci="true" input="forall (x y:Nvar), equiv (app_rel rel_le x y) (exists (z:Nvar),y=x+z)"}--> </td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+ <p>We can demonstrate that addition is increasing for this relation.</p>
+ <p>"Is less than" exercises:</p>
+ <p>
+  <!--{type="exercise" input="logic_quantifier_ex_le_02"}-->
+  <!--{type="exercise" input="logic_quantifier_ex_le_03"}--></p>
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_le_02">
+ <!--{type="ex_title"}-->
+ <p>"Is less than" Exercises:</p>
+ <p>
+  <!--{type="exercise" input="logic_quantifier_ex_le_01"}-->
+  <!--{type="exercise" input="logic_quantifier_ex_le_03"}--> </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_04">
+ <!--{type="ex_title"}-->
+ <p> <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 1 Eléments de logique</a></span></span> </p>
+ <p>There are two kinds of people on a mysterious island. There are so-called honestants who always speak the truth, and the others are swindlecants who always lie.</p>
+ <p> Show that if <span style="font-weight: bold">a</span> and <span style="font-weight: bold">b</span> are two people on the island and that if <span style="font-weight: bold">a</span> says that <span style="font-weight: bold">b</span> is lying, at least one of the two is a swindlecant. </p>
+ <p> <span class="light-bulb">ń</span> The axiom <span class="buttontheo">speaking the truth or lying</span> is used to generate two cases: either <span style="font-weight: bold">a</span> is honestant, or <span style="font-weight: bold">a</span> is swindlecant. The theory "Honestants and Swindlecants" is made up of the following axioms: </p>
+ <table class="slide">
+  <colgroup>
+   <col width="25%">
+   <col width="75%">
+  </colgroup>
+  <tbody>
+   <tr>
+   </tr>
+   <tr>
+    <td style="vertical-align: top"><span class="def" style="padding-top: 20px">Honestants and Swindlecants</span></td>
+    <td style="padding-top: 24px;">
+     <!--{type="prop" input="forall (a:gbmember), (or (is_good a) (is_bad a))"}--></td>
+   </tr>
+   <tr>
+    <td style="vertical-align: top; padding-top: 8px"><span class="def">The truth told by the honestant</span></td>
+    <td>
+     <!--{type="prop" style="padding-top: 20px" input="forall (a:gbmember) (P:Prop), (is_good a) -> (say a P) -> P"}--></td>
+   </tr>
+   <tr>
+    <td style="vertical-align: top; padding-top: 8px"><span class="def">The lie told by the swindlecant</span></td>
+    <td>
+     <!--{type="prop" input="forall (a:gbmember) (P:Prop), (is_bad a) -> (say a P) -> (~ P)"}--></td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_05">
+ <!--{type="ex_title"}-->
+ <p> <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 1 Eléments de logique</a></span></span> </p>
+ <p> Show that if <span style="font-weight: bold">a</span> says that <span style="font-weight: bold">a</span> and <span style="font-weight: bold">b</span> are both swindlecants, then <span style="font-weight: bold">a</span> is a swindlecant. </p>
+ <p> "Honestants and Swindlecants" exercises: </p>
+ <!--{type="exercise" input="logic_quantifier_ex_le_04"}-->
+ <!--{type="exercise" input="logic_quantifier_ex_le_05"}-->
+ <!--{type="exercise" input="logic_quantifier_ex_le_06"}-->
+ <!--{type="exercise" input="logic_quantifier_ex_le_07"}-->
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_06">
+ <!--{type="ex_title"}-->
+ <p> <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 1 Eléments de logique</a></span></span> </p>
+ <p> Show that if <span style="font-weight: bold">a</span> says
+  <!--{type="expr" input="False"}--> then he is a swindlecant. </p>
+ <p></p> Exercises "Honestants and Swindlecants" :
+ <p></p>
+ <!--{type="exercise" input="logic_quantifier_ex_le_04"}-->
+ <!--{type="exercise" input="logic_quantifier_ex_le_05"}-->
+ <!--{type="exercise" input="logic_quantifier_ex_le_06"}-->
+ <!--{type="exercise" input="logic_quantifier_ex_le_07"}-->
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_07">
+ <!--{type="ex_title"}-->
+ <p> <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 1 Eléments de logique</a></span></span> </p>
+ <p>Show that a person living on the island cannot say that he himself is a swindlecant.</p>
+ <p></p> Exercises "Honestants and Swindlecants" :
+ <p></p>
+ <!--{type="exercise" input="logic_quantifier_ex_le_04"}-->
+ <!--{type="exercise" input="logic_quantifier_ex_le_05"}-->
+ <!--{type="exercise" input="logic_quantifier_ex_le_06"}-->
+ <!--{type="exercise" input="logic_quantifier_ex_le_07"}-->
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_le_13">
+ <!--{type="ex_title"}-->
+ <!--  <a href="https://fr.wikipedia.org/wiki/Principe_des_tiroirs" target="_blank"><img class="txtwrap" src="http://img.1.im6.fr/03E8000007913469-photo-dressing-tiroir-casiers-chaussettes.jpg" height="30%" width="30%"></img></a> -->
+ <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 2 Relations et fonctions</a></span></span>
+ <p> In 1834, the German mathematician <span class="exturl"><a href="https://en.wikipedia.org/wiki/Peter_Gustav_Lejeune_Dirichlet" target="_blank">Johann Dirichlet</a></span> announced the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Pigeonhole_principle" target="_blank">pigeonhole principle</a></span>, which applies to the case in which n pigeons occupy m holes: </p>
+ <p style="align: center; font-style: italic">If n &gt; m, then at least one hole must contain strictly more than one pigeon.</p>
+ <p> In other words, by <span class="exturl"><a href="https://en.wikipedia.org/wiki/Contraposition" target="_blank">contraposition</a></span>, if each hole contains at the most one pigeon, then n &lt;= m. </p>
+ <p> Let’s consider <span class="stress">the storage function</span> of n+1 pigeons, indexed from 0 to n, in holes: this function takes the index of a pigeon as argument, and returns an index of a hole. The assumption that a hole contains at the most one pigeon, translates into f being an <span class="stress">injective function</span> (the fiber of a hole has at most one element). Furthermore, given that by hypothesis, m holes contain the pigeons, there is one pigeon, indexed x, such that f(x)=m. </p>
+ <p>Demonstrating the pigeonhole principle therefore consists of demonstrating that if the function f is injective over the set [0 ... n], then there is one pigeon numbered x, such that its hole, f(x), is greater or equal to n.</p>
+ <p>To simplify this, we can reason with a notion stronger than injectivity and consider strictly increasing functions:</p>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td>
+     <!--{type="prop" sci="true" input=" forall (n:Nvar) (f:NvarFun), equiv (FFMono n f) (forall (x y:Nvar), ExprLT x y -> ExprLT y n -> ExprLT (app_fun f x) (app_fun f y))"}--></td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+ <p>Opposite, it is demonstrated that the strict increase is a stronger condition than injectivity over [0 ... n], which is expressed here in the following way :</p>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td>
+     <!--{type="prop" sci="true" input="forall (n:Nvar) (f:NvarFun), equiv (FFInj n f) (forall (x y:Nvar), ExprLT x n -> ExprLT y n -> app_fun f x = app_fun f y -> nvar x = nvar y)"}--></td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+ <p>The pigeonhole principle is demonstrated in the following exercise, following the strict increase of the storage function.</p>
+ <p> </p>
+ <h3>Solution</h3>
+ <p> <span class="light-bulb">ń</span> Use a case base reasoning with the help of
+  <!--{type="tag" input="2"}-->. </p>
+ <p>Use theorems below on equalities and inequalities:</p>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td><span class="def">Symmetry</span>
+     <!--{type="prop" sci="true" input="forall (x y:O1U), (equiv (x=y) (y=x))"}--><br><br>
+     <!--{type="prop" sci="true" input="forall (x y:O1U), (equiv (x<>y) (y<>x))"}--></td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td><span class="def">Inequality rewritings</span>
+     <!--{type="prop" sci="true" input="forall (x y:O1U), (equiv (ExprGT x y) (ExprLT y x))"}--><br><br>
+     <!--{type="prop" sci="true" input="forall (x y:O1U), (equiv (ExprGTEQ x y) (ExprLTEQ y x))"}--></td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td><span class="def">Strict inequality</span>
+     <!--{type="prop" sci="true" input="forall (x y:O1U), (ExprGT x y) -> (x <> y)"}--><br><br>
+     <!--{type="prop" sci="true" input="forall (x y:O1U), (ExprLT x y) -> (x <> y)"}--></td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_le_14">
+ <!--{type="ex_title"}-->
+ <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 2 Relations et fonctions</a></span></span>
+ <p>The pigeonhole principle is presented in the previous exercise. It is do with demonstrating that if a function is injective over [0 .. n], then there exists x in [0 ... n] such that f(x) ≥ n.</p>
+ <p> We have previously demonstrated that a sufficient condition for being injective over [0 ... n] is to be strictly increasing over [0 ... n]. </p>
+ <p>The pigeonhole principle is demonstrated opposite, using a strictly increasing function as the hypothesis.</p>
+ <div class="slide">
+  <p> <span class="light-bulb">ń</span> Use reasoning by recurrence over n. </p>
+ </div>
+ <p>The theorems below enable us to transform an inequality between two integers to a strcit inequality, and vice versa:</p>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td><span class="def">Transition to the next integer</span>
+     <!--{type="prop" sci="true" input="forall (x y:O1U), (equiv (ExprGT x y) (ExprGTEQ x (y+1)))"}--><br><br>
+     <!--{type="prop" sci="true" input="forall (x y:O1U), (equiv (ExprGTEQ x y) (ExprGT (x+1) y))"}--></td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+ <p>The different forms of transitivity of comparison operators also enable us to introduce or eliminate strict inequalities from inequalities, and vice versa:</p>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td><span class="def">Transitivity</span>
+     <!--{type="prop" sci="true" input="forall (x y z:O1U), (ExprGT x y) -> (ExprGT y z) -> (ExprGT x z)"}--><br><br>
+     <!--{type="prop" sci="true" input="forall (x y z:O1U), (ExprGTEQ x y) -> (ExprGT y z) -> (ExprGT x z)"}--><br><br>
+     <!--{type="prop" sci="true" input="forall (x y z:O1U), (ExprGT x y) -> (ExprGTEQ y z) -> (ExprGT x z)"}--><br><br>
+     <!--{type="prop" sci="true" input="forall (x y z:O1U), (ExprGTEQ x y) -> (ExprGTEQ y z) -> (ExprGTEQ x z)"}--><br><br>
+     <!--{type="prop" sci="true" input="forall (x y z:O1U), (ExprGT x y) -> (ExprGTEQ y z) -> (ExprGTEQ x z)"}--><br><br>
+     <!--{type="prop" sci="true" input="forall (x y z:O1U), (ExprGTEQ x y) -> (ExprGT y z) -> (ExprGTEQ x z)"}--></td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_27">
+ <!--{type="ex_title"}-->
+ <p>This result is available in the other exercises, as <span class="buttontheo">set characterization</span> of a transitive relation.</p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_31">
+ <!--{type="ex_title"}-->
+ <p> <span class="light-bulb">ń</span> Use the characterization of a transitive relation, and the conservation of inclusion by composition. </p>
+ <p> <span class="light-bulb">A</span>Selecting a term in a proposition with the cursor allows you to replace it with another term; it is therefore necessary to prove that it is equal to the original term. </p>
+ <h3>Also see</h3>
+ <p>
+  <!--{type="exercise" input="logic_quantifier_ex_le_27"}-->
+  <!--{type="exercise" input="logic_quantifier_ex_le_47"}--> </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_47">
+ <!--{type="ex_title"}-->
+ <p>Composition conserves inclusion.</p>
+ <p> This result is available in other exercises, as "combination by <span class="buttontheo">composition</span>" rule. </p>
+</div>
+<div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_48">
+ <!--{type="ex_title"}-->
+ <p>The law of excluded middle is demonstrated by assuming ad absurdium rule (double negation elimination).</p>
+ <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_le_71">
+ <!--{type="ex_title"}-->
+ <p>Mrs. Muddled has three children, Alice, Bill, and Carl.</p>
+ <p>When asked her 3 children's ages, Mrs. Muddled said that Alice is the youngest unless Bill is, and that if Carl isn't the youngest then Alice is the oldest.</p>
+ <p> Who is the oldest and who is the youngest?</p>
+ <h3>Theory</h3>
+ <p>Information given by Mrs. Muddled is provided by assumptions <span class="propid">4</span> et <span class="propid">5</span></p>
+ <p>There’s some implicit meaning in the superlative words “youngest” and “oldest” provided by the following rules : </p>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td> <span class="def">Antonymy</span>
+     <!--{type="prop" input="forall (x:Child), (Youngest x) -> (~(Oldest x))"}--><br><br>
+     <!--{type="prop" input="forall (x:Child), (Oldest x) -> (~(Youngest x))"}--> </td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+ <p>Finally, “youngest” and “oldest” are opposites. Since there is more than one child, no one can be both.</p>
+ <table class="slide">
+  <colgroup>
+   <col width="100%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td> <span class="def">Uniqueness</span>
+     <!--{type="prop" input="forall (x y:Child), (x <> y) -> (Youngest x) -> (~(Youngest y))"}--><br><br>
+     <!--{type="prop" input="forall (x y:Child), (x <> y) -> (Oldest x) -> (~(Oldest y))"}--> </td>
+   </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+ </table>
+</div>
+<div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_le_72">
+ <!--{type="ex_title"}-->
+</div>
+<div class="pedagogic paper" key="exercise_description_sigma_ex_15">
+ <!--{type="ex_title"}-->
+</div>
+<div class="pedagogic paper" key="exercise_description_sigma_ex_16">
+ <!--{type="ex_title"}-->
+</div>
+<div key="help_description_icon_exercises_check">
+ <p>exercise solved. Click 'Start' to load the solution.</p>
+</div>
+<div key="help_description_icon_exercises_difficulty">
+ <p>difficulty level from 0 (easy) -to 3 (hard).</p>
+</div>
+<div key="help_description_icon_exercises_lighbulb">
+ <p>Solution hints (tutorial exercises provide this service)</p>
+</div>
+<div key="help_description_icon_exercises_lock">
+ <p>Lock. Obtain the 'tutorial' cockade of current chapter (and possibly prerequisite chapters) to unblock exercise.</p>
+</div>
+<div key="help_description_icon_trophy_all">
+ <p>The 'universal' cockade is obtained when all exercises of the chapter are solved.</p>
+</div>
+<div key="help_description_icon_trophy_diagnostic">
+ <p>The 'express' cockade is obtained when all exercises marked 'express' are resolved. As a result, chapter theorems are available in the diagnosis window.</p>
+</div>
+<div key="help_description_icon_trophy_tutorial">
+ <p>The 'tutorial' cockade is obtained when all tutorial exercises are solved.</p>
+</div>
+<div key="help_description_icon_trophy_unavoidable">
+ <p>The cockade 'unavoidable' is obtained when all the exercises marked 'unavoidable' of the chapter are solved.</p>
+</div>
+<div key="help_description_shortcut_browsing_left_scope">
+ <p>Display scope to the left of current the scope</p>
+</div>
+<div key="help_description_shortcut_browsing_lower_prop">
+ <p>Move focus to the statement below</p>
+</div>
+<div key="help_description_shortcut_browsing_open_scope">
+ <p>Open justification scope</p>
+</div>
+<div key="help_description_shortcut_browsing_redo">
+ <p>Redo proof step</p>
+</div>
+<div key="help_description_shortcut_browsing_right_scope">
+ <p>Display scope to the right of the current scope</p>
+</div>
+<div key="help_description_shortcut_browsing_undo">
+ <p>Undo last proof step</p>
+</div>
+<div key="help_description_shortcut_browsing_upper_prop">
+ <p>Move focus to the statement above</p>
+</div>
+<div key="help_description_shortcut_commutativity_commut_left">
+ <p>Select term on the left</p>
+</div>
+<div key="help_description_shortcut_commutativity_commut_mode">
+ <p>Activate keybaord commutative mode</p>
+</div>
+<div key="help_description_shortcut_commutativity_commut_right">
+ <p>Select term on the right</p>
+</div>
+<div key="help_description_shortcut_commutativity_commut_shift_left">
+ <p>Move selected term to the left</p>
+</div>
+<div key="help_description_shortcut_commutativity_commut_shift_right">
+ <p>Move selected term to the right</p>
+</div>
+<div key="help_description_shortcut_commutativity_enter_commut">
+ <p>Apply terms reordering</p>
+</div>
+<div key="help_description_shortcut_commutativity_esc_commut">
+ <p>Exit keyboard commutative mode</p>
+</div>
+<div key="help_description_shortcut_evar_enter_evar">
+ <p>Assign a value to a proof variable</p>
+</div>
+<div key="help_description_shortcut_evar_esc_evar">
+ <p>Exit keyboard proof variable mode</p>
+</div>
+<div key="help_description_shortcut_evar_evar_left">
+ <p>Select previous proof variable</p>
+</div>
+<div key="help_description_shortcut_evar_evar_mode">
+ <p>Activate keyboard proof variable mode</p>
+</div>
+<div key="help_description_shortcut_evar_evar_right">
+ <p>Select next proof variable</p>
+</div>
+<div key="help_description_shortcut_proof_context">
+ <p>Show / hide context (statements from other scopes available for deduction) </p>
+</div>
+<div key="help_description_shortcut_proof_deduce">
+ <p>Open diagnostic window in deduction</p>
+</div>
+<div key="help_description_shortcut_proof_enter">
+ <p>Perform one of the following:</p>
+ <ul>
+  <li style="font-size:14px">Open diagnostic window in deduction if the statement is justified</li>
+  <li style="font-size:14px">Open diagnostic window in justification if the statement is not justified</li>
+  <li style="font-size:14px">Unify statement</li>
+ </ul>
+</div>
+<div key="help_description_shortcut_proof_justify">
+ <p>Perform one of the following:</p>
+ <ul>
+  <li style="font-size:14px">Open diagnostic window in justification if the statement is not justified</li>
+  <li style="font-size:14px">Display justification theorem in the toolbox if the proposal is justified</li>
+ </ul>
+</div>
+<div key="help_description_shortcut_selection_enter_select">
+ <p>Open diagnostics window to rewrite selected term</p>
+</div>
+<div key="help_description_shortcut_selection_esc_select">
+ <p>Exit keybaord selection mode</p>
+</div>
+<div key="help_description_shortcut_selection_group_select">
+ <p>Mark selected term as group (keep intact the term during rewriting)</p>
+</div>
+<div key="help_description_shortcut_selection_select_down">
+ <p>Select first argument</p>
+</div>
+<div key="help_description_shortcut_selection_select_left">
+ <p>Select previous argument</p>
+</div>
+<div key="help_description_shortcut_selection_select_mode">
+ <p>Activate keyboard selection mode</p>
+</div>
+<div key="help_description_shortcut_selection_select_right">
+ <p>Select next argument</p>
+</div>
+<div key="help_description_shortcut_selection_select_shift_left">
+ <p>Increase selection with term on the left</p>
+</div>
+<div key="help_description_shortcut_selection_select_shift_right">
+ <p>Increase selection with next terme</p>
+</div>
+<div key="help_description_shortcut_selection_select_up">
+ <p>Select the function whose argument is selected term</p>
+</div>
+<div key="help_description_shortcut_unification_enter_union">
+ <p>Unify with selected statement</p>
+</div>
+<div key="help_description_shortcut_unification_esc_union">
+ <p>Exit keyboard unification mode</p>
+</div>
+<div key="help_description_shortcut_unification_left_union">
+ <p>Select left statement</p>
+</div>
+<div key="help_description_shortcut_unification_right_union">
+ <p>Select right statement</p>
+</div>
+<div key="help_description_shortcut_unification_union_mode">
+ <p>Activate keyboard unfication mode</p>
+</div>
+<div key="help_section_description_browsing">
+ <p>The proof is presented in the style of natural deduction: justified statements are positioned on top of each other; assumptions are on top, and the conclusion is the last statement.</p>
+ <p>A justification is a theorem applied to statements above justified statement. A justification may also be a proof, which is then in another scope (represented by a tab).</p>
+ <p>One can navigate in the paper with the cursor, or with the keyboard thanks to keyboard shortcuts below:</p>
+</div>
+<div key="help_section_description_commutativity">
+ <p>When choosing commutative rewriting, one can reorder the terms with the curor by drag-and-drop, or with the keyboard thanks to keyboard shortcuts below:</p>
+</div>
+<div key="help_section_description_evar">
+ <p>Proof variables may appear when applying a theorem (a proof varaible is represented with a blue tag)</p>
+ <p>On can assign a value to a proof variable by clicking on it, or with keyboard shortcuts below:</p>
+</div>
+<div key="help_section_description_exercises">
+ <!--TODO-->
+</div>
+<div key="help_section_description_proof">
+ <p>Several proof actions are possible:</p>
+ <ul>
+  <li style="font-size:14px">Justify (if the proposal is not already justified)</li>
+  <li style="font-size:14px">Unify (if unifiable statements are proposed)</li>
+  <li style="font-size:14px">Deduce</li>
+  <li style="font-size:14px">Delete (if the proposal is not used by any justification)</li>
+  <li style="font-size:14px">Move by dragging and dropping the index tag of the statement (as long as the deductive style is respected : a statement used by a justification can only be above justified statement)</li>
+ </ul>
+ <p>Keyboard shortcuts are available:</p>
+</div>
+<div key="help_section_description_selection">
+ <p>Selecting a term allows to rewrite it (development, factoring, ...)</p>
+ <p>Term selection is done either with the cursor or with keyboard shortcuts below:</p>
+</div>
+<div key="help_section_description_trophy">
+ <!--TODO-->
+</div>
+<div key="help_section_description_unification">
+ <p>When several unifications are possible, select the appropriate statement with the cursor or with keyboard shortcuts below:</p>
+</div>
+<div key="pager_account"></div>
+<div class="pager" key="pager_algebra">
+ <a href="https://fr.wikipedia.org/wiki/%C3%89variste_Galois" target="_blank"><img class="txtwrap" src="./img/Evariste_galois.jpg" height="20%" width="20%"></a>
+ <p>The <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Structure_alg%C3%A9brique" target="_blank">algebraic structures</a></span> are of this chapter study of objects.</p>
+ <p> In the early nineteenth <span class="sup">century,</span> <span class="exturl"><a href="https://fr.wikipedia.org/wiki/%C3%89variste_Galois" target="_blank">Evariste Galois</a></span> introduced the concept of <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Groupe_(math%C3%A9matiques)" target="_blank">group</a></span> . </p>
+</div>
+<div key="pager_algebra_structures"></div>
+<div class="pager" key="pager_analysis">
+ <a href="https://fr.wikipedia.org/wiki/Augustin_Louis_Cauchy" target="_blank"><img class="txtwrap" src="./img/Augustin-Louis_Cauchy_1901.jpg" height="12%" width="12%"></a>
+ <p> During the <span class="sup">19th</span> century, mathematicians lay the foundations for analyzing the properties of real functions (functions in real terms): continutité, convergence, limits, differentiation, integration, ... </p>
+ <p></p>
+ <p> In France from the beginning of the century, <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Augustin_Louis_Cauchy" target="_blank">Augustin-Louis Cauchy</a></span> in particular studying the convergence properties of the positive increasing sequences, introduced in this chapter. In Germany, <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Bernhard_Riemann" target="_blank">Bernhard Riemann</a></span> , and <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Karl_Weierstrass" target="_blank">Karl Weierstrass</a></span> develop theories of integration and function limits. </p>
+</div>
+<div class="pager" key="pager_analysis_induction">
+ <p> <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Raisonnement_par_r%C3%A9currence" target="_blank">Mathematical induction</a></span> is a simple and yet very powerful theorem. It allows to prove that a proposition P (n) dependent on an index n, is true regardless of the value of the index, which means true for an infinite number of values of the index n. </p>
+ <p> For example, without induction, it would require a very large amount (if not infinite) of calculation steps to get confidant that P is true for any value of n, while induction provides with absolute certainty in a few proof steps. </p>
+</div>
+<div class="pager" key="pager_analysis_limits">
+ <p>The limit of a function at a point or at infinity is formally introduced. The calculation method by composition of limits is presented : for example under certain conditions, the limit of a sum is the sum of the limits. This method enables to compute the limit of any function by decomposing it into elementary functions with known limits. </p>
+</div>
+<div class="pager" key="pager_analysis_series">
+ <p> A series is a function of ℕ in ℝ. Here we introduce some fundamental properties of these functions: </p>
+ <ul>
+  <li>increasing decreasing monotonicities</li>
+  <li>upper and lower bounds</li>
+  <li>convergence, divergence</li>
+ </ul>
+</div>
+<div key="pager_badges"></div>
+<div key="pager_credits"></div>
+<div key="pager_dashboard"></div>
+<div class="custom pager" key="pager_demo_seg">
+ <p>Calculus is about transforming an equality relation (or inequality), between real numbers or vectors for example. The challenge is to work out a sequence of algebraic manipulations (factorize, expand, ...) from assumption(s) to conclusion.</p>
+</div>
+<div class="pager" key="pager_eq_seg">
+ <p>A equality can be transformed, especially with the operations introduced in this chapter:</p>
+ <ul>
+  <li>left and right operations that can "pass a term to the other side" by changing its sign</li>
+  <li>combinations of equalities, typically to solve systems of equations</li>
+  <li>squaring, root squaring (if the value is positive), ...</li>
+ </ul>
+</div>
+<div class="pager" key="pager_ineq_seg">
+ <p>Inequalities compare two real numbers. They transform similarly to the equations with:</p>
+ <ul>
+  <li>operations to left and right sides</li>
+  <li>combinations (addition, subtraction)</li>
+  <li>functions (opposite, square root, ...)</li>
+  <li>...</li>
+ </ul>
+ <p>If the function applied to the left and right sides of an inequality is decreasing, then the sense of the inequality is reversed.</p>
+</div>
+<div class="pager" key="pager_logic">
+ <p> The grammar of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Propositional_calculus" target="_blank">propositions</a></span>, and associated reasoning rules, form a logical system called <span class="exturl"><a href="https://en.wikipedia.org/wiki/Natural_deduction" target="_">natural deduction</a></span>, notably used for developing mathematical <span class="exturl"><a href="https://en.wikipedia.org/wiki/Mathematical_proof" target="_blank">demonstrations</a></span>. </p>
+ <p>This system is valuable because it is independent from the theory studied. A theory is the set of axioms (acknowledged theorems) defining objects and their properties.</p>
+</div>
+<div class="pager" key="pager_logic_connector">
+ <p>Logical connectors are fundamental elements for forming mathematical propositions from two propositions, whatever A and B are:</p>
+ <ul>
+  <li>implication, A implies B, noted "A ⇒ B"</li>
+  <li>conjunction, A and B, noted "A ∧ B"</li>
+  <li>disjunction, A or B, noted "A ∨ B"</li>
+  <li>negation, not A, noted "¬ A"</li>
+ </ul>
+ <p>Each of these connectors is associated with two rules:</p>
+ <ul>
+  <li>a rule to justify (or demonstrate) the proposition: how can we justify "A ∧ B" ?</li>
+  <li>a rule to deduce a new proposition: what can we deduce from "A ∧ B" ?</li>
+ </ul>
+</div>
+<div class="pager" key="pager_logic_function">
+ <p>A function f is a formula that has a value x, such that the proposition "y=f(x)" is a functional relation of x and y.</p>
+</div>
+<div class="pager" key="pager_logic_quantifier">
+ <p>Mathematical propositions can also be formulae with variables taking on certain values: for example "3 is a prime number" can be considered as the formula "x is a prime number" where the variable "x" is replaced by "3".</p>
+ <p> For a formula with a variable, we need to express that the proposition is true <span class="stress" style="font-size: 16px">for every</span> value the variable assumes, or that <span class="stress" style="font-size: 16px">there exists</span> at least one value for which the proposition is true. These new elements language are the quantifiers. </p>
+</div>
+<div class="pager" key="pager_logic_relation">
+ <p>Relations, omnipresent in mathematics, are formulae that relate two values belonging to two, potentially different, universes. We talk about binary relation when the values belong to the same universe.</p>
+ <p>The characterization of relations, as well as their properties, are presented.</p>
+</div>
+<div class="pager" key="pager_rewrite_seg">
+ <p>Rewriting operations allow to deduce a new equality, almost identical, in which a term
+  <!--{type="expr" input="a"}--> is replaced by a term
+  <!--{type="expr" input="b"}--> , provided
+  <!--{type="prop" sci="true" style="vertical-align:-3px;" input="a = b"}--> . Rewriting of a to b is given by the algebraic calculation:</p>
+ <ul>
+  <li>factoring, expansion</li>
+  <li>remarkable identities</li>
+  <li>simplifications</li> ...
+ </ul>
+ <p>For example, one can deduce from
+  <!--{type="prop" sci="true" style="vertical-align:-3px;" input="x=(2*(x-1))"}--> the statement
+  <!--{type="prop" sci="true" style="vertical-align:-3px;" input="x= (2*x) - 2"}--> by replacing the term
+  <!--{type="expr" input="2*(x-1)"}--> by
+  <!--{type="expr" input="minus (2*x) 2"}--> ; we known that
+  <!--{type="prop" sci="true" style="vertical-align:-3px;" input="(2*(x-1)) = ((2*x)-2)"}--> by expansion.</p>
+</div>
+<div class="pager" key="pager_set_operators">
+ <p>A set E is a collection of objects that are called <span class="stress" style="font-size:16px">the elements</span> of E.</p>
+ <p>The proposition that an element x belongs to E, or is an element of E, is noted <span class="stress" style="font-size:16px">
+   <!--{type="prop" sci="true" input="sis_element x E"}--></span>. The negation of membership, ¬(
+  <!--{type="prop" sci="true" input="sis_element x E"}-->), is noted <span class="stress" style="font-size:16px">
+   <!--{type="prop" sci="true" input="~sis_element x E"}--></span>. </p>
+ <p>A <span class="exturl"><a href="https://en.wikipedia.org/wiki/Set_(mathematics)" target="blank">set operator</a></span> allows us to construct one set from other sets.</p>
+</div>
+<div class="pager" key="pager_set_rewoperators">
+ <p>Algebraic calculations on sets resemble calculations on numbers because: </p>
+ <ul>
+  <li>set operations (intersection, union, ...) have properties similar to operations on reals (addition, multiplication, ...): these operations are associative, commutative, distributive, ... </li>
+  <li>set equality and real equality are equivalence relations that are transitive, symmetric and reflexive (see next section)</li>
+ </ul>
+ <p>Set algebra is equivalent to the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Alg%C3%A8bre_de_Boole_(logique)" target="_blank">Boolean algebra</a></span> : either an element belongs to a set, or it does not. This algebra is central in computer science, in software development and in the design of electronic circuits. </p>
+</div>
+<div class="pager" key="pager_settheory">
+ <a href="https://en.wikipedia.org/wiki/Georg_Cantor" target="_blank"><img class="txtwrap" src="./img/cantor.jpg" height="12%" width="12%"></a>
+ <p> At the end of the 19<span class="sup">th</span> Century, the German mathematician <span class="exturl"><a href="https://en.wikipedia.org/wiki/Georg_Cantor" target="_blank">Georg Cantor</a></span> developed the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Set_theory" target="_blank">set theory</a></span>. This theory allows us to define fundamental elements of mathematics, notably integers, real numbers, functions ... </p>
+ <p>In 1930, The Austro-Hungarian mathematician, <span class="exturl"><a href="https://en.wikipedia.org/wiki/Kurt_G%C3%B6del" target="_blank">Kurt Gödel</a></span> even demonstrated that any theory can be translated into the set theory. </p>
+</div>
+<div class="pager" key="pager_sigma_seg">
+ <p>Sigma notation used to sum a series of indexed terms noted
+  <!--{type="expr" input="app_series a i"}--> (with the index i from 1 to n typically). This sum is noted:
+  <!--{type="expr" style="vertical-align: -4px;" input="(sigma(k,1,n,(app_series a k)))"}--> .</p>
+ <p>In this notation, the index k is a dummy variable: it is not declared in the context and is valid only for the summed expression.</p>
+ <p>Sigma properties are those of the addition (associativity, distributivity of multiplication, ...) and those of index shits.</p>
+</div>
+<div key="slide_demo_tuto_app_(3 * x - 6 = zero,lradd,0)">
+ <!--   (3 * x - 6 = zero,lradd,0)
+  by Forward lradd)
+ -->
+ <div class="pedagogic slide" expr="(3 * x - 6 = zero,lradd,0)" exercise="demo_tuto_app">
+  <p>The objective is to <span class="stress">isolate the term
+    <!--{type="expr" input="pow x 2"}--></span> on the left. Start by isolating x on the left as in the previous exercise, and then square left and right sides of the resulting equality.</p>
+ </div>
+</div>
+<div key="slide_demo_tuto_app_(3 * x = 6,lrdiv,0)">
+ <!--   (3 * x = 6,lrdiv,0)
+  by Forward lrdiv)
+ -->
+ <div class="pedagogic slide" expr="(3 * x = 6,lrdiv,0)" exercise="demo_tuto_app">
+  <p>Divide by 3 on the left and right sides in order to isolate x.</p>
+ </div>
+</div>
+<div key="slide_demo_tuto_app_(x = 2,app_square,0)">
+ <!--   (x = 2,app_square,0)
+  by Forward app_square)
+ -->
+ <div class="pedagogic slide" expr="(x = 2,app_square,0)" exercise="demo_tuto_app">
+  <p>The square function is applied on the left and right sides.</p>
+ </div>
+</div>
+<div key="slide_demo_tuto_comb_(3 * x - y = zero,combadd,0)">
+ <!--   (3 * x - y = zero,combadd,0)
+  by Forward combadd)
+ -->
+ <div class="pedagogic slide" expr="(3 * x - y = zero,combadd,0)" exercise="demo_tuto_comb">
+  <p>The objective is to isolate x by first <span class="stress">eliminating y.</span> We note that y shows on the left hand side of statement
+   <!--{type="tag" input="s0"}--> and that the opposite of y shows on the left side of
+   <!--{type="tag" input="s1"}--> .</p>
+  <p>We can eliminate y by adding sides to sides
+   <!--{type="tag" input="s1"}--> and
+   <!--{type="tag" input="s0"}--> .</p>
+ </div>
+</div>
+<div key="slide_demo_tuto_comb_(4 * x = 4,lrdiv,0)">
+ <!--   (4 * x = 4,lrdiv,0)
+  by Forward lrdiv)
+ -->
+ <div class="pedagogic slide" expr="(4 * x = 4,lrdiv,0)" exercise="demo_tuto_comb">
+  <p>Variable x is isolated by removing the coefficient 4 with a left and right division by 4.</p>
+ </div>
+</div>
+<div key="slide_demo_tuto_first_(2 * x + 1 = 5,lrsub,0)">
+ <!--   (2 * x + 1 = 5,lrsub,0)
+  by Forward lrsub)
+ -->
+ <div class="pedagogic slide" expr="(2 * x + 1 = 5,lrsub,0)" exercise="demo_tuto_first">
+  <p>The objective is to <span class="stress">isolate
+    <!--{type="expr" input="x"}--></span> on the left side, that is to say to obtain, by successive operations, an equality of the form x = ....</p>
+  <p>Start by isolating
+   <!--{type="expr" input="2*x"}--> by eliminating 1 on the left with left and right subtraction of 1.</p>
+ </div>
+</div>
+<div key="slide_demo_tuto_first_(2 * x = 4,lrdiv,0)">
+ <!--   (2 * x = 4,lrdiv,0)
+  by Forward lrdiv)
+ -->
+ <div class="pedagogic slide" expr="(2 * x = 4,lrdiv,0)" exercise="demo_tuto_first">
+  <p> Isolate
+   <!--{type="expr" input="x"}--> by eliminating 2 on left right sides with a division by 2 (trivially diffreemnt from 0). </p>
+ </div>
+</div>
+<div key="slide_demo_tuto_first_(find_expr x 2)">
+ <!--   (find_expr x 2)
+  by Backward (find_expr_intro)
+ -->
+ <div class="pedagogic slide" expr="(find_expr x 2)" exercise="demo_tuto_first">
+ </div>
+</div>
+<div key="slide_demo_tuto_fun_(( fanonym  (SReals) (sunknown Expr) (x) (3 * x)),app_def,0)">
+ <!--   (( fanonym  (SReals) (sunknown Expr) (x) (3 * x)),app_def,0)
+  by Forward app_def)
+ -->
+ <div class="pedagogic slide" expr="(( fanonym  (SReals) (sunknown Expr) (x) (3 * x)),app_def,0)" exercise="demo_tuto_fun">
+ </div>
+</div>
+<div key="slide_demo_tuto_fun_(( fanonym  (SReals) (sunknown Expr) (x) (x)),app_def,0)">
+ <!--   (( fanonym  (SReals) (sunknown Expr) (x) (x)),app_def,0)
+  by Forward app_def)
+ -->
+ <div class="pedagogic slide" expr="(( fanonym  (SReals) (sunknown Expr) (x) (x)),app_def,0)" exercise="demo_tuto_fun">
+ </div>
+</div>
+<div key="slide_demo_tuto_fun_((app_expr f a) = 3 * a,combadd,0)">
+ <!--   ((app_expr f a) = 3 * a,combadd,0)
+  by Forward combadd)
+ -->
+ <div class="pedagogic slide" expr="((app_expr f a) = 3 * a,combadd,0)" exercise="demo_tuto_fun">
+ </div>
+</div>
+<div key="slide_demo_tuto_fun_((app_expr g b) = b,lrmul,0)">
+ <!--   ((app_expr g b) = b,lrmul,0)
+  by Forward lrmul)
+ -->
+ <div class="pedagogic slide" expr="((app_expr g b) = b,lrmul,0)" exercise="demo_tuto_fun">
+ </div>
+</div>
+<div key="slide_demo_tuto_neq_(2 * x <> 4,lrsub_neq,0)">
+ <!--   (2 * x <> 4,lrsub_neq,0)
+  by Forward lrsub_neq)
+ -->
+ <div class="pedagogic slide" expr="(2 * x <> 4,lrsub_neq,0)" exercise="demo_tuto_neq">
+  <p>Subtract 4 on left and right sides of
+   <!--{type="tag" input="s2"}--> . </p>
+ </div>
+</div>
+<div key="slide_demo_tuto_neq_(x <> 2,lrmul_neq,0)">
+ <!--   (x <> 2,lrmul_neq,0)
+  by Forward lrmul_neq)
+ -->
+ <div class="pedagogic slide" expr="(x <> 2,lrmul_neq,0)" exercise="demo_tuto_neq">
+  <p>The objective is to get the left member of
+   <!--{type="tag" input="s1"}--> with the left and right operations.</p>
+  <p> Multiply by 2 on left and right sides of
+   <!--{type="tag" input="s1"}--> .</p>
+ </div>
+</div>
+<div key="slide_demo_tuto_rel_(x + 1 = 1,lrsub,0)">
+ <!--   (x + 1 = 1,lrsub,0)
+  by Forward lrsub)
+ -->
+ <div class="pedagogic slide" expr="(x + 1 = 1,lrsub,0)" exercise="demo_tuto_rel">
+  <p>Subtract 1 on the left and right sides of
+   <!--{type="tag" input="s4"}--> .</p>
+ </div>
+</div>
+<div key="slide_demo_tuto_rel_(y + 2 = 3,lrsub,0)">
+ <!--   (y + 2 = 3,lrsub,0)
+  by Forward lrsub)
+ -->
+ <div class="pedagogic slide" expr="(y + 2 = 3,lrsub,0)" exercise="demo_tuto_rel">
+  <p>The objective is to isolate x by eliminating y by transitivity. Start by isolating y in
+   <!--{type="tag" input="s1"}--> . </p>
+ </div>
+</div>
+<div key="slide_demo_tuto_rel_(y = 1,eq_trans,2)">
+ <!--   (y = 1,eq_trans,2)
+  by Forward eq_trans)
+ -->
+ <div class="pedagogic slide" expr="(y = 1,eq_trans,2)" exercise="demo_tuto_rel">
+  <p>Eliminate y by transitivity.</p>
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_(( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2)">
+ <!-- 	(( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2)
+	by Backward select of select ( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2 (sigmasimpl)
+ -->
+ <div class="pedagogic slide" expr="(( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2)" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))">
+ <!-- 	((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))
+	by Backward (elim_true_at_rank)
+ -->
+ <div class="pedagogic slide" expr="((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))">
+ <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))
+	by Section
+ -->
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)">
+ <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)
+	by Forward select of ( sigma( k, zero, n + 1, k)) = select (((n * (n + 1)) / 2 + n) + 1) (reducedenom)
+ -->
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)">
+ <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)
+	by Forward select of ( sigma( k, zero, n + 1, k)) = select ((n + 2) * (n + 1)) / 2 (commutativity)
+ -->
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)">
+ <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)
+	by Forward select of ( sigma( k, zero, n + 1, k)) = select (n * (n + 1) + 2 * (n + 1)) / 2 (factorize)
+ -->
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) + (n + 1) = (n * (n + 1)) / 2 + (n + 1),sigmadef,0)">
+ <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) + (n + 1) = (n * (n + 1)) / 2 + (n + 1),sigmadef,0)
+	by Forward select of select ((( sigma( k, zero, n, k)) + n) + 1) = ((n * (n + 1)) / 2 + n) + 1 (sigmadef)
+ -->
+ <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) + (n + 1) = (n * (n + 1)) / 2 + (n + 1),sigmadef,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)">
+ <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)
+	by Forward lradd)
+ -->
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))">
+ <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))
+	by Backward (red_true_at_rank)
+ -->
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)">
+ <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)
+	by Forward red_true_at_rank)
+ -->
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n))">
+ <!-- 	((forall n : Nvar, true_at_rank P n))
+	by Backward (ind_basic_forall)
+ -->
+ <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n))" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_demo_tuto_sigma_(true_at_rank P zero)">
+ <!-- 	(true_at_rank P zero)
+	by Backward (red_true_at_rank)
+ -->
+ <div class="pedagogic slide" expr="(true_at_rank P zero)" exercise="demo_tuto_sigma">
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_01_(and B A)">
+ <!-- 	(and B A)
+	by Backward (conj)
+ -->
+ <div class="pedagogic slide" expr="(and B A)" exercise="logic_connector_tuto_01">
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_02_(and A B,elim_conj_left,0)">
+ <!--   (and A B,elim_conj_left,0)
+  by Forward elim_conj_left)
+ -->
+ <div class="pedagogic slide" expr="(and A B,elim_conj_left,0)" exercise="logic_connector_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_02_(and A B,elim_conj_right,0)">
+ <!--   (and A B,elim_conj_right,0)
+  by Forward elim_conj_right)
+ -->
+ <div class="pedagogic slide" expr="(and A B,elim_conj_right,0)" exercise="logic_connector_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_02_(and B A)">
+ <!--   (and B A)
+  by Backward (conj)
+ -->
+ <div class="pedagogic slide" expr="(and B A)" exercise="logic_connector_tuto_02">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> As in the previous example, we justify conjunction
+   <!--{type="tag" input="s1"}--> by invoking <span class="buttontheo">conjunction by</span> rule. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_03_(or A B)">
+ <!--   (or A B)
+  by Backward (intro_or_right)
+ -->
+ <div class="pedagogic slide" expr="(or A B)" exercise="logic_connector_tuto_03">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> The choice between A and B to prove
+   <!--{type="tag" input="s1"}--> <span class="buttontheo">by disjunction</span> is simple, because statement B is provided as an assumption
+   <!--{type="tag" input="s0"}--> . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_04_(case P (or Q P))">
+ <!--   (case P (or Q P))
+  by Section
+ -->
+ <div class="pedagogic slide" expr="(case P (or Q P))" exercise="logic_connector_tuto_04">
+  <p>
+   <!--<span class="light-bulb">ń</span>-->To Prove Q ∨ P if <span class="stress">P is true</span>, we need to open a <span class="stress">logical scope</span> with the <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> button. In this scope, P is a hypothesis and Q ∨ P is the conclusion, . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_04_(case P (or Q P),or Q P)">
+ <!--   (case P (or Q P),or Q P)
+  by Backward (intro_or_right)
+ -->
+ <div class="pedagogic slide" expr="(case P (or Q P),or Q P)" exercise="logic_connector_tuto_04">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> In this scope, the situation is the same as in the previous exercise. The proof of the disjunction
+   <!--{type="tag" input="s2_1"}--> is by choosing P, which is true by hypothesis
+   <!--{type="tag" input="s2_0"}--> . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_04_(case Q (or Q P))">
+ <!--   (case Q (or Q P))
+  by Section
+ -->
+ <div class="pedagogic slide" expr="(case Q (or Q P))" exercise="logic_connector_tuto_04">
+  <p>
+   <!--<span class="light-bulb">ń</span>-->To Prove Q ∨ P if <span class="stress">Q is true</span>, we need to open a <span class="stress">logical scope</span> with the <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> button. In this scope, Q is a hypothesis and Q ∨ P is the conclusion, . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_04_(case Q (or Q P),or Q P)">
+ <!--   (case Q (or Q P),or Q P)
+  by Backward (intro_or_left)
+ -->
+ <div class="pedagogic slide" expr="(case Q (or Q P),or Q P)" exercise="logic_connector_tuto_04">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> In this scope, the situation is the same as in the previous exercise. The proof of the disjunction
+   <!--{type="tag" input="s3_1"}--> is by choosing P, which is true by hypothesis
+   <!--{type="tag" input="s3_0"}--> . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_04_(or Q P)">
+ <!--   (or Q P)
+  by Backward (case_base)
+ -->
+ <div class="pedagogic slide" expr="(or Q P)" exercise="logic_connector_tuto_04">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> The reasoning by <span class="buttontheo">disjunction of cases</span> is available to justify any statement when a disjunction is available. </p>
+  <p> It is shown that
+   <!--{type="tag" input="s1"}--> by using the disjunction
+   <!--{type="tag" input="s0"}--> by disjunction of cases. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_06_(A -> (B -> and A B))">
+ <!--   (A -> (B -> and A B))
+  by Section
+ -->
+ <div class="pedagogic slide" expr="(A -> (B -> and A B))" exercise="logic_connector_tuto_06">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> button
+   <!--{type="button_section"}--> opens the logical scope with assumption A and conclusion
+   <!--{type="prop" input="(B -> (and A B))"}-->. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_06_(A -> (B -> and A B),B -> and A B)">
+ <!--   (A -> (B -> and A B),B -> and A B)
+  by Section
+ -->
+ <div class="pedagogic slide" expr="(A -> (B -> and A B),B -> and A B)" exercise="logic_connector_tuto_06">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> Again button
+   <!--{type="button_section"}--> creates the logical scope with A and B assumptions and "A ∧ B" in conclusion. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_06_(B -> and A B,A -> (B -> and A B),and A B)">
+ <!--   (B -> and A B,A -> (B -> and A B),and A B)
+  by Backward (conj)
+ -->
+ <div class="pedagogic slide" expr="(B -> and A B,A -> (B -> and A B),and A B)" exercise="logic_connector_tuto_06">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> We find ourselves in the situation of the first exercise of this tutorial (to prove a conjunction). We prove
+   <!--{type="tag" input="s3_1"}--> by conjunction with assumptions
+   <!--{type="tag" input="s2_0"}--> and
+   <!--{type="tag" input="s3_0"}--> . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_07_(B)">
+ <!--   (B)
+  by Backward (modus_ponens)
+ -->
+ <div class="pedagogic slide" expr="(B)" exercise="logic_connector_tuto_07">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> We deduce B from implication
+   <!--{type="tag" input="s0"}--> if A is true. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_085_(A -> False,modus_ponens,0)">
+ <!--   (A -> False,modus_ponens,0)
+  by Forward modus_ponens)
+ -->
+ <div class="pedagogic slide" expr="(A -> False,modus_ponens,0)" exercise="logic_connector_tuto_085">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> <span class="stress">Modus ponens</span> allows us to deduce a contradiction
+   <!--{type="tag" input="s3"}--> . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_085_(~ A,elim_negation,0)">
+ <!--   (~ A,elim_negation,0)
+  by Forward elim_negation)
+ -->
+ <div class="pedagogic slide" expr="(~ A,elim_negation,0)" exercise="logic_connector_tuto_085">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> Translate negation
+   <!--{type="tag" input="s0"}--> into an implication of the false, by definition of negation. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_08_(A -> False)">
+ <!--   (A -> False)
+  by Section
+ -->
+ <div class="pedagogic slide" expr="(A -> False)" exercise="logic_connector_tuto_08">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> The <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> button allows to create a scope in which A is a hypothesis.</p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_08_(A -> False,B)">
+ <!--   (A -> False,B)
+  by Backward (modus_ponens)
+ -->
+ <div class="pedagogic slide" expr="(A -> False,B)" exercise="logic_connector_tuto_08">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> <span class="stress">Modus ponens</span> allows to justify the assumption B by using A
+   <!--{type="tag" input="s0"}--> . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_08_(A -> False,False)">
+ <!--   (A -> False,False)
+  by Backward (modus_ponens)
+ -->
+ <div class="pedagogic slide" expr="(A -> False,False)" exercise="logic_connector_tuto_08">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> <span class="stress">Modus ponens</span> allows to justify the false assumption by B using
+   <!--{type="tag" input="s2"}--> . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_08_(~ A)">
+ <!--   (~ A)
+  by Backward (elim_negation)
+ -->
+ <div class="pedagogic slide" expr="(~ A)" exercise="logic_connector_tuto_08">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> Translate negation
+   <!--{type="tag" input="s0"}--> into an implication of the false, by definition of negation. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_09_(A,intro_false,0)">
+ <!--   (A,intro_false,0)
+  by Forward intro_false)
+ -->
+ <div class="pedagogic slide" expr="(A,intro_false,0)" exercise="logic_connector_tuto_09">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> Click <span class="context">Context</span> ('c' keyboard shortcut) displays statements from upper scopes. The situation is the same as in previous exercise. We can therefore justify the contradiction directly
+   <!--{type="tag" input="s3"}--> by invoking the principle of <span class="buttontheo">non-contradiction.</span> </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_09_(B)">
+ <!--   (B)
+  by Backward (falseall)
+ -->
+ <div class="pedagogic slide" expr="(B)" exercise="logic_connector_tuto_09">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> The obvious contradiction between
+   <!--{type="tag" input="s0"}--> and
+   <!--{type="tag" input="s2"}--> invites to justify B with <span class="buttontheo">ex falso Quodlibet.</span> </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_10_(case (~ A) (or A B))">
+ <!--   (case (~ A) (or A B))
+  by Section
+ -->
+ <div class="pedagogic slide" expr="(case (~ A) (or A B))" exercise="logic_connector_tuto_10">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> When ¬A is true, we prove "A ∨ B" by selecting B, obtained by deduction from obtained ¬A using
+   <!--{type="tag" input="s0"}--> . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_10_(case (~ A) (or A B),or A B)">
+ <!--   (case (~ A) (or A B),or A B)
+  by Backward (intro_or_right)
+ -->
+ <div class="pedagogic slide" expr="(case (~ A) (or A B),or A B)" exercise="logic_connector_tuto_10">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> When ¬A is true, we prove "A ∨ B" by selecting B, obtained by deduction from ¬A using
+   <!--{type="tag" input="s0"}--> . </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_10_(case A (or A B))">
+ <!--   (case A (or A B))
+  by Section
+ -->
+ <div class="pedagogic slide" expr="(case A (or A B))" exercise="logic_connector_tuto_10">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> If A is true, we prove "A ∨ B" by choosing A. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_10_(case A (or A B),or A B)">
+ <!--   (case A (or A B),or A B)
+  by Backward (intro_or_left)
+ -->
+ <div class="pedagogic slide" expr="(case A (or A B),or A B)" exercise="logic_connector_tuto_10">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> If A is true, we prove "A ∨ B" by choosing A. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_10_(or A B)">
+ <!--   (or A B)
+  by Backward (case_base_binary)
+ -->
+ <div class="pedagogic slide" expr="(or A B)" exercise="logic_connector_tuto_10">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> The law of <span class="buttontheo">the excluded middle</span> allows to consider two cases to prove
+   <!--{type="tag" input="s1"}--> : if A is true and when ¬ A is true. </p>
+ </div>
+</div>
+<div key="slide_logic_connector_tuto_10_(~ A -> B,modus_ponens,0)">
+ <!--   (~ A -> B,modus_ponens,0)
+  by Forward modus_ponens)
+ -->
+ <div class="pedagogic slide" expr="(~ A -> B,modus_ponens,0)" exercise="logic_connector_tuto_10">
+  <p>
+   <!--<span class="light-bulb">ń</span>--> Implication
+   <!--{type="tag" input="s0"}--> is available to justify B as <span class="buttontheo">local theorem.</span> It is noted that this justification acts here as modus ponens. The only difference is that the notion of local theorem extends the modus ponens to expressions containing quantifiers "for every ..." (see next chapter). </p>
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_01_((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))">
+ <!-- 	((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))
+	by Section
+ -->
+ <div class="pedagogic slide" expr="((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))" exercise="logic_quantifier_tuto_01">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_01_((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))">
+ <!-- 	((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))
+	by Section
+ -->
+ <div class="pedagogic slide" expr="((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))" exercise="logic_quantifier_tuto_01">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_01_(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))">
+ <!-- 	(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))
+	by Backward (ex_intro)
+ -->
+ <div class="pedagogic slide" expr="(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))" exercise="logic_quantifier_tuto_01">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_01_(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))">
+ <!-- 	(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))
+	by Backward (intro_or_left)
+ -->
+ <div class="pedagogic slide" expr="(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))" exercise="logic_quantifier_tuto_01">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_02_((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)">
+ <!-- 	((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)
+	by Forward ex_elim)
+ -->
+ <div class="pedagogic slide" expr="((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)" exercise="logic_quantifier_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))">
+ <!-- 	(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))
+	by Section
+ -->
+ <div class="pedagogic slide" expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))" exercise="logic_quantifier_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))">
+ <!-- 	(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))
+	by Backward (ex_intro)
+ -->
+ <div class="pedagogic slide" expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))" exercise="logic_quantifier_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))">
+ <!-- 	(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))
+	by Backward (intro_or_left)
+ -->
+ <div class="pedagogic slide" expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))">
+ <!-- 	(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))
+	by Section
+ -->
+ <div class="pedagogic slide" expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))" exercise="logic_quantifier_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))">
+ <!-- 	(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))
+	by Backward (ex_intro)
+ -->
+ <div class="pedagogic slide" expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))">
+ <!-- 	(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))
+	by Backward (intro_or_right)
+ -->
+ <div class="pedagogic slide" expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_02_(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))">
+ <!-- 	(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))
+	by Backward (case_base)
+ -->
+ <div class="pedagogic slide" expr="(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))">
+ <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))
+	by Section
+ -->
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))" exercise="logic_quantifier_tuto_03">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)">
+ <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)
+	by Forward apply_forall)
+ -->
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)" exercise="logic_quantifier_tuto_03">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)">
+ <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)
+	by Forward apply_forall)
+ -->
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)" exercise="logic_quantifier_tuto_03">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))">
+ <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))
+	by Backward (conj)
+ -->
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))" exercise="logic_quantifier_tuto_03">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_03_(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)">
+ <!-- 	(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)
+	by Forward elim_conj_left)
+ -->
+ <div class="pedagogic slide" expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)" exercise="logic_quantifier_tuto_03">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_03_(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)">
+ <!-- 	(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)
+	by Forward elim_conj_right)
+ -->
+ <div class="pedagogic slide" expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)" exercise="logic_quantifier_tuto_03">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)">
+ <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)
+	by Forward apply_forall)
+ -->
+ <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)" exercise="logic_quantifier_tuto_04">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U A x))">
+ <!-- 	((forall x : O1U, app_prop O1U A x))
+	by Section
+ -->
+ <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U A x))" exercise="logic_quantifier_tuto_04">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)">
+ <!-- 	((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)
+	by Forward elim_conj_left)
+ -->
+ <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)" exercise="logic_quantifier_tuto_04">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U B x))">
+ <!-- 	((forall x : O1U, app_prop O1U B x))
+	by Section
+ -->
+ <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U B x))" exercise="logic_quantifier_tuto_04">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)">
+ <!-- 	((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)
+	by Forward elim_conj_right)
+ -->
+ <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)" exercise="logic_quantifier_tuto_04">
+ </div>
+</div>
+<div key="slide_logic_quantifier_tuto_04_(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))">
+ <!-- 	(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))
+	by Backward (conj)
+ -->
+ <div class="pedagogic slide" expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))" exercise="logic_quantifier_tuto_04">
+ </div>
+</div>
+<div key="slide_rew_tuto_develop_(((x ^ 2 + 3 * x) + 2) + 3 * x = x ^ 2,lrsub,0)">
+ <!--   (((x ^ 2 + 3 * x) + 2) + 3 * x = x ^ 2,lrsub,0)
+  by Forward lrsub)
+ -->
+ <div class="pedagogic slide" expr="(((x ^ 2 + 3 * x) + 2) + 3 * x = x ^ 2,lrsub,0)" exercise="rew_tuto_develop">
+  <p>Note that the term
+   <!--{type="expr" input="pow x 2"}--> is present on the left and right sides of equality.</p>
+  <p>We can therefore conclude
+   <!--{type="stress" input="l&#39;éliminer"}--> by left and right subtraction.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_develop_((x + 1) * (x + 2) + 3 * x = x ^ 2,expand,0)">
+ <!--   ((x + 1) * (x + 2) + 3 * x = x ^ 2,expand,0)
+  by Forward select of select ((x + 1) * (x + 2)) + 3 * x = x ^ 2 (expand)
+ -->
+ <div class="pedagogic slide" expr="((x + 1) * (x + 2) + 3 * x = x ^ 2,expand,0)" exercise="rew_tuto_develop">
+  <p>The goal is to isolate x on the left.</p>
+  <p>Expand the products of factors to obtain a polynomial form.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_develop_(6 * x + 2 = zero,lrsub,0)">
+ <!--   (6 * x + 2 = zero,lrsub,0)
+  by Forward lrsub)
+ -->
+ <div class="pedagogic slide" expr="(6 * x + 2 = zero,lrsub,0)" exercise="rew_tuto_develop">
+  <p>The situation is now well known : the objective is to isolate, on the left side, the variable of a polynomial form of degree 1.</p>
+  <p>Left and right operations allow to conclude.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_develop_(6 * x = - (2),lrdiv,0)">
+ <!--   (6 * x = - (2),lrdiv,0)
+  by Forward lrdiv)
+ -->
+ <div class="pedagogic slide" expr="(6 * x = - (2),lrdiv,0)" exercise="rew_tuto_develop">
+  <p>Conclude by division by 6 on left and right sides.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_fact1_(x * (x * (1 + 1 / x ^ 2)) = zero,linearsimpl,0)">
+ <!--   (x * (x * (1 + 1 / x ^ 2)) = zero,linearsimpl,0)
+  by Forward select of select (x * x) * (1 + 1 / x ^ 2) = zero (linearsimpl)
+ -->
+ <div class="pedagogic slide" expr="(x * (x * (1 + 1 / x ^ 2)) = zero,linearsimpl,0)" exercise="rew_tuto_fact1">
+ </div>
+</div>
+<div key="slide_rew_tuto_fact1_(x * (x + 1 / x) = zero,gen_factorize,0)">
+ <!--   (x * (x + 1 / x) = zero,gen_factorize,0)
+  by Forward select of x * select (x + 1 / x) = zero (gen_factorize)
+ -->
+ <div class="pedagogic slide" expr="(x * (x + 1 / x) = zero,gen_factorize,0)" exercise="rew_tuto_fact1">
+ </div>
+</div>
+<div key="slide_rew_tuto_fact1_(x ^ 2 + 1 = zero,gen_factorize,0)">
+ <!--   (x ^ 2 + 1 = zero,gen_factorize,0)
+  by Forward select of select (x ^ 2 + 1) = zero (gen_factorize)
+ -->
+ <div class="pedagogic slide" expr="(x ^ 2 + 1 = zero,gen_factorize,0)" exercise="rew_tuto_fact1">
+  <p>The objective is to factorize by
+   <!--{type="expr" input="pow x 2"}--> .</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_fact1_(x ^ 2 <> zero)">
+ <!--   (x ^ 2 <> zero)
+  by Backward (elim_pow_ineq_zero)
+ -->
+ <div class="pedagogic slide" expr="(x ^ 2 <> zero)" exercise="rew_tuto_fact1">
+  <p>slide 2</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_fact2_((x + 1) * ((x - 3) + x) = 2,linearsimpl,0)">
+ <!-- 	((x + 1) * ((x - 3) + x) = 2,linearsimpl,0)
+	by Forward select of (x + 1) * select ((x - 3) + x) = 2 (linearsimpl)
+ -->
+ <div expr="((x + 1) * ((x - 3) + x) = 2,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
+ </div>
+</div>
+<div key="slide_rew_tuto_fact2_((x + 1) * (2 * (x - 3 / 2)) = 2,lrdiv,0)">
+ <!-- 	((x + 1) * (2 * (x - 3 / 2)) = 2,lrdiv,0)
+	by Forward lrdiv)
+ -->
+ <div expr="((x + 1) * (2 * (x - 3 / 2)) = 2,lrdiv,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
+ </div>
+</div>
+<div key="slide_rew_tuto_fact2_((x + 1) * (2 * x - 3) = 2,gen_factorize,0)">
+ <!-- 	((x + 1) * (2 * x - 3) = 2,gen_factorize,0)
+	by Forward select of (x + 1) * select (2 * x - 3) = 2 (gen_factorize)
+ -->
+ <div expr="((x + 1) * (2 * x - 3) = 2,gen_factorize,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
+ </div>
+</div>
+<div key="slide_rew_tuto_fact2_((x + 1) * (x - 3) + x * (x + 1) = 2,factorize,0)">
+ <!-- 	((x + 1) * (x - 3) + x * (x + 1) = 2,factorize,0)
+	by Forward select of select ((x + 1) * (x - 3) + x * (x + 1)) = 2 (factorize)
+ -->
+ <div expr="((x + 1) * (x - 3) + x * (x + 1) = 2,factorize,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
+ </div>
+</div>
+<div key="slide_rew_tuto_group_(E = (x + 1) * (2 * x + (3 + (y - 1))),expand,0)">
+ <!-- 	(E = (x + 1) * (2 * x + (3 + (y - 1))),expand,0)
+	by Forward select of E = select (UIGroup (x + 1) * (UIGroup (2 * x + 3) + UIGroup (y - 1))) (expand)
+ -->
+ <div class="pedagogic slide" expr="(E = (x + 1) * (2 * x + (3 + (y - 1))),expand,0)" exercise="rew_tuto_group">
+  <p>The objective is to expand the right hand side of
+   <!--{type="tag" input="s0"}--> and to keep intact the terms:</p>
+  <ul>
+   <li>
+    <!--{type="expr" input="plus x 1"}--></li>
+   <li>
+    <!--{type="expr" input="plus (mult 2 x) 3"}--></li>
+   <li>
+    <!--{type="expr" input="minus y 1"}--></li>
+  </ul>
+  <p>The solution is to specify three groups. You create a group by selecting a term and <span class="stress">pressing the <span style="font-family:'Courier New';font-weight:bold;padding-left:8px;padding-right:8px">g</span> button.</span></p>
+  <p>Once the three groups created, develop in the usual manner.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem1_((x ^ 2 + 2 * x) + 1 = 4,polysquare,0)">
+ <!--   ((x ^ 2 + 2 * x) + 1 = 4,polysquare,0)
+  by Forward select of select ((x ^ 2 + 2 * x) + 1) = 4 (polysquare)
+ -->
+ <div class="pedagogic slide" expr="((x ^ 2 + 2 * x) + 1 = 4,polysquare,0)" exercise="rew_tuto_idrem1">
+  <p>Conclude by factorising the left hand side with the remarkable formula of polynomial square.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem1_(x ^ 2 + (2 * x - 3) = zero,lradd,0)">
+ <!--   (x ^ 2 + (2 * x - 3) = zero,lradd,0)
+  by Forward lradd)
+ -->
+ <div class="pedagogic slide" expr="(x ^ 2 + (2 * x - 3) = zero,lradd,0)" exercise="rew_tuto_idrem1">
+  <p>The objective is to factorize on the left side.</p>
+  <p>Note that the left-hand side term is almost the development of
+   <!--{type="expr" input="pow (x+1) 2"}--> , according to the remarkable formula.</p>
+  <p>Therefore form the development of the perfect square
+   <!--{type="expr" input="((pow x 2)+(2*x))+1"}--> by adding 4 left and right.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem2_((x - 3) * (x + 3) + (x + 3) = zero,factorize,0)">
+ <!-- 	((x - 3) * (x + 3) + (x + 3) = zero,factorize,0)
+	by Forward select of select (((x - 3) * (x + 3) + x) + 3) = zero (factorize)
+ -->
+ <div expr="((x - 3) * (x + 3) + (x + 3) = zero,factorize,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem2_((x - 3) * (x + 3) = - (x + 3),lradd,0)">
+ <!-- 	((x - 3) * (x + 3) = - (x + 3),lradd,0)
+	by Forward lradd)
+ -->
+ <div expr="((x - 3) * (x + 3) = - (x + 3),lradd,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem2_(x ^ 2 - 3 = - x + 3,lrsub,0)">
+ <!-- 	(x ^ 2 - 3 = - x + 3,lrsub,0)
+	by Forward lrsub)
+ -->
+ <div expr="(x ^ 2 - 3 = - x + 3,lrsub,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
+ </div>
+</div>
+<div key="slide_rew_tuto_idrem2_(x ^ 2 - 9 = - (x + 3),square_diff,0)">
+ <!-- 	(x ^ 2 - 9 = - (x + 3),square_diff,0)
+	by Forward select of select (x ^ 2 - 9) = - (x + 3) (square_diff)
+ -->
+ <div expr="(x ^ 2 - 9 = - (x + 3),square_diff,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
+ </div>
+</div>
+<div key="slide_rew_tuto_misc1_((x + 3) * ((x + 2) * (x + 1)) = zero,commutativity,0)">
+ <!--   ((x + 3) * ((x + 2) * (x + 1)) = zero,commutativity,0)
+  by Forward select of select (((x + 3) * (x + 2)) * (x + 1)) = zero (commutativity)
+ -->
+ <div class="pedagogic slide" expr="((x + 3) * ((x + 2) * (x + 1)) = zero,commutativity,0)" exercise="rew_tuto_misc1">
+  <p>Select the terms to reorder by commutative operation.</p>
+  <p>Rearrange the term directly in the diagnostics window by dragging and dropping terms of the product.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_misc2_(x = 2 * (x + 1),rewriting,0)">
+ <!--   (x = 2 * (x + 1),rewriting,0)
+  by Forward select of x = 2 * select (x + 1) (rewriting)
+ -->
+ <div class="pedagogic slide" expr="(x = 2 * (x + 1),rewriting,0)" exercise="rew_tuto_misc2">
+  <p>The goal is to isolate x on the left. Note in assumption
+   <!--{type="tag" input="s2"}--> that one factor on the right hand side right
+   <!--{type="expr" input="x+1"}--> , is equal to 4 under the assumption
+   <!--{type="tag" input="s1"}--> .</p>
+  <p>So just replace
+   <!--{type="expr" input="x+1"}--> by 4 using
+   <!--{type="tag" input="s1"}--> as justification.</p>
+  <p>Start by selecting <span class="stress"> with the mouse</span> the term
+   <!--{type="expr" input="x+1"}--> in
+   <!--{type="tag" input="s2"}--> .</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_op_((x + 1) / ((y + 2) - 2) = zero,rewriting,0)">
+ <!--   ((x + 1) / ((y + 2) - 2) = zero,rewriting,0)
+  by Forward select of (x + 1) / (select (y + 2) - 2) = zero (rewriting)
+ -->
+ <div class="pedagogic slide" expr="((x + 1) / ((y + 2) - 2) = zero,rewriting,0)" exercise="rew_tuto_op">
+  <p>Conclude by adding 2 on the left and right sides.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_op_((x + 1) / y = zero,addsub,0)">
+ <!--   ((x + 1) / y = zero,addsub,0)
+  by Forward select of (x + 1) / select y = zero (addsub)
+ -->
+ <div class="pedagogic slide" expr="((x + 1) / y = zero,addsub,0)" exercise="rew_tuto_op">
+  <p>The objective is to get statement
+   <!--{type="tag" input="s1"}--> by transforming y at the denominator of
+   <!--{type="tag" input="s2"}--> into
+   <!--{type="expr" input="x-2"}--> .</p>
+  <p>Rewrite
+   <!--{type="expr" input="y"}--> into
+   <!--{type="expr" input="y-2+2"}--> , term in which
+   <!--{type="expr" input="y-2"}--> is then replaced by
+   <!--{type="expr" input="x"}--> according to
+   <!--{type="tag" input="s0"}-->.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_simpl2_((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)">
+ <!-- 	((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)
+	by Forward lrmul)
+ -->
+ <div expr="((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
+ </div>
+</div>
+<div key="slide_rew_tuto_simpl2_((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)">
+ <!-- 	((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)
+	by Forward select of select ((x + 2 * (x - 2)) + 1) = zero (linearsimpl)
+ -->
+ <div expr="((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
+ </div>
+</div>
+<div key="slide_rew_tuto_simpl2_(2 / (x + 1) + 1 / (x - 2) = zero,reducedenom,0)">
+ <!--   (2 / (x + 1) + 1 / (x - 2) = zero,reducedenom,0)
+  by Forward select of select (2 / (x + 1) + 1 / (x - 2)) = zero (reducedenom)
+ -->
+ <div class="pedagogic slide" expr="(2 / (x + 1) + 1 / (x - 2) = zero,reducedenom,0)" exercise="rew_tuto_simpl2">
+  <p>The goal is to isolate x on the left.</p>
+  <p>Start by reducing polynomial fractions to the same denominator,
+   <!--{type="expr" input="(x+1)*(x-2)"}--> .</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_simpl2_(3 * x - 3 = zero,lradd,0)">
+ <!--   (3 * x - 3 = zero,lradd,0)
+  by Forward lradd)
+ -->
+ <div class="pedagogic slide" expr="(3 * x - 3 = zero,lradd,0)" exercise="rew_tuto_simpl2">
+  <p>The situation is increasingly simple. Use left and right operations to isolate x.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_simpl2_(3 * x = 3,lrdiv,0)">
+ <!--   (3 * x = 3,lrdiv,0)
+  by Forward lrdiv)
+ -->
+ <div class="pedagogic slide" expr="(3 * x = 3,lrdiv,0)" exercise="rew_tuto_simpl2">
+  <p>Concluded by dividing by 3 on the left and right sides.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_simpl_(3 * x + 4 = 10,lrsub,0)">
+ <!--   (3 * x + 4 = 10,lrsub,0)
+  by Forward lrsub)
+ -->
+ <div class="pedagogic slide" expr="(3 * x + 4 = 10,lrsub,0)" exercise="rew_tuto_simpl">
+  <p>The objective of isolation of x is achieved with the left and right operations introduced in the previous chapter.</p>
+  <p>Subtract 4 on the left and right sides to isolate
+   <!--{type="expr" input="3*x"}--> .</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_simpl_(3 * x = 6,lrdiv,0)">
+ <!--   (3 * x = 6,lrdiv,0)
+  by Forward lrdiv)
+ -->
+ <div class="pedagogic slide" expr="(3 * x = 6,lrdiv,0)" exercise="rew_tuto_simpl">
+  <p>Divide by 3 on te left and right sides in order to conclude.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_simpl_(x + (1 + (2 * x + 3)) = 10,linearsimpl,0)">
+ <!--   (x + (1 + (2 * x + 3)) = 10,linearsimpl,0)
+  by Forward select of select (((x + 1) + 2 * x) + 3) = 10 (linearsimpl)
+ -->
+ <div class="pedagogic slide" expr="(x + (1 + (2 * x + 3)) = 10,linearsimpl,0)" exercise="rew_tuto_simpl">
+  <p>The goal is to isolate x on the left. Note that the left term of assumption
+   <!--{type="tag" input="s0"}--> is a sum of first degree polynomial form in x,
+   <!--{type="expr" input="x+1"}--> and
+   <!--{type="expr" input="2*x+1"}--> .</p>
+  <p>Simplify these terms into a polynomial form.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_varchange_((a - 3) ^ 2 = zero,rewriting,0)">
+ <!--   ((a - 3) ^ 2 = zero,rewriting,0)
+  by Forward select of (select a - 3) ^ 2 = zero (rewriting)
+ -->
+ <div class="pedagogic slide" expr="((a - 3) ^ 2 = zero,rewriting,0)" exercise="rew_tuto_varchange">
+  <p>Conclude by replacing a by
+   <!--{type="expr" input="pow x 2"}--> .</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_varchange_((a ^ 2 - 6 * a) + 9 = zero,polysquare,0)">
+ <!--   ((a ^ 2 - 6 * a) + 9 = zero,polysquare,0)
+  by Forward select of select ((a ^ 2 - 6 * a) + 9) = zero (polysquare)
+ -->
+ <div class="pedagogic slide" expr="((a ^ 2 - 6 * a) + 9 = zero,polysquare,0)" exercise="rew_tuto_varchange">
+  <p>On the left hand side is the square of
+   <!--{type="expr" input="a-3"}--> .</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_varchange_((x ^ 4 - 6 * a) + 9 = zero,rewriting,1)">
+ <!--   ((x ^ 4 - 6 * a) + 9 = zero,rewriting,1)
+  by Forward select of (select (x ^ 4) - 6 * a) + 9 = zero (rewriting)
+ -->
+ <div class="pedagogic slide" expr="((x ^ 4 - 6 * a) + 9 = zero,rewriting,1)" exercise="rew_tuto_varchange">
+  <p>Replace
+   <!--{type="expr" input="pow x 4"}--> by
+   <!--{type="expr" input="pow a 2"}--> in
+   <!--{type="expr" input="s3"}--> .</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_varchange_((x ^ 4 - 6 * x ^ 2) + 9 = zero,varchange,0)">
+ <!--   ((x ^ 4 - 6 * x ^ 2) + 9 = zero,varchange,0)
+  by Forward select of (x ^ 4 - 6 * select (x ^ 2)) + 9 = zero (varchange)
+ -->
+ <div class="pedagogic slide" expr="((x ^ 4 - 6 * x ^ 2) + 9 = zero,varchange,0)" exercise="rew_tuto_varchange">
+  <p>The objective is to factorize the left-hand side of assumption
+   <!--{type="tag" input="s0"}--> .</p>
+  <p>At first glance it is just a degree 4 polynomial form, but looking more closely, it is a polynomial form of degree 2 in
+   <!--{type="expr" input="pow x 2"}--> .</p>
+  <p>Change variable accordingly.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_varchange_(a = x ^ 2)">
+ <!--   (a = x ^ 2)
+  by Backward (replacement)
+ -->
+ <div class="pedagogic slide" expr="(a = x ^ 2)" exercise="rew_tuto_varchange">
+  <p>slide 5</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_varchange_(a = x ^ 2,app_square,0)">
+ <!--   (a = x ^ 2,app_square,0)
+  by Forward app_square)
+ -->
+ <div class="pedagogic slide" expr="(a = x ^ 2,app_square,0)" exercise="rew_tuto_varchange">
+  <p>Definition of a is squareed to get
+   <!--{type="expr" input="pow x 4"}--> as a function of a.</p>
+ </div>
+</div>
+<div key="slide_rew_tuto_varchange_(a ^ 2 = x ^ 4,linearsimpl,0)">
+ <!-- 	(a ^ 2 = x ^ 4,linearsimpl,0)
+	by Forward select of a ^ 2 = select ((x ^ 2) ^ 2) (linearsimpl)
+ -->
+ <div expr="(a ^ 2 = x ^ 4,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
+ </div>
+</div>
+<div class="toolbox-text custom pedagogic confuse" key="text_Antonym1">
+ <p>If a child is the youngest, then he/she is not the oldest. </p>
+</div>
+<div class="toolbox-text custom pedagogic confuse" key="text_Antonym2">
+ <p>If a child is the oldest, then he/she is not the youngest. </p>
+</div>
+<div class="toolbox-text custom pedagogic confuse" key="text_Superlative1">
+ <p>If a child is the youngest, then any other child is not the youngest. </p>
+</div>
+<div class="toolbox-text custom pedagogic confuse" key="text_Superlative2">
+ <p>If a child is the oldest then any other child is not the oldest. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_adabsurdium">
+ <p> <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Raisonnement_par_l%27absurde" target="_blank">Reductio ad absurdum</a></span> is proves statement A by showing that, if its negation, ¬ A is true, then we get a contradiction: </p>
+ <p> Indeed,
+  <!--{type="prop" sci="true" input="~(~A)"}--> rewrites into
+  <!--{type="prop" sci="true" input="(~A -> False)"}--> by definition of negation. Reduction ad absurdum is thus an elimination rule of double negation. </p>
+</div>
+<div key="text_addsub">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic appdef" key="text_app_def">
+ <p>One can apply a function to a value that belongs to its domain, as exampled below: </p>
+</div>
+<div class="toolbox-text custom pedagogic lrapply" key="text_app_sqrt">
+ <p>Applies square root, if the value is positive.</p>
+</div>
+<div key="text_app_sqrt_bounded">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic lrapply" key="text_app_square">
+ <p>Squaring left and right.</p>
+</div>
+<div key="text_app_square_bounded">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic appdef" key="text_appdef">
+ <p>A function is defined by the formula "Let f be defined on ... by f (x) = ...", as in the example below: </p>
+</div>
+<div key="text_apply_forall">
+ <!--TODO-->
+</div>
+<div key="text_apply_fun_lr">
+ <!--TODO-->
+</div>
+<div key="text_apply_ineq_inverse">
+ <!--TODO-->
+</div>
+<div key="text_apply_ineq_sqrt">
+ <!--TODO-->
+</div>
+<div key="text_apply_ineq_square">
+ <!--TODO-->
+</div>
+<div key="text_arith_def">
+ <!--TODO-->
+</div>
+<div key="text_arith_pro">
+ <!--TODO-->
+</div>
+<div key="text_arith_series">
+ <!--TODO-->
+</div>
+<div key="text_ax_bad">
+ <!--TODO-->
+</div>
+<div key="text_ax_good">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_back_elim_equiv">
+ <p>Several versions of equivalence are available, in deduction and justification:</p>
+ <p> </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_binrel">
+ <p> A binary relation connects two elements of the same set. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_bound_conj">
+ <p>Double inequaliy is translated to two inequality statements.</p>
+</div>
+<div key="text_bound_to_eq">
+ <!--TODO-->
+</div>
+<div key="text_bounded_elim">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_case_base">
+ <p> If "A ∨ B" is true, we just know that one of the two statements is true, without knowing which one. One can not deduce anything directly. However, when we want to prove a statement C knowing that "A ∨ B" is true, it suffices to prove C if A is true, and prove C if B is true. In such a case, we know that C is true in all cases, without knowing which of the two propositions, A or B is true. . </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_case_base_binary">
+ <p>The excluded middle rule expresses the fact that, whatever the statement A, either A is true or A is false, excluding any other value of A than true and false. </p>
+</div>
+<div key="text_case_good_or_bad">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_comb_comp_lt">
+ <p>Composition preserves the inclusion relation.</p>
+</div>
+<div class="toolbox-text custom pedagogic comb" key="text_combadd">
+ <p></p>
+</div>
+<div class="toolbox-text custom pedagogic comb" key="text_combinaison">
+ <p>Two equalities can be combined by addition or subtraction of left and right sides.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_combine_cmp_minus">
+ <p> </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_combine_cmp_plus">
+ <p> </p>
+</div>
+<div class="toolbox-text custom pedagogic comb" key="text_combsub">
+ <p></p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_commutativity">
+ <p>Multiplication and addition are commutative operations: you can reorder the terms as necessary.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_conj">
+ <p> To prove "A ∧ B" is to provide two proofs: one A and one B. </p>
+</div>
+<div key="text_conjunction" class="toolbox-text custom pedagogic">
+ <p>The conjonction of two statements A and B, noted "A ∧ B" and read "A and B", is true if A is true and B is true.</p>
+</div>
+<div key="text_converge">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic appdef" key="text_deduce_not_color">
+ <p>Since there are only two white hats, if a hat wearer sees his two friends each carry a white hat, then he/she can infer that he/she is necessarily wearing a black hat.</p>
+ <p>By contraposition, if a hat wearer does not know the color of his hat, then at least one of his two comrades is wearing a black hat.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_fbij">
+ <p> A function f of A to B is <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Bijection" target="_blank">bijective</a></span> if it is both injective and surjective: any element of B is the image by f of one and only one element of A. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_fcomp">
+ <p>The composition of two functions f: A → B and g: B → C, denoted "f ∘ g" and read "f round g", is a function of A to C so that the image of an element x of A is the image under g of the image under f of x. </p>
+ <p> The composition operator provides with a function of type (A → C) from two of functions of types (A → B) and (B → C). A form of similarity is noted with the proof of a <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Syllogisme" target="_blank">syllogism</a></span> that provides proof of
+  <!--{type="prop" sci="true" input="A -> C"}--> assuming
+  <!--{type="prop" sci="true" input="A -> B"}--> and
+  <!--{type="prop" sci="true" input="B -> C"}--> ... </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_finj">
+ <p> A function is <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Injection_(math%C3%A9matiques)" target="_blank">injective</a></span> if the corresponding relation is injective. Thus the function f of A to B is injective iif an element of B is the image of one and only one element of A. or in other words, if two elements x and z have the same image under f, then these elements are the same. </p>
+ <p>Note that to prove that a function f is not injective, just find two distinct elements that have the same image by f. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_finvol">
+ <p> If f is a function from E to E, it is <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Involution_(math%C3%A9matiques)" target="_blank">involutive</a></span> if the image of the image of an element x, is x itself. </p>
+ <p>Examples:</p>
+ <ul>
+  <li>the symmetry in a mirror</li>
+  <li>in <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Logique_classique" target="_blank">classical logic</a></span> , the negation of a proposition is involutive, allowing the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Raisonnement_par_l%27absurde" target="_blank">reduction ad absurdum</a></span></li>
+  <li>the encryption algorithm <span class="exturl"><a href="https://fr.wikipedia.org/wiki/ROT13" target="_blank">ROT13</a></span></li>
+ </ul>
+ <p></p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_fsurj">
+ <p>A function f of A to B is surjective if all elements of B are the image of at least one element of A. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rantisym">
+ <p>A binary relation on E is antisymmetric if, for any elements x y of E, if the pairs (x, y) and (y, x) belong to the graph of the relationship, then x is the same element as y.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rcomp">
+ <p> If A B and C are sets, if
+  <!--{type="expr" input="R1"}--> a relation on A×B, and if
+  <!--{type="expr" input="R2"}--> a relation on B×C, then composition of
+  <!--{type="expr" input="R1"}--> and
+  <!--{type="expr" input="R2"}-->, noted
+  <!--{type="expr" input="RComp U U U A B C R1 R2"}-->, is the relation on A×C such that an élément x of A is in relation with an element z of C by
+  <!--{type="expr" input="RComp U U U A B C R1 R2"}-->, if x and z are in relation with an element y of B, respectively on the left y by
+  <!--{type="expr" input="R1"}--> and on the left by
+  <!--{type="expr" input="R2"}--> : </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rfun">
+ <p>A relation of A×B is functional if an element of A is related to at most one element of B. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rident">
+ <p>The graph of the identity relation on set E, noted
+  <!--{type="expr" input="RIdent U E"}--> is all couples
+  <!--{type="expr" input="upair U U x x"}--> where x belongs to E. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rinj">
+ <p>A relation of A×B is injective if an element of B is related to at most one element of A. In other words, an element of B in relation by R, is in relation with only one element of A. In other words again, if two elements of a are in relation with an element of B by an injective relation, then these two elements are the same. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rinv">
+ <p>The inverse relation of a relation R defined on A×B, denoted R⁻¹, is defined on B × A by: </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rrefl">
+ <p>A binary relation on E is reflexive if any element of E is related to itself.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rsurj">
+ <p>A relation of A × B is surjective, or right-total, if all elements of B are in relation with an element of A. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rsym">
+ <p>A binary relation on E is symmetric if, for every elements x and y of E, the pairs (x, y) and (y, x) belong to the graph of the relation.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rtotleft">
+ <p>A relation on A × B is left-total if all elements of A are in relation with an element of B. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_def_rtrans">
+ <p>A binary relation is transitive if:</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_disjonction">
+ <p>The disjunction of two propositions A and B, denoted "A ∨ B" and read "A or B" is true if A is true or B is true.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_distrib">
+ <p>The multiplication is distributive over addition.</p>
+</div>
+<div key="text_elim_comp">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_conj_left">
+ <p> If "A ∧ B" is true, then A is true. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_conj_right">
+ <p>If "A ∧ B" is true, then B is true.</p>
+</div>
+<div key="text_elim_eqfun">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_eqset">
+ <p>Two sets A and B are equal if being element of A involves be element of B, and vice versa; that is to say that A is included in B and conversely B is included in A (by definition of inclusion). Equality is simply noté "A = B". </p>
+</div>
+<div key="text_elim_even_def">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_false_exset">
+ <p> By definition, <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Ensemble_vide" target="_blank">the empty set</a></span> , denoted by ∅, is the set that is included in any set. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_gen_app_rel">
+ <p> In the following, a relation R is equated with its graph in order to keep formulas and notations simple. </p>
+</div>
+<div key="text_elim_has_finite_limit_decr">
+ <!--TODO-->
+</div>
+<div key="text_elim_has_finite_limit_incr">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_is_elem_universe">
+ <p> By definition, the universe, noted U, is the set that contains all elements. The universe is the largest set in the sense of inclusion (any set is included in the universe). </p>
+</div>
+<div key="text_elim_multiple">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_negation">
+ <p> The negation of a statement A is defined using the constant <span style="font-weight:bold">contradiction</span> as follows: </p>
+</div>
+<div key="text_elim_pprod">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_requiv">
+ <p>An <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Relation_d%27%C3%A9quivalence" target="_blank">equivalence relation</a></span> is reflexive, symmetric, and transitive. For example, equality and equivalence are equivalence relations. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_scomp">
+ <p> The complement of a set A in the universe U, denoted "
+  <!--{type="expr" input="scomp U (sall U) A"}--> " and read "complement of A in U" or simply "complement of A", contains elements that are not in A: </p>
+ <span style="position:relative;left:-20px;display:inherit;width:110%;text-align:center;padding-bottom:0px;background-color:rgba(0,172,231,1)"> <img src="./svg/complement.svg" style="width:auto;height:150px;position:relative"> </span>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_sdiff">
+ <p> The relative complement of two sets A and B, denoted "
+  <!--{type="expr" input="sdiff U A B"}-->" contains the elements that are in A and not in B: </p>
+ <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px;position:relative"> <img src="./svg/diff.svg" style="width:auto;height:150px"> </span>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_sequiv">
+ <p>The equivalence class of an element x by a relation R on a set E, denoted
+  <!--{type="expr" input="sequiv U E x R"}--> , is the set of elements related to x by R.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_set_lteq">
+ <p>A set is included in another if and only if being an element of it implies being element of the other.</p>
+ <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px"> <img src="./svg/subset.svg" style="width:auto;height:150px"> </span>
+</div>
+<div key="text_elim_shas_lower_bound">
+ <!--TODO-->
+</div>
+<div key="text_elim_shas_upper_bound">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_sinter">
+ <p> The intersection of two sets A and B, denoted "
+  <!--{type="expr" input="sinter U A B"}--> " and read "A inter B" contains the elements that are in both A and B: </p>
+ <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px;position:relative"> <img src="./svg/inter.svg" style="width:auto;height:150px"> </span>
+</div>
+<div key="text_elim_sis_decreasing">
+ <!--TODO-->
+</div>
+<div key="text_elim_sis_gt_zero">
+ <!--TODO-->
+</div>
+<div key="text_elim_sis_increasing">
+ <!--TODO-->
+</div>
+<div key="text_elim_sis_lt_zero">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_subset">
+ <p> <a href="https://fr.wikipedia.org/wiki/Ensemble_des_parties_d%27un_ensemble" target="_blank">The power set</a> of a set A, denoted
+  <!--{type="expr" input="ssubset U A"}--> , is the set of subsets of A. </p>
+ <p> In particular we deduce that
+  <!--{type="prop" sci="true" input="sis_element A (ssubset U A)"}--> since
+  <!--{type="prop" sci="true" input="set_lteq U A A"}--> by definition of inclusion. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_sunion">
+ <p> The union of two sets A and B, denoted "
+  <!--{type="expr" input="sunion U A B"}--> " and read "A union B" contains the elements that either A or B in: </p>
+ <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px;position:relative"> <img src="./svg/union.svg" style="width:auto;height:150px"> </span>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_elim_true_at_rank">
+ <p>The first step of the induction defines a statement P of an index n, as in the example below: </p>
+</div>
+<div key="text_eq_inverse">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic lrapply" key="text_eq_reverse">
+ <p>Taking the opposite on left and right sides.</p>
+</div>
+<div class="toolbox-text custom pedagogic eqrel" key="text_eq_symmetry">
+ <p>If a = b then b = a.</p>
+</div>
+<div class="toolbox-text custom pedagogic eqrel" key="text_eq_trans">
+ <p>If a = b and b = c then a = c.</p>
+</div>
+<div key="text_eqfun">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic eqrel" key="text_eqrel">
+ <p>Equality is a transitive and symmetrical relation.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_eqset">
+ <p>Two sets A and B are equal if being element of A involves be element of B, and vice versa; that is to say that A is included in B and conversely B is included in A (by definition of inclusion). Equality is simply noté "A = B". </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_equiv">
+ <p>When statements "A ⇒ B" and "B ⇒ A" are both true, ie when "(A ⇒ B) ∧ (B ⇒ A)" is true, we say that A is equivalent to B and we note "A ⇔ B". </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_equiv_rtrans">
+ <p>Set formulation of a transitive relation:</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_ex_elim">
+ <p> The deduction from an existence
+  <!--{type="prop" sci="true" input="exists x, app_prop U F x"}--> <span class="stress">declares an element</span> x that verifies the proposition
+  <!--{type="prop" sci="true" input="app_prop U F x"}--> . </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_ex_intro">
+ <p> Proving existence is about <span class="stress">finding an element</span> for which the statement is true. Such an element is called a <span class="stress">witness</span> of the proof
+  <!--{type="prop" sci="true" input="exists (x:O1U), app_prop O1U F x"}--> . </p>
+ <!-- <p>Trouver un témoin consiste à trouver une valeur pour l'<span class="stress">inconnue de raisonnement</span> <span class="evar" style="font-size:15px">x?</span> </p> -->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_exists">
+ <p> The statement that F is true for an element x is denoted
+  <!--{type="prop" sci="true" input="app_prop U F x"}--> and read "F of x". </p>
+ <p> The existence of an element x such that F (x) is true, denoted
+  <!--{type="prop" sci="true" input="exists (x:O1U), app_prop O1U F x"}--> and read "there exists x such that x F" is true if, for a value t, we can prove
+  <!--{type="prop" sci="true" input="app_prop U F t"}--> . The operator ∃ is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Quantificateur_(logique)" target="_blank">existential quantifier</a></span> . </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_expand">
+ <p>Full development of product of factors.</p>
+</div>
+<div key="text_fact">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_factorize">
+ <p>'Remarkable' factorization detects a common factor in a sum of terms, and factorize it.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_falseall">
+ <p>"False results from what you want." This rule enable to justify any statement with the constant <span style="font-weight:bold">contradiction.</span></p>
+ <p>This rule is very useful especially in the reasoning by disjunction of cases: indeed if a contradiction is obtained in a case, it can be concluded directly with this rule.</p>
+ <p>You find this logical principle in popular expressions:</p>
+ <ul>
+  <li>With "if", we would put Paris in a bottle (french).</li>
+  <li>When Pigs Fly ...</li>
+ </ul>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_forall">
+ <p> The statement that F is true for every value x, denoted
+  <!--{type="prop" sci="true" input="forall (x:O1U), (app_prop O1U F x)"}--> and read "for every x, F x" is true if we can prove
+  <!--{type="prop" sci="true" input="app_prop O1U F x"}--> for any element x. The operator ∀ is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Quantificateur_(logique)" target="_blank">universal quantifier</a></span> . </p>
+</div>
+<div key="text_funop">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_gen_factorize">
+ <p>Factorization by any value <span class="stress">other than zero.</span></p>
+</div>
+<div key="text_geo_def">
+ <!--TODO-->
+</div>
+<div key="text_geo_pro">
+ <!--TODO-->
+</div>
+<div key="text_geo_series">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_implication">
+ <p>Implication from A to B, denoted "A ⇒ B" and read "A implies B" or "if A then B" means that B can not be false when A is true.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_inclusionsimpl">
+ <p> One can simplify the intersection (or the union) of two sets if one of two sets is included in the other. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_ind_basic_forall">
+ <p>The justification by induction uses the <span class="stress">initialization</span> statement and the <span class="stress">heredity</span> statement. </p>
+</div>
+<div key="text_ind_init">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_induction">
+ <p>In general statetments beginning with "For every integer n ..." is proved by induction. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_ineq_sym_rew">
+ <p>A comparison can be rewritten by changing the order of values ​​and replacing the comparison by its reciprocal. For example
+  <!--{type="prop" sci="true" style="vertical-align:-3px;" input="ExprLT a b"}--> rewrites to
+  <!--{type="prop" sci="true" style="vertical-align:-3px;" input="ExprGT b a"}--> . </p>
+</div>
+<div class="toolbox-text custom pedagogic appdef" key="text_ineqapp">
+ <p>A function can be applied to the left and right sides of an inequality, without changing its sense, if the left and right sides values belong to the domain of definition of f, and the f is increasing on this domain.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_ineqbound">
+ <p>Double inequality is equivalent to two inequalities. </p>
+ <p>Left and right sides operations for inequalities are also available for double inequality.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_ineqcomb">
+ <p>Two inequalities can be combined by addition or subtraction of left and right sides.</p>
+</div>
+<div key="text_ineqconv">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_ineqrel">
+ <p>Comparisons are transitive relations. The reciprocal relation allows to rewrite inequality by changing the order of compared values. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_intro_false">
+ <p> We can deduce a contradiction from a statement and its negation.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_intro_or_left">
+ <p>To prove "A ∨ B", it suffices to prove A.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_intro_or_right">
+ <p>To prove "A ∨ B", it suffices to prove B.</p>
+</div>
+<div key="text_intro_sqrt_square">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic leftright" key="text_leftright">
+ <p>Equality is preserved by applying an operation to the left and right sides (addition, subtraction, multiplication, division).</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_leftright_ineq">
+ <p>The left and right operations (addition, subtraction, multiplication, division) can transform an inequality (or double inequality) on the left and right sides. </p>
+ <p>Four forms of comparison (superiority or inferiority, strict or not), and four forms of double inequality are considered.</p>
+</div>
+<div class="toolbox-text custom pedagogic appdef" key="text_leftright_neq">
+ <p>As for equality, inequality is preserved by applying the same operation (addition, subtraction, multiplication, division) to the left and right sides.</p>
+</div>
+<div key="text_limfinite">
+ <!--TODO-->
+</div>
+<div key="text_limit_finite">
+ <!--TODO-->
+</div>
+<div key="text_limit_inf">
+ <!--TODO-->
+</div>
+<div key="text_limit_neg_inf">
+ <!--TODO-->
+</div>
+<div key="text_limitinf">
+ <!--TODO-->
+</div>
+<div key="text_limitops">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom simpl" key="text_linearsimpl" style="padding-left:20px;padding-right:20px">
+ <p>Simplifications can:</p>
+ <ul>
+  <li style="font-size:14px">calculate a numerical term (which contains only numbers)</li>
+  <li style="font-size:14px">perform simple polynomial operations (addition, subtraction, ...)
+   <!-- <span class="stress">de degré 1</span> --></li>
+  <li style="font-size:14px">perform linear simplifications (elimination of terms like 'x-x')</li>
+  <!--  <li style="font-size:14px;">factoriser les puissances par rapport à la multiplication</li> -->
+ </ul>
+ <p></p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_logicothers">
+ <p> In the early 20 <span class="sup">th</span> century, the mathematical current <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Constructivisme_(math%C3%A9matiques)" target="_blank">constructivist</a></span> considered that a valid proof of "A ∨ B" should allow to know which of the two statements is true, and therefore it rejected the use of the excluded middle principle. We speak of <span class="stress">constructivist logic</span> (or intuitionistic) when the excluded middle is not admitted, and <span class="stress">classical logic</span> when admitted. </p>
+</div>
+<div class="toolbox-text custom pedagogic leftright" key="text_lradd">
+ <p>Addition to left and right sides. This allows to pass a term from one side of an equality to the other (with sign change).</p>
+</div>
+<div key="text_lradd_bounded">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_lradd_ineq">
+ <p>Addition to left and right sides. This allows to pass a term from one side of an inequality to the other (with sign change). </p>
+</div>
+<div key="text_lradd_neq">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic lrapply" key="text_lrapply">
+ <p>A function f can be applied to the left and right sides of an equality, if the value belongs to the domain of f. Four major functions are introduced: square, square root, opposite function and inverse function.</p>
+</div>
+<div class="toolbox-text custom pedagogic leftright" key="text_lrdiv">
+ <p>Division by a value of left and right sides. The argument should be different from zero.</p>
+</div>
+<div key="text_lrdiv_bounded">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_lrdiv_ineq">
+ <p>Division by a value of left and right sides. If the is argument is negative, the sense of inequality is changed. </p>
+</div>
+<div key="text_lrdiv_neq">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic leftright" key="text_lrmul">
+ <p>Multiplication by a value of the left and right sides.</p>
+</div>
+<div key="text_lrmul_bounded">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_lrmul_ineq">
+ <p>Multiplication by a value of left and right sides. If this value is negative, the sense of inequality is changed.</p>
+</div>
+<div key="text_lrmul_neq">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic leftright" key="text_lrsub">
+ <p>Subtraction by a value of left and right sides. This allows to pass a term from one side of an equality to the other (with sign change).</p>
+</div>
+<div key="text_lrsub_bounded">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_lrsub_ineq">
+ <p>Subtraction by a value of left and right sides. This allows to pass a term from one side of an inequ to the other (with sign change).</p>
+</div>
+<div key="text_lrsub_neq">
+ <!--TODO-->
+</div>
+<div key="text_lt_next_int">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_modus_ponens">
+ <p> Deducing B from A means that if A is true, one can deduce B. This rule is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Modus_ponens" target="_blank">modus ponens</a></span> .</p>
+</div>
+<div key="text_muldiv">
+ <!--TODO-->
+</div>
+<div key="text_multiple">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_negation">
+ <p> The negation of a statement A is noted "¬ A" and reads "not A". </p>
+</div>
+<div key="text_neq_symmetry">
+ <!--TODO-->
+</div>
+<div key="text_non_zero_gt">
+ <!--TODO-->
+</div>
+<div key="text_non_zero_lt">
+ <!--TODO-->
+</div>
+<div key="text_oldest">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_polysquare">
+ <p>The square factorization of the sum of the term
+  <!--{type="expr" input="a"}--> and
+  <!--{type="expr" input="b"}--> is given by the formula: </p>
+ <p>
+  <!--{type="prop" sci="true" input=" ((pow a 2) + (2*a*b) + (pow b 2)) = (pow (a+b) 2)"}--></p>
+ <p>For example :</p>
+</div>
+<div key="text_prod">
+ <!--TODO-->
+</div>
+<div key="text_proddecompl">
+ <!--TODO-->
+</div>
+<div key="text_proddef">
+ <!--TODO-->
+</div>
+<div key="text_prodidx">
+ <!--TODO-->
+</div>
+<div key="text_prodinverse">
+ <!--TODO-->
+</div>
+<div key="text_prodlinear">
+ <!--TODO-->
+</div>
+<div key="text_prodrem">
+ <!--TODO-->
+</div>
+<div key="text_prodresult1">
+ <!--TODO-->
+</div>
+<div key="text_prodsimpl">
+ <!--TODO-->
+</div>
+<div key="text_produpshift">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic appdef" key="text_reason_capacity">
+ <p>Since hat wearers are endowed with reason, if one can deduce one hat color, so can a hat wearer, and then he knows the color of his/her hat. </p>
+</div>
+<div key="text_red_true_at_rank">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_reducedenom">
+ <p>Getting to the common denominator of a sum of fractions.</p>
+ <p></p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_relops">
+ <p>operators</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_relothers">
+ <p>remarkable</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_relprop">
+ <p>relations</p>
+</div>
+<div key="text_relset">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_remid">
+ <p>Remarkable identities allow to factorize terms with simple specific forms, common in the calculations. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_rewops">
+ <p> Rewriting operations appy an operation and its reciprocal to rewrite a term into an equal term.</p>
+</div>
+<div key="text_rewprops">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_rewriting">
+ <p> Select a term 'a' in an equation allows to replace the term with 'b' if equality 'a = b' is true. </p>
+</div>
+<div key="text_sandwich">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_section">
+ <p>To prove "A ⇒ B" one creates a new logical scope (a new exercise) in which A is a hypothesis and B is the conclusion.</p>
+</div>
+<div key="text_series_limitation">
+ <!--TODO-->
+</div>
+<div key="text_series_sign">
+ <!--TODO-->
+</div>
+<div key="text_series_variation">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_set_absorb">
+ <p> The empty set is the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/%C3%89l%C3%A9ment_absorbant" target="_blank">absorbent element</a></span> of the intersection operation, and the universe is the absorbent element of the union operation (as 0 is the multiplication of absorbent element). </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_set_adabsurdum">
+ <p>The complement of the complement of a set is the set. This rule, elimination of double complement, is called 'ad absurdum', by analogy with the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Raisonnement_par_l%27absurde" target="_blank">reduction ad absurdum</a></span> of classical logic, which is the rule for the elimination of double negation. </p>
+</div>
+<div key="text_set_comb">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_set_demorgan">
+ <p> The complement of the intersection (resp. union) of two sets is the union (resp. intersection) complements of these sets. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_set_eq_symmetry">
+ <p>The symmetry of set equality is available for set calculations.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_set_eq_trans">
+ <p>Transitivity of set equality is available for set calculations.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_set_excluded">
+ <p> Every element of the universe belong to either a set or to its complement, to the exclusion of any other possibility. </p>
+</div>
+<div key="text_set_inter_comb">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_set_lteq_transitivity">
+ <p>The set inclusion is a transitive relation.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_set_neutral">
+ <p> The empty set is the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/%C3%89l%C3%A9ment_neutre" target="_blank">neutral element</a></span> of the union and the universe is the neutral element of the intersection (as 1 is the neutral element of the multiplication, and 0 is the neutral element of addition ). </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_set_rewriting">
+ <p> Rewriting operations allow to replace a term A by another term B, if statement A = B can be proved. Known algebraic properties (commutative, associative, ...) of set operations (intersection, union, ...) are invoked directly, without justification. </p>
+</div>
+<div key="text_set_union_comb">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_setassociative">
+ <p> Intersection and union are associative operations. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_setcommutative">
+ <p> Intersection and union are commutative operations. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_setdevelopp">
+ <p> Intersection and union operations are distributive over one another. </p>
+</div>
+<div key="text_setexpr">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_setfactorize">
+ <p> Intersection and union operations are distributive over one another. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_setfun">
+ <p> A function is a formula with a variable x in a universe A. This formulation is denoted
+  <!--{type="expr" input="app_fun f x"}--> and read 'f of x'. A function f maps an element x of A to an element y of B called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Fonction_(math%C3%A9matiques_%C3%A9l%C3%A9mentaires)#Image.2C_ant.C3.A9c.C3.A9dent" target="_blank">the image</a></span> of x by f. The element x is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Ant%C3%A9c%C3%A9dent_(math%C3%A9matiques)" target="_blank">the antecedent</a></span> of y f. Such a function is declared by the formula f: A → B 'read' f is a function from A to B '. </p>
+ <!--  <p>
+    La nature de cette association est telle que la <span class="exturl">
+      <a href="https://fr.wikipedia.org/wiki/Relation_(math%C3%A9matiques)"
+   target="_blank">relation</a></span> définie sur A×B par "f(x) = y" est
+    fonctionnelle : un élément de A a une et une seule image par f. Une
+    fonction peut être assimilée à une relation fonctionnelle.
+  </p> -->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_setgraph">
+ <p> The set of couples
+  <!--{type="expr" input="upair U U x y"}--> in relation by R is denoted "
+  <!--{type="prop" sci="true" input="gen_app_rel U U A B R x y"}--> ". This set is the <span class="stress">graph</span> of the relation R. The graph is a subset of the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Produit_cart%C3%A9sien" target="_blank">Cartesian product</a></span>
+  <!--{type="expr" input="(pprod U (ExSet U) A B)"}--> . </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_setops">
+ <p>If the universe is the set of points of the plane, a set may be represented by a set of all points inside a closed border, ie by a surface. In this case, set operations may be represented by the blue surfaces below. </p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_sigma">
+ <p>Rewriting properties result from the associative and distributive properties of addition and multiplication.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_sigmadecompl">
+</div>
+<div key="text_sigmadef">
+ <!--TODO-->
+</div>
+<div key="text_sigmaidx">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_sigmainverse">
+ <p>Summed elements' order can be reversed to add (by commutative property of addition).</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_sigmalinear">
+ <p>One can factorize
+  <!--{type="expr" input="lambda"}--> below only if
+  <!--{type="expr" input="lambda"}--> does not depend on k.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_sigmarem">
+ <p>Remarkable sums are available to solve exercises.</p>
+</div>
+<div key="text_sigmaresult1">
+ <!--TODO-->
+</div>
+<div key="text_sigmaresult2">
+ <!--TODO-->
+</div>
+<div key="text_sigmaresult3">
+ <!--TODO-->
+</div>
+<div key="text_sigmasimpl">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_sigmaupshift">
+ <p>Shifting the index of the summed value.</p>
+</div>
+<div key="text_simpl"></div>
+<div key="text_slim_def_elim">
+ <!--TODO-->
+</div>
+<div key="text_slim_inf_def_elim">
+ <!--TODO-->
+</div>
+<div key="text_slimfinite_inf_elim">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_slteq">
+ <p>A set A is included in another set B, if being element of A implies being element of B.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_somesets">
+</div>
+<div class="toolbox-text custom pedagogic appdef" key="text_sophiehattheory">
+ <p>The protagonists of this story are called hat wearers.</p>
+</div>
+<div class="toolbox-text custom pedagogic" key="text_square_diff">
+ <p>The factorization of the difference of squares is given by the formula: </p>
+ <p>
+  <!--{type="prop" sci="true" input="((pow a 2)-(pow b 2)) = ((a+b)*(a-b))"}--></p>
+ <p>For example :</p>
+</div>
+<div key="text_subadd">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_trans_lt_gt">
+ <p> If a is greater than b, which is greater than c, then a is greater than c. </p>
+ <p>These rules are also available for double inequality</p>
+</div>
+<div key="text_true_at_rank">
+ <!--TODO-->
+</div>
+<div key="text_truthlie">
+ <!--TODO-->
+</div>
+<div key="text_updownsimpl">
+ <!--TODO-->
+</div>
+<div class="toolbox-text custom pedagogic" key="text_varchange">
+ <p>a change of variables is a basic technique used to simplify problems in which the original variables are replaced with functions of other variables</p>
+ <p>In the example below, the equation
+  <!--{type="expr" input="sqrt(x)"}--> is a second-degree equation in 'a', if
+  <!--{type="prop" sci="true" style="vertical-align:-3px;" input="a=sqrt x"}--> : </p>
+</div>
+<div key="text_youngest">
+ <!--TODO-->
+</div>
