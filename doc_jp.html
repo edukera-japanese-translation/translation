@@ -1129,11 +1129,11 @@
  <div class="pedagogic slide" expr="(true_at_rank P zero)" exercise="demo_tuto_sigma">
  </div>
 </div>
-<div key="slide_logic_connector_tuto_01_(and B A)">
- <!-- 	(and B A)
+<div key="slide_logic_connector_tuto_01_(and A B)">
+ <!-- 	(and A B)
 	by Backward (conj)
  -->
- <div class="pedagogic slide" expr="(and B A)" exercise="logic_connector_tuto_01">
+ <div expr="(and A B)" class="pedagogic slide" exercise="logic_connector_tuto_01">
  </div>
 </div>
 <div key="slide_logic_connector_tuto_02_(and A B,elim_conj_left,0)">
@@ -1609,20 +1609,6 @@
   <p>Conclude by division by 6 on left and right sides.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_fact1_(x * (x * (1 + 1 / x ^ 2)) = zero,linearsimpl,0)">
- <!--   (x * (x * (1 + 1 / x ^ 2)) = zero,linearsimpl,0)
-  by Forward select of select (x * x) * (1 + 1 / x ^ 2) = zero (linearsimpl)
- -->
- <div class="pedagogic slide" expr="(x * (x * (1 + 1 / x ^ 2)) = zero,linearsimpl,0)" exercise="rew_tuto_fact1">
- </div>
-</div>
-<div key="slide_rew_tuto_fact1_(x * (x + 1 / x) = zero,gen_factorize,0)">
- <!--   (x * (x + 1 / x) = zero,gen_factorize,0)
-  by Forward select of x * select (x + 1 / x) = zero (gen_factorize)
- -->
- <div class="pedagogic slide" expr="(x * (x + 1 / x) = zero,gen_factorize,0)" exercise="rew_tuto_fact1">
- </div>
-</div>
 <div key="slide_rew_tuto_fact1_(x ^ 2 + 1 = zero,gen_factorize,0)">
  <!--   (x ^ 2 + 1 = zero,gen_factorize,0)
   by Forward select of select (x ^ 2 + 1) = zero (gen_factorize)
@@ -1786,18 +1772,18 @@
    <!--{type="tag" input="s0"}-->.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_simpl2_((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)">
- <!-- 	((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)
+<div key="slide_rew_tuto_simpl2_(((x + 1) + 2 * (x - 2)) / ((x + 1) * (x - 2)) = zero,lrmul,0)">
+ <!-- 	(((x + 1) + 2 * (x - 2)) / ((x + 1) * (x - 2)) = zero,lrmul,0)
 	by Forward lrmul)
  -->
- <div expr="((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
+ <div expr="(((x + 1) + 2 * (x - 2)) / ((x + 1) * (x - 2)) = zero,lrmul,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
  </div>
 </div>
-<div key="slide_rew_tuto_simpl2_((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)">
- <!-- 	((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)
+<div key="slide_rew_tuto_simpl2_((x + 2 * (x - 2)) + 1 = zero,linearsimpl,0)">
+ <!-- 	((x + 2 * (x - 2)) + 1 = zero,linearsimpl,0)
 	by Forward select of select ((x + 2 * (x - 2)) + 1) = zero (linearsimpl)
  -->
- <div expr="((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
+ <div expr="((x + 2 * (x - 2)) + 1 = zero,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
  </div>
 </div>
 <div key="slide_rew_tuto_simpl2_(2 / (x + 1) + 1 / (x - 2) = zero,reducedenom,0)">
@@ -1912,13 +1898,6 @@
  <div class="pedagogic slide" expr="(a = x ^ 2,app_square,0)" exercise="rew_tuto_varchange">
   <p>Definition of a is squareed to get
    <!--{type="expr" input="pow x 4"}--> as a function of a.</p>
- </div>
-</div>
-<div key="slide_rew_tuto_varchange_(a ^ 2 = x ^ 4,linearsimpl,0)">
- <!-- 	(a ^ 2 = x ^ 4,linearsimpl,0)
-	by Forward select of a ^ 2 = select ((x ^ 2) ^ 2) (linearsimpl)
- -->
- <div expr="(a ^ 2 = x ^ 4,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
  </div>
 </div>
 <div class="toolbox-text custom pedagogic confuse" key="text_Antonym1">
