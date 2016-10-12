@@ -91,8 +91,8 @@
  <p> In this exercise, the universe of elements is made up of all <span class="exturl"><a href="https://en.wikipedia.org/wiki/Natural_number" target="_blank">natural numbers</a></span>. </p>
  <p> The formulae are the <span class="stress">propositions defined on ℕ</span>, and the elements are the integers. </p>
  <p> Note "
-  <!--{type="prop" sci="true" input="forall (x:Nvar), app_prop U P x"}-->" and "
-  <!--{type="prop" sci="true" input="exists (x:Nvar), app_prop U P x"}-->" quantifications on ℕ. </p>
+  <!--{type="prop" sci="true" input="forall (x:Nvar), app_prop P x"}-->" and "
+  <!--{type="prop" sci="true" input="exists (x:Nvar), app_prop P x"}-->" quantifications on ℕ. </p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_08">
  <!--{type="ex_title"}-->
@@ -800,11 +800,20 @@
   <li>convergence, divergence</li>
  </ul>
 </div>
+<div key="pager_axiom">
+ <!--TODO-->
+</div>
 <div key="pager_badges"></div>
 <div key="pager_credits"></div>
 <div key="pager_dashboard"></div>
 <div class="custom pager" key="pager_demo_seg">
  <p>Calculus is about transforming an equality relation (or inequality), between real numbers or vectors for example. The challenge is to work out a sequence of algebraic manipulations (factorize, expand, ...) from assumption(s) to conclusion.</p>
+</div>
+<div key="pager_double_inequality">
+ <p>The double inequality
+  <!--{type="expr" input="is_bounded ExprLTLT a b c"}--> is equivalent to the two inequalities :
+  <!--{type="expr" input="ExprLT a b"}--> and
+  <!--{type="expr" input="ExprLT b c"}-->. Hence double Inequality properties are the same as inequality properties.</p>
 </div>
 <div class="pager" key="pager_eq_seg">
  <p>A equality can be transformed, especially with the operations introduced in this chapter:</p>
@@ -823,6 +832,9 @@
   <li>...</li>
  </ul>
  <p>If the function applied to the left and right sides of an inequality is decreasing, then the sense of the inequality is reversed.</p>
+</div>
+<div key="pager_internal">
+ <!--TODO-->
 </div>
 <div class="pager" key="pager_logic">
  <p> The grammar of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Propositional_calculus" target="_blank">propositions</a></span>, and associated reasoning rules, form a logical system called <span class="exturl"><a href="https://en.wikipedia.org/wiki/Natural_deduction" target="_">natural deduction</a></span>, notably used for developing mathematical <span class="exturl"><a href="https://en.wikipedia.org/wiki/Mathematical_proof" target="_blank">demonstrations</a></span>. </p>
@@ -898,36 +910,36 @@
  <p>In this notation, the index k is a dummy variable: it is not declared in the context and is valid only for the summed expression.</p>
  <p>Sigma properties are those of the addition (associativity, distributivity of multiplication, ...) and those of index shits.</p>
 </div>
-<div key="slide_demo_tuto_app_(3 * x - 6 = zero,lradd,0)">
- <!--   (3 * x - 6 = zero,lradd,0)
-  by Forward lradd)
+<div key="slide_demo_tuto_app_(integer 3 * x - integer 6 = zero,lradd,0)">
+ <!-- 	(integer 3 * x - integer 6 = zero,lradd,0)
+	by Forward lradd)
  -->
- <div class="pedagogic slide" expr="(3 * x - 6 = zero,lradd,0)" exercise="demo_tuto_app">
+ <div expr="(integer 3 * x - integer 6 = zero,lradd,0)" class="pedagogic slide" exercise="demo_tuto_app">
   <p>The objective is to <span class="stress">isolate the term
     <!--{type="expr" input="pow x 2"}--></span> on the left. Start by isolating x on the left as in the previous exercise, and then square left and right sides of the resulting equality.</p>
  </div>
 </div>
-<div key="slide_demo_tuto_app_(3 * x = 6,lrdiv,0)">
- <!--   (3 * x = 6,lrdiv,0)
-  by Forward lrdiv)
+<div key="slide_demo_tuto_app_(integer 3 * x = integer 6,lrdiv,0)">
+ <!-- 	(integer 3 * x = integer 6,lrdiv,0)
+	by Forward lrdiv)
  -->
- <div class="pedagogic slide" expr="(3 * x = 6,lrdiv,0)" exercise="demo_tuto_app">
+ <div expr="(integer 3 * x = integer 6,lrdiv,0)" class="pedagogic slide" exercise="demo_tuto_app">
   <p>Divide by 3 on the left and right sides in order to isolate x.</p>
  </div>
 </div>
-<div key="slide_demo_tuto_app_(x = 2,app_square,0)">
- <!--   (x = 2,app_square,0)
-  by Forward app_square)
+<div key="slide_demo_tuto_app_(x = integer 2,app_square,0)">
+ <!-- 	(x = integer 2,app_square,0)
+	by Forward app_square)
  -->
- <div class="pedagogic slide" expr="(x = 2,app_square,0)" exercise="demo_tuto_app">
+ <div expr="(x = integer 2,app_square,0)" class="pedagogic slide" exercise="demo_tuto_app">
   <p>The square function is applied on the left and right sides.</p>
  </div>
 </div>
-<div key="slide_demo_tuto_comb_(3 * x - y = zero,combadd,0)">
- <!--   (3 * x - y = zero,combadd,0)
-  by Forward combadd)
+<div key="slide_demo_tuto_comb_(integer 3 * x - y = zero,combadd,0)">
+ <!-- 	(integer 3 * x - y = zero,combadd,0)
+	by Forward combadd)
  -->
- <div class="pedagogic slide" expr="(3 * x - y = zero,combadd,0)" exercise="demo_tuto_comb">
+ <div expr="(integer 3 * x - y = zero,combadd,0)" class="pedagogic slide" exercise="demo_tuto_comb">
   <p>The objective is to isolate x by first <span class="stress">eliminating y.</span> We note that y shows on the left hand side of statement
    <!--{type="tag" input="s0"}--> and that the opposite of y shows on the left side of
    <!--{type="tag" input="s1"}--> .</p>
@@ -936,204 +948,92 @@
    <!--{type="tag" input="s0"}--> .</p>
  </div>
 </div>
-<div key="slide_demo_tuto_comb_(4 * x = 4,lrdiv,0)">
- <!--   (4 * x = 4,lrdiv,0)
-  by Forward lrdiv)
+<div key="slide_demo_tuto_comb_(integer 4 * x = integer 4,lrdiv,0)">
+ <!-- 	(integer 4 * x = integer 4,lrdiv,0)
+	by Forward lrdiv)
  -->
- <div class="pedagogic slide" expr="(4 * x = 4,lrdiv,0)" exercise="demo_tuto_comb">
+ <div expr="(integer 4 * x = integer 4,lrdiv,0)" class="pedagogic slide" exercise="demo_tuto_comb">
   <p>Variable x is isolated by removing the coefficient 4 with a left and right division by 4.</p>
  </div>
 </div>
-<div key="slide_demo_tuto_first_(2 * x + 1 = 5,lrsub,0)">
- <!--   (2 * x + 1 = 5,lrsub,0)
-  by Forward lrsub)
+<div key="slide_demo_tuto_first_(integer 2 * x + integer 1 = integer 5,lrsub,0)">
+ <!-- 	(integer 2 * x + integer 1 = integer 5,lrsub,0)
+	by Forward lrsub)
  -->
- <div class="pedagogic slide" expr="(2 * x + 1 = 5,lrsub,0)" exercise="demo_tuto_first">
+ <div expr="(integer 2 * x + integer 1 = integer 5,lrsub,0)" class="pedagogic slide" exercise="demo_tuto_first">
   <p>The objective is to <span class="stress">isolate
     <!--{type="expr" input="x"}--></span> on the left side, that is to say to obtain, by successive operations, an equality of the form x = ....</p>
   <p>Start by isolating
    <!--{type="expr" input="2*x"}--> by eliminating 1 on the left with left and right subtraction of 1.</p>
  </div>
 </div>
-<div key="slide_demo_tuto_first_(2 * x = 4,lrdiv,0)">
- <!--   (2 * x = 4,lrdiv,0)
-  by Forward lrdiv)
+<div key="slide_demo_tuto_first_(integer 2 * x = integer 4,lrdiv,0)">
+ <!-- 	(integer 2 * x = integer 4,lrdiv,0)
+	by Forward lrdiv)
  -->
- <div class="pedagogic slide" expr="(2 * x = 4,lrdiv,0)" exercise="demo_tuto_first">
+ <div expr="(integer 2 * x = integer 4,lrdiv,0)" class="pedagogic slide" exercise="demo_tuto_first">
   <p> Isolate
    <!--{type="expr" input="x"}--> by eliminating 2 on left right sides with a division by 2 (trivially diffreemnt from 0). </p>
  </div>
 </div>
-<div key="slide_demo_tuto_first_(find_expr x 2)">
- <!--   (find_expr x 2)
-  by Backward (find_expr_intro)
+<div key="slide_demo_tuto_neq_(integer 2 * x <> integer 4,lrsub_neq,0)">
+ <!-- 	(integer 2 * x <> integer 4,lrsub_neq,0)
+	by Forward lrsub_neq)
  -->
- <div class="pedagogic slide" expr="(find_expr x 2)" exercise="demo_tuto_first">
- </div>
-</div>
-<div key="slide_demo_tuto_fun_(( fanonym  (SReals) (sunknown Expr) (x) (3 * x)),app_def,0)">
- <!--   (( fanonym  (SReals) (sunknown Expr) (x) (3 * x)),app_def,0)
-  by Forward app_def)
- -->
- <div class="pedagogic slide" expr="(( fanonym  (SReals) (sunknown Expr) (x) (3 * x)),app_def,0)" exercise="demo_tuto_fun">
- </div>
-</div>
-<div key="slide_demo_tuto_fun_(( fanonym  (SReals) (sunknown Expr) (x) (x)),app_def,0)">
- <!--   (( fanonym  (SReals) (sunknown Expr) (x) (x)),app_def,0)
-  by Forward app_def)
- -->
- <div class="pedagogic slide" expr="(( fanonym  (SReals) (sunknown Expr) (x) (x)),app_def,0)" exercise="demo_tuto_fun">
- </div>
-</div>
-<div key="slide_demo_tuto_fun_((app_expr f a) = 3 * a,combadd,0)">
- <!--   ((app_expr f a) = 3 * a,combadd,0)
-  by Forward combadd)
- -->
- <div class="pedagogic slide" expr="((app_expr f a) = 3 * a,combadd,0)" exercise="demo_tuto_fun">
- </div>
-</div>
-<div key="slide_demo_tuto_fun_((app_expr g b) = b,lrmul,0)">
- <!--   ((app_expr g b) = b,lrmul,0)
-  by Forward lrmul)
- -->
- <div class="pedagogic slide" expr="((app_expr g b) = b,lrmul,0)" exercise="demo_tuto_fun">
- </div>
-</div>
-<div key="slide_demo_tuto_neq_(2 * x <> 4,lrsub_neq,0)">
- <!--   (2 * x <> 4,lrsub_neq,0)
-  by Forward lrsub_neq)
- -->
- <div class="pedagogic slide" expr="(2 * x <> 4,lrsub_neq,0)" exercise="demo_tuto_neq">
+ <div expr="(integer 2 * x <> integer 4,lrsub_neq,0)" class="pedagogic slide" exercise="demo_tuto_neq">
   <p>Subtract 4 on left and right sides of
    <!--{type="tag" input="s2"}--> . </p>
  </div>
 </div>
-<div key="slide_demo_tuto_neq_(x <> 2,lrmul_neq,0)">
- <!--   (x <> 2,lrmul_neq,0)
-  by Forward lrmul_neq)
+<div key="slide_demo_tuto_neq_(x <> integer 2,lrmul_neq,0)">
+ <!-- 	(x <> integer 2,lrmul_neq,0)
+	by Forward lrmul_neq)
  -->
- <div class="pedagogic slide" expr="(x <> 2,lrmul_neq,0)" exercise="demo_tuto_neq">
+ <div expr="(x <> integer 2,lrmul_neq,0)" class="pedagogic slide" exercise="demo_tuto_neq">
   <p>The objective is to get the left member of
    <!--{type="tag" input="s1"}--> with the left and right operations.</p>
   <p> Multiply by 2 on left and right sides of
    <!--{type="tag" input="s1"}--> .</p>
  </div>
 </div>
-<div key="slide_demo_tuto_rel_(x + 1 = 1,lrsub,0)">
- <!--   (x + 1 = 1,lrsub,0)
-  by Forward lrsub)
+<div key="slide_demo_tuto_rel_(integer 3 = x + integer 3,lrsub,0)">
+ <!-- 	(integer 3 = x + integer 3,lrsub,0)
+	by Forward lrsub)
  -->
- <div class="pedagogic slide" expr="(x + 1 = 1,lrsub,0)" exercise="demo_tuto_rel">
-  <p>Subtract 1 on the left and right sides of
+ <div expr="(integer 3 = x + integer 3,lrsub,0)" class="pedagogic slide" exercise="demo_tuto_rel">
+  <p>Subtract 3 on the left and right sides of
    <!--{type="tag" input="s4"}--> .</p>
  </div>
 </div>
-<div key="slide_demo_tuto_rel_(y + 2 = 3,lrsub,0)">
- <!--   (y + 2 = 3,lrsub,0)
-  by Forward lrsub)
- -->
- <div class="pedagogic slide" expr="(y + 2 = 3,lrsub,0)" exercise="demo_tuto_rel">
-  <p>The objective is to isolate x by eliminating y by transitivity. Start by isolating y in
-   <!--{type="tag" input="s1"}--> . </p>
- </div>
-</div>
-<div key="slide_demo_tuto_rel_(y = 1,eq_trans,2)">
- <!--   (y = 1,eq_trans,2)
-  by Forward eq_trans)
- -->
- <div class="pedagogic slide" expr="(y = 1,eq_trans,2)" exercise="demo_tuto_rel">
-  <p>Eliminate y by transitivity.</p>
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_(( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2)">
- <!-- 	(( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2)
-	by Backward select of select ( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2 (sigmasimpl)
- -->
- <div class="pedagogic slide" expr="(( sigma( k, zero, zero, k)) = (zero * (zero + 1)) / 2)" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))">
- <!-- 	((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))
-	by Backward (elim_true_at_rank)
- -->
- <div class="pedagogic slide" expr="((forall n : Nvar, ( sigma( k, zero, n, k)) = (n * (n + 1)) / 2))" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))">
- <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))
-	by Section
- -->
- <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)))" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)">
- <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)
-	by Forward select of ( sigma( k, zero, n + 1, k)) = select (((n * (n + 1)) / 2 + n) + 1) (reducedenom)
- -->
- <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n * (n + 1)) / 2 + n) + 1,reducedenom,0)" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)">
- <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)
-	by Forward select of ( sigma( k, zero, n + 1, k)) = select ((n + 2) * (n + 1)) / 2 (commutativity)
- -->
- <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = ((n + 1) * (n + 2)) / 2,commutativity,0)" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)">
- <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)
-	by Forward select of ( sigma( k, zero, n + 1, k)) = select (n * (n + 1) + 2 * (n + 1)) / 2 (factorize)
- -->
- <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n + 1, k)) = (n * (n + 1) + 2 * (n + 1)) / 2,factorize,0)" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) + (n + 1) = (n * (n + 1)) / 2 + (n + 1),sigmadef,0)">
- <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) + (n + 1) = (n * (n + 1)) / 2 + (n + 1),sigmadef,0)
-	by Forward select of select ((( sigma( k, zero, n, k)) + n) + 1) = ((n * (n + 1)) / 2 + n) + 1 (sigmadef)
- -->
- <div expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) + (n + 1) = (n * (n + 1)) / 2 + (n + 1),sigmadef,0)" class="pedagogic slide" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)">
- <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)
+<div key="slide_demo_tuto_rel_(x + integer 1 = y,lradd,0)">
+ <!-- 	(x + integer 1 = y,lradd,0)
 	by Forward lradd)
  -->
- <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),( sigma( k, zero, n, k)) = (n * (n + 1)) / 2,lradd,0)" exercise="demo_tuto_sigma">
+ <div expr="(x + integer 1 = y,lradd,0)" class="pedagogic slide" exercise="demo_tuto_rel">
+  <p>The objective is to isolate x by eliminating y+2 by transitivity. Start by forming y+2 on the right hand side of
+   <!--{type="tag" input="s0"}-->, by adding 2 on the left and right side.</p>
  </div>
 </div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))">
- <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))
-	by Backward (red_true_at_rank)
+<div key="slide_demo_tuto_rel_(x + integer 3 = y + integer 2,eq_trans,1)">
+ <!-- 	(x + integer 3 = y + integer 2,eq_trans,1)
+	by Forward eq_trans)
  -->
- <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P (n + 1))" exercise="demo_tuto_sigma">
+ <div expr="(x + integer 3 = y + integer 2,eq_trans,1)" class="pedagogic slide" exercise="demo_tuto_rel">
+  <p>Eliminate y+2 by transitivity.</p>
  </div>
 </div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)">
- <!-- 	((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)
-	by Forward red_true_at_rank)
+<div key="slide_demo_tuto_rel_(zero = x,eq_symmetry,0)">
+ <!-- 	(zero = x,eq_symmetry,0)
+	by Forward eq_symmetry)
  -->
- <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n -> true_at_rank P (n + 1)),true_at_rank P n,red_true_at_rank,0)" exercise="demo_tuto_sigma">
+ <div expr="(zero = x,eq_symmetry,0)" class="pedagogic slide" exercise="demo_tuto_rel">
  </div>
 </div>
-<div key="slide_demo_tuto_sigma_((forall n : Nvar, true_at_rank P n))">
- <!-- 	((forall n : Nvar, true_at_rank P n))
-	by Backward (ind_basic_forall)
- -->
- <div class="pedagogic slide" expr="((forall n : Nvar, true_at_rank P n))" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_demo_tuto_sigma_(true_at_rank P zero)">
- <!-- 	(true_at_rank P zero)
-	by Backward (red_true_at_rank)
- -->
- <div class="pedagogic slide" expr="(true_at_rank P zero)" exercise="demo_tuto_sigma">
- </div>
-</div>
-<div key="slide_logic_connector_tuto_01_(and B A)">
- <!-- 	(and B A)
+<div key="slide_logic_connector_tuto_01_(and A B)">
+ <!-- 	(and A B)
 	by Backward (conj)
  -->
- <div class="pedagogic slide" expr="(and B A)" exercise="logic_connector_tuto_01">
+ <div expr="(and A B)" class="pedagogic slide" exercise="logic_connector_tuto_01">
  </div>
 </div>
 <div key="slide_logic_connector_tuto_02_(and A B,elim_conj_left,0)">
@@ -1177,7 +1077,7 @@
  -->
  <div class="pedagogic slide" expr="(case P (or Q P))" exercise="logic_connector_tuto_04">
   <p>
-   <!--<span class="light-bulb">ń</span>-->To Prove Q ∨ P if <span class="stress">P is true</span>, we need to open a <span class="stress">logical scope</span> with the <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> button. In this scope, P is a hypothesis and Q ∨ P is the conclusion, . </p>
+   <!--<span class="light-bulb">ń</span>-->To Prove Q ∨ P if <span class="stress">P is true</span>, we need to open a <span class="stress">logical scope</span> with the <!--{type="button_section"}--> button. In this scope, P is a hypothesis and Q ∨ P is the conclusion, . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_04_(case P (or Q P),or Q P)">
@@ -1197,7 +1097,7 @@
  -->
  <div class="pedagogic slide" expr="(case Q (or Q P))" exercise="logic_connector_tuto_04">
   <p>
-   <!--<span class="light-bulb">ń</span>-->To Prove Q ∨ P if <span class="stress">Q is true</span>, we need to open a <span class="stress">logical scope</span> with the <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> button. In this scope, Q is a hypothesis and Q ∨ P is the conclusion, . </p>
+   <!--<span class="light-bulb">ń</span>-->To Prove Q ∨ P if <span class="stress">Q is true</span>, we need to open a <span class="stress">logical scope</span> with the <!--{type="button_section"}--> button. In this scope, Q is a hypothesis and Q ∨ P is the conclusion, . </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_04_(case Q (or Q P),or Q P)">
@@ -1256,11 +1156,11 @@
    <!--{type="tag" input="s3_0"}--> . </p>
  </div>
 </div>
-<div key="slide_logic_connector_tuto_07_(B)">
- <!--   (B)
-  by Backward (modus_ponens)
+<div key="slide_logic_connector_tuto_07_(A -> B,modus_ponens,0)">
+ <!-- 	(A -> B,modus_ponens,0)
+	by Forward modus_ponens)
  -->
- <div class="pedagogic slide" expr="(B)" exercise="logic_connector_tuto_07">
+ <div expr="(A -> B,modus_ponens,0)" class="pedagogic slide" exercise="logic_connector_tuto_07">
   <p>
    <!--<span class="light-bulb">ń</span>--> We deduce B from implication
    <!--{type="tag" input="s0"}--> if A is true. </p>
@@ -1292,7 +1192,7 @@
  -->
  <div class="pedagogic slide" expr="(A -> False)" exercise="logic_connector_tuto_08">
   <p>
-   <!--<span class="light-bulb">ń</span>--> The <span class="buttonscope-wrapper"><span class="buttonscope">↵</span></span> button allows to create a scope in which A is a hypothesis.</p>
+   <!--<span class="light-bulb">ń</span>--> The <!--{type="button_section"}--> button allows to create a scope in which A is a hypothesis.</p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_08_(A -> False,B)">
@@ -1305,11 +1205,11 @@
    <!--{type="tag" input="s0"}--> . </p>
  </div>
 </div>
-<div key="slide_logic_connector_tuto_08_(A -> False,False)">
- <!--   (A -> False,False)
-  by Backward (modus_ponens)
+<div key="slide_logic_connector_tuto_08_(B -> False,modus_ponens,0)">
+ <!-- 	(B -> False,modus_ponens,0)
+	by Forward modus_ponens)
  -->
- <div class="pedagogic slide" expr="(A -> False,False)" exercise="logic_connector_tuto_08">
+ <div expr="(B -> False,modus_ponens,0)" class="pedagogic slide" exercise="logic_connector_tuto_08">
   <p>
    <!--<span class="light-bulb">ń</span>--> <span class="stress">Modus ponens</span> allows to justify the false assumption by B using
    <!--{type="tag" input="s2"}--> . </p>
@@ -1325,25 +1225,24 @@
    <!--{type="tag" input="s0"}--> into an implication of the false, by definition of negation. </p>
  </div>
 </div>
-<div key="slide_logic_connector_tuto_09_(A,intro_false,0)">
- <!--   (A,intro_false,0)
-  by Forward intro_false)
+<div key="slide_logic_connector_tuto_09_(False,falseall,0)">
+ <!-- 	(False,falseall,0)
+	by Forward falseall)
  -->
- <div class="pedagogic slide" expr="(A,intro_false,0)" exercise="logic_connector_tuto_09">
+ <div expr="(False,falseall,0)" class="pedagogic slide" exercise="logic_connector_tuto_09">
   <p>
-   <!--<span class="light-bulb">ń</span>--> Click <span class="context">Context</span> ('c' keyboard shortcut) displays statements from upper scopes. The situation is the same as in previous exercise. We can therefore justify the contradiction directly
-   <!--{type="tag" input="s3"}--> by invoking the principle of <span class="buttontheo">non-contradiction.</span> </p>
+   <!--<span class="light-bulb">ń</span>--> Exercise is solved with <span class="buttontheo">Ex Falso Quodlibet</span>. </p>
  </div>
 </div>
-<div key="slide_logic_connector_tuto_09_(B)">
- <!--   (B)
-  by Backward (falseall)
+<div key="slide_logic_connector_tuto_09_(~ A,intro_false,0)">
+ <!-- 	(~ A,intro_false,0)
+	by Forward intro_false)
  -->
- <div class="pedagogic slide" expr="(B)" exercise="logic_connector_tuto_09">
+ <div expr="(~ A,intro_false,0)" class="pedagogic slide" exercise="logic_connector_tuto_09">
   <p>
    <!--<span class="light-bulb">ń</span>--> The obvious contradiction between
    <!--{type="tag" input="s0"}--> and
-   <!--{type="tag" input="s2"}--> invites to justify B with <span class="buttontheo">ex falso Quodlibet.</span> </p>
+   <!--{type="tag" input="s2"}--> invites to use the axiom <span class="buttontheo">non-contradiction</span>, proved in the last exercise.</p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(case (~ A) (or A B))">
@@ -1404,275 +1303,63 @@
    <!--{type="tag" input="s0"}--> is available to justify B as <span class="buttontheo">local theorem.</span> It is noted that this justification acts here as modus ponens. The only difference is that the notion of local theorem extends the modus ponens to expressions containing quantifiers "for every ..." (see next chapter). </p>
  </div>
 </div>
-<div key="slide_logic_quantifier_tuto_01_((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))">
- <!-- 	((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))
-	by Section
+<div key="slide_rew_tuto_develop_(((x ^ integer 2 + integer 3 * x) + integer 2) + integer 3 * x = x ^ integer 2,lrsub,0)">
+ <!-- 	(((x ^ integer 2 + integer 3 * x) + integer 2) + integer 3 * x = x ^ integer 2,lrsub,0)
+	by Forward lrsub)
  -->
- <div class="pedagogic slide" expr="((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))" exercise="logic_quantifier_tuto_01">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_01_((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))">
- <!-- 	((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))
-	by Section
- -->
- <div class="pedagogic slide" expr="((forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x))" exercise="logic_quantifier_tuto_01">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_01_(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))">
- <!-- 	(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))
-	by Backward (ex_intro)
- -->
- <div class="pedagogic slide" expr="(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),(exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)))" exercise="logic_quantifier_tuto_01">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_01_(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))">
- <!-- 	(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))
-	by Backward (intro_or_left)
- -->
- <div class="pedagogic slide" expr="(app_prop O1U A b -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x),(forall y : O1U, app_prop O1U A y -> exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),or (app_prop O1U A b) (app_prop O1U B b))" exercise="logic_quantifier_tuto_01">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_02_((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)">
- <!-- 	((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)
-	by Forward ex_elim)
- -->
- <div class="pedagogic slide" expr="((exists x : O1U, or (app_prop O1U A x) (app_prop O1U B x)),ex_elim,0)" exercise="logic_quantifier_tuto_02">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))">
- <!-- 	(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))
-	by Section
- -->
- <div class="pedagogic slide" expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))" exercise="logic_quantifier_tuto_02">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))">
- <!-- 	(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))
-	by Backward (ex_intro)
- -->
- <div class="pedagogic slide" expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists y : O1U, app_prop O1U A y))" exercise="logic_quantifier_tuto_02">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))">
- <!-- 	(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))
-	by Backward (intro_or_left)
- -->
- <div class="pedagogic slide" expr="(case (app_prop O1U A a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))">
- <!-- 	(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))
-	by Section
- -->
- <div class="pedagogic slide" expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)))" exercise="logic_quantifier_tuto_02">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))">
- <!-- 	(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))
-	by Backward (ex_intro)
- -->
- <div class="pedagogic slide" expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),(exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_02_(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))">
- <!-- 	(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))
-	by Backward (intro_or_right)
- -->
- <div class="pedagogic slide" expr="(case (app_prop O1U B a)  (or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z)),or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_02_(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))">
- <!-- 	(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))
-	by Backward (case_base)
- -->
- <div class="pedagogic slide" expr="(or (exists y : O1U, app_prop O1U A y) (exists z : O1U, app_prop O1U B z))" exercise="logic_quantifier_tuto_02">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))">
- <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))
-	by Section
- -->
- <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)))" exercise="logic_quantifier_tuto_03">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)">
- <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)
-	by Forward apply_forall)
- -->
- <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U A x),apply_forall,0)" exercise="logic_quantifier_tuto_03">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)">
- <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)
-	by Forward apply_forall)
- -->
- <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),(forall x : O1U, app_prop O1U B x),apply_forall,0)" exercise="logic_quantifier_tuto_03">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_03_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))">
- <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))
-	by Backward (conj)
- -->
- <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),and (app_prop O1U A a) (app_prop O1U B a))" exercise="logic_quantifier_tuto_03">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_03_(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)">
- <!-- 	(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)
-	by Forward elim_conj_left)
- -->
- <div class="pedagogic slide" expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_left,0)" exercise="logic_quantifier_tuto_03">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_03_(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)">
- <!-- 	(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)
-	by Forward elim_conj_right)
- -->
- <div class="pedagogic slide" expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x),elim_conj_right,0)" exercise="logic_quantifier_tuto_03">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)">
- <!-- 	((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)
-	by Forward apply_forall)
- -->
- <div class="pedagogic slide" expr="((forall x : O1U, and (app_prop O1U A x) (app_prop O1U B x)),apply_forall,0)" exercise="logic_quantifier_tuto_04">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U A x))">
- <!-- 	((forall x : O1U, app_prop O1U A x))
-	by Section
- -->
- <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U A x))" exercise="logic_quantifier_tuto_04">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)">
- <!-- 	((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)
-	by Forward elim_conj_left)
- -->
- <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U A x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_left,0)" exercise="logic_quantifier_tuto_04">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U B x))">
- <!-- 	((forall x : O1U, app_prop O1U B x))
-	by Section
- -->
- <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U B x))" exercise="logic_quantifier_tuto_04">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_04_((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)">
- <!-- 	((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)
-	by Forward elim_conj_right)
- -->
- <div class="pedagogic slide" expr="((forall x : O1U, app_prop O1U B x),and (app_prop O1U A a) (app_prop O1U B a),elim_conj_right,0)" exercise="logic_quantifier_tuto_04">
- </div>
-</div>
-<div key="slide_logic_quantifier_tuto_04_(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))">
- <!-- 	(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))
-	by Backward (conj)
- -->
- <div class="pedagogic slide" expr="(and (forall x : O1U, app_prop O1U A x) (forall x : O1U, app_prop O1U B x))" exercise="logic_quantifier_tuto_04">
- </div>
-</div>
-<div key="slide_rew_tuto_develop_(((x ^ 2 + 3 * x) + 2) + 3 * x = x ^ 2,lrsub,0)">
- <!--   (((x ^ 2 + 3 * x) + 2) + 3 * x = x ^ 2,lrsub,0)
-  by Forward lrsub)
- -->
- <div class="pedagogic slide" expr="(((x ^ 2 + 3 * x) + 2) + 3 * x = x ^ 2,lrsub,0)" exercise="rew_tuto_develop">
+ <div expr="(((x ^ integer 2 + integer 3 * x) + integer 2) + integer 3 * x = x ^ integer 2,lrsub,0)" class="pedagogic slide" exercise="rew_tuto_develop">
   <p>Note that the term
    <!--{type="expr" input="pow x 2"}--> is present on the left and right sides of equality.</p>
-  <p>We can therefore conclude
-   <!--{type="stress" input="l&#39;éliminer"}--> by left and right subtraction.</p>
+  <p>We can therefore eliminate it by left and right subtraction.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_develop_((x + 1) * (x + 2) + 3 * x = x ^ 2,expand,0)">
- <!--   ((x + 1) * (x + 2) + 3 * x = x ^ 2,expand,0)
-  by Forward select of select ((x + 1) * (x + 2)) + 3 * x = x ^ 2 (expand)
+<div key="slide_rew_tuto_develop_((x + integer 1) * (x + integer 2) + integer 3 * x = x ^ integer 2,expand,0)">
+ <!-- 	((x + integer 1) * (x + integer 2) + integer 3 * x = x ^ integer 2,expand,0)
+	by Forward select of select ((x + integer 1) * (x + integer 2)) + integer 3 * x = x ^ integer 2 (expand)
  -->
- <div class="pedagogic slide" expr="((x + 1) * (x + 2) + 3 * x = x ^ 2,expand,0)" exercise="rew_tuto_develop">
+ <div expr="((x + integer 1) * (x + integer 2) + integer 3 * x = x ^ integer 2,expand,0)" class="pedagogic slide" exercise="rew_tuto_develop">
   <p>The goal is to isolate x on the left.</p>
   <p>Expand the products of factors to obtain a polynomial form.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_develop_(6 * x + 2 = zero,lrsub,0)">
- <!--   (6 * x + 2 = zero,lrsub,0)
-  by Forward lrsub)
+<div key="slide_rew_tuto_develop_(integer 6 * x + integer 2 = zero,lrsub,0)">
+ <!-- 	(integer 6 * x + integer 2 = zero,lrsub,0)
+	by Forward lrsub)
  -->
- <div class="pedagogic slide" expr="(6 * x + 2 = zero,lrsub,0)" exercise="rew_tuto_develop">
+ <div expr="(integer 6 * x + integer 2 = zero,lrsub,0)" class="pedagogic slide" exercise="rew_tuto_develop">
   <p>The situation is now well known : the objective is to isolate, on the left side, the variable of a polynomial form of degree 1.</p>
   <p>Left and right operations allow to conclude.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_develop_(6 * x = - (2),lrdiv,0)">
- <!--   (6 * x = - (2),lrdiv,0)
-  by Forward lrdiv)
+<div key="slide_rew_tuto_develop_(integer 6 * x = - integer 2,lrdiv,0)">
+ <!-- 	(integer 6 * x = - integer 2,lrdiv,0)
+	by Forward lrdiv)
  -->
- <div class="pedagogic slide" expr="(6 * x = - (2),lrdiv,0)" exercise="rew_tuto_develop">
+ <div expr="(integer 6 * x = - integer 2,lrdiv,0)" class="pedagogic slide" exercise="rew_tuto_develop">
   <p>Conclude by division by 6 on left and right sides.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_fact1_(x * (x * (1 + 1 / x ^ 2)) = zero,linearsimpl,0)">
- <!--   (x * (x * (1 + 1 / x ^ 2)) = zero,linearsimpl,0)
-  by Forward select of select (x * x) * (1 + 1 / x ^ 2) = zero (linearsimpl)
+<div key="slide_rew_tuto_fact1_(x <> zero,lrmul_neq,0)">
+ <!-- 	(x <> zero,lrmul_neq,0)
+	by Forward lrmul_neq)
  -->
- <div class="pedagogic slide" expr="(x * (x * (1 + 1 / x ^ 2)) = zero,linearsimpl,0)" exercise="rew_tuto_fact1">
- </div>
-</div>
-<div key="slide_rew_tuto_fact1_(x * (x + 1 / x) = zero,gen_factorize,0)">
- <!--   (x * (x + 1 / x) = zero,gen_factorize,0)
-  by Forward select of x * select (x + 1 / x) = zero (gen_factorize)
- -->
- <div class="pedagogic slide" expr="(x * (x + 1 / x) = zero,gen_factorize,0)" exercise="rew_tuto_fact1">
- </div>
-</div>
-<div key="slide_rew_tuto_fact1_(x ^ 2 + 1 = zero,gen_factorize,0)">
- <!--   (x ^ 2 + 1 = zero,gen_factorize,0)
-  by Forward select of select (x ^ 2 + 1) = zero (gen_factorize)
- -->
- <div class="pedagogic slide" expr="(x ^ 2 + 1 = zero,gen_factorize,0)" exercise="rew_tuto_fact1">
+ <div expr="(x <> zero,lrmul_neq,0)" class="pedagogic slide" exercise="rew_tuto_fact1">
   <p>The objective is to factorize by
    <!--{type="expr" input="pow x 2"}--> .</p>
  </div>
 </div>
-<div key="slide_rew_tuto_fact1_(x ^ 2 <> zero)">
- <!--   (x ^ 2 <> zero)
-  by Backward (elim_pow_ineq_zero)
+<div key="slide_rew_tuto_fact1_(x ^ integer 2 + integer 1 = zero,gen_factorize,0)">
+ <!-- 	(x ^ integer 2 + integer 1 = zero,gen_factorize,0)
+	by Forward select of select (x ^ integer 2 + integer 1) = zero (gen_factorize)
  -->
- <div class="pedagogic slide" expr="(x ^ 2 <> zero)" exercise="rew_tuto_fact1">
-  <p>slide 2</p>
+ <div expr="(x ^ integer 2 + integer 1 = zero,gen_factorize,0)" class="pedagogic slide" exercise="rew_tuto_fact1">
  </div>
 </div>
-<div key="slide_rew_tuto_fact2_((x + 1) * ((x - 3) + x) = 2,linearsimpl,0)">
- <!-- 	((x + 1) * ((x - 3) + x) = 2,linearsimpl,0)
-	by Forward select of (x + 1) * select ((x - 3) + x) = 2 (linearsimpl)
+<div key="slide_rew_tuto_group_(E = (x + integer 1) * (integer 2 * x + (integer 3 + (y - integer 1))),expand,0)">
+ <!-- 	(E = (x + integer 1) * (integer 2 * x + (integer 3 + (y - integer 1))),expand,0)
+	by Forward select of E =select  (UIGroup (x + integer 1) *   (UIGroup (integer 2 * x + integer 3) + UIGroup (y - integer 1))) (expand)
  -->
- <div expr="((x + 1) * ((x - 3) + x) = 2,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
- </div>
-</div>
-<div key="slide_rew_tuto_fact2_((x + 1) * (2 * (x - 3 / 2)) = 2,lrdiv,0)">
- <!-- 	((x + 1) * (2 * (x - 3 / 2)) = 2,lrdiv,0)
-	by Forward lrdiv)
- -->
- <div expr="((x + 1) * (2 * (x - 3 / 2)) = 2,lrdiv,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
- </div>
-</div>
-<div key="slide_rew_tuto_fact2_((x + 1) * (2 * x - 3) = 2,gen_factorize,0)">
- <!-- 	((x + 1) * (2 * x - 3) = 2,gen_factorize,0)
-	by Forward select of (x + 1) * select (2 * x - 3) = 2 (gen_factorize)
- -->
- <div expr="((x + 1) * (2 * x - 3) = 2,gen_factorize,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
- </div>
-</div>
-<div key="slide_rew_tuto_fact2_((x + 1) * (x - 3) + x * (x + 1) = 2,factorize,0)">
- <!-- 	((x + 1) * (x - 3) + x * (x + 1) = 2,factorize,0)
-	by Forward select of select ((x + 1) * (x - 3) + x * (x + 1)) = 2 (factorize)
- -->
- <div expr="((x + 1) * (x - 3) + x * (x + 1) = 2,factorize,0)" class="pedagogic slide" exercise="rew_tuto_fact2">
- </div>
-</div>
-<div key="slide_rew_tuto_group_(E = (x + 1) * (2 * x + (3 + (y - 1))),expand,0)">
- <!-- 	(E = (x + 1) * (2 * x + (3 + (y - 1))),expand,0)
-	by Forward select of E = select (UIGroup (x + 1) * (UIGroup (2 * x + 3) + UIGroup (y - 1))) (expand)
- -->
- <div class="pedagogic slide" expr="(E = (x + 1) * (2 * x + (3 + (y - 1))),expand,0)" exercise="rew_tuto_group">
+ <div expr="(E = (x + integer 1) * (integer 2 * x + (integer 3 + (y - integer 1))),expand,0)" class="pedagogic slide" exercise="rew_tuto_group">
   <p>The objective is to expand the right hand side of
    <!--{type="tag" input="s0"}--> and to keep intact the terms:</p>
   <ul>
@@ -1687,19 +1374,19 @@
   <p>Once the three groups created, develop in the usual manner.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_idrem1_((x ^ 2 + 2 * x) + 1 = 4,polysquare,0)">
- <!--   ((x ^ 2 + 2 * x) + 1 = 4,polysquare,0)
-  by Forward select of select ((x ^ 2 + 2 * x) + 1) = 4 (polysquare)
+<div key="slide_rew_tuto_idrem1_((x ^ integer 2 + integer 2 * x) + integer 1 = integer 4,polysquare,0)">
+ <!-- 	((x ^ integer 2 + integer 2 * x) + integer 1 = integer 4,polysquare,0)
+	by Forward select of select ((x ^ integer 2 + integer 2 * x) + integer 1) = integer 4 (polysquare)
  -->
- <div class="pedagogic slide" expr="((x ^ 2 + 2 * x) + 1 = 4,polysquare,0)" exercise="rew_tuto_idrem1">
+ <div expr="((x ^ integer 2 + integer 2 * x) + integer 1 = integer 4,polysquare,0)" class="pedagogic slide" exercise="rew_tuto_idrem1">
   <p>Conclude by factorising the left hand side with the remarkable formula of polynomial square.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_idrem1_(x ^ 2 + (2 * x - 3) = zero,lradd,0)">
- <!--   (x ^ 2 + (2 * x - 3) = zero,lradd,0)
-  by Forward lradd)
+<div key="slide_rew_tuto_idrem1_(x ^ integer 2 + (integer 2 * x - integer 3) = zero,lradd,0)">
+ <!-- 	(x ^ integer 2 + (integer 2 * x - integer 3) = zero,lradd,0)
+	by Forward lradd)
  -->
- <div class="pedagogic slide" expr="(x ^ 2 + (2 * x - 3) = zero,lradd,0)" exercise="rew_tuto_idrem1">
+ <div expr="(x ^ integer 2 + (integer 2 * x - integer 3) = zero,lradd,0)" class="pedagogic slide" exercise="rew_tuto_idrem1">
   <p>The objective is to factorize on the left side.</p>
   <p>Note that the left-hand side term is almost the development of
    <!--{type="expr" input="pow (x+1) 2"}--> , according to the remarkable formula.</p>
@@ -1707,73 +1394,45 @@
    <!--{type="expr" input="((pow x 2)+(2*x))+1"}--> by adding 4 left and right.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_idrem2_((x - 3) * (x + 3) + (x + 3) = zero,factorize,0)">
- <!-- 	((x - 3) * (x + 3) + (x + 3) = zero,factorize,0)
-	by Forward select of select (((x - 3) * (x + 3) + x) + 3) = zero (factorize)
+<div key="slide_rew_tuto_misc1_((x + integer 3) * ((x + integer 2) * (x + integer 1)) = zero,commutativity,0)">
+ <!-- 	((x + integer 3) * ((x + integer 2) * (x + integer 1)) = zero,commutativity,0)
+	by Forward select of select (((x + integer 3) * (x + integer 2)) * (x + integer 1)) = zero (commutativity)
  -->
- <div expr="((x - 3) * (x + 3) + (x + 3) = zero,factorize,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
- </div>
-</div>
-<div key="slide_rew_tuto_idrem2_((x - 3) * (x + 3) = - (x + 3),lradd,0)">
- <!-- 	((x - 3) * (x + 3) = - (x + 3),lradd,0)
-	by Forward lradd)
- -->
- <div expr="((x - 3) * (x + 3) = - (x + 3),lradd,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
- </div>
-</div>
-<div key="slide_rew_tuto_idrem2_(x ^ 2 - 3 = - x + 3,lrsub,0)">
- <!-- 	(x ^ 2 - 3 = - x + 3,lrsub,0)
-	by Forward lrsub)
- -->
- <div expr="(x ^ 2 - 3 = - x + 3,lrsub,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
- </div>
-</div>
-<div key="slide_rew_tuto_idrem2_(x ^ 2 - 9 = - (x + 3),square_diff,0)">
- <!-- 	(x ^ 2 - 9 = - (x + 3),square_diff,0)
-	by Forward select of select (x ^ 2 - 9) = - (x + 3) (square_diff)
- -->
- <div expr="(x ^ 2 - 9 = - (x + 3),square_diff,0)" class="pedagogic slide" exercise="rew_tuto_idrem2">
- </div>
-</div>
-<div key="slide_rew_tuto_misc1_((x + 3) * ((x + 2) * (x + 1)) = zero,commutativity,0)">
- <!--   ((x + 3) * ((x + 2) * (x + 1)) = zero,commutativity,0)
-  by Forward select of select (((x + 3) * (x + 2)) * (x + 1)) = zero (commutativity)
- -->
- <div class="pedagogic slide" expr="((x + 3) * ((x + 2) * (x + 1)) = zero,commutativity,0)" exercise="rew_tuto_misc1">
+ <div expr="((x + integer 3) * ((x + integer 2) * (x + integer 1)) = zero,commutativity,0)" class="pedagogic slide" exercise="rew_tuto_misc1">
   <p>Select the terms to reorder by commutative operation.</p>
   <p>Rearrange the term directly in the diagnostics window by dragging and dropping terms of the product.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_misc2_(x = 2 * (x + 1),rewriting,0)">
- <!--   (x = 2 * (x + 1),rewriting,0)
-  by Forward select of x = 2 * select (x + 1) (rewriting)
+<div key="slide_rew_tuto_misc2_(x = integer 2 * (x + integer 1),rewriting,0)">
+ <!-- 	(x = integer 2 * (x + integer 1),rewriting,0)
+	by Forward select of x = integer 2 * select (x + integer 1) (rewriting)
  -->
- <div class="pedagogic slide" expr="(x = 2 * (x + 1),rewriting,0)" exercise="rew_tuto_misc2">
+ <div expr="(x = integer 2 * (x + integer 1),rewriting,0)" class="pedagogic slide" exercise="rew_tuto_misc2">
   <p>The goal is to isolate x on the left. Note in assumption
    <!--{type="tag" input="s2"}--> that one factor on the right hand side right
    <!--{type="expr" input="x+1"}--> , is equal to 4 under the assumption
-   <!--{type="tag" input="s1"}--> .</p>
+   <!--{type="tag" input="s0"}--> .</p>
   <p>So just replace
    <!--{type="expr" input="x+1"}--> by 4 using
-   <!--{type="tag" input="s1"}--> as justification.</p>
+   <!--{type="tag" input="s0"}--> as justification.</p>
   <p>Start by selecting <span class="stress"> with the mouse</span> the term
    <!--{type="expr" input="x+1"}--> in
    <!--{type="tag" input="s2"}--> .</p>
  </div>
 </div>
-<div key="slide_rew_tuto_op_((x + 1) / ((y + 2) - 2) = zero,rewriting,0)">
- <!--   ((x + 1) / ((y + 2) - 2) = zero,rewriting,0)
-  by Forward select of (x + 1) / (select (y + 2) - 2) = zero (rewriting)
+<div key="slide_rew_tuto_op_((x + integer 1) / ((y + integer 2) - integer 2) = zero,rewriting,0)">
+ <!-- 	((x + integer 1) / ((y + integer 2) - integer 2) = zero,rewriting,0)
+	by Forward select of (x + integer 1) / (select (y + integer 2) - integer 2) = zero (rewriting)
  -->
- <div class="pedagogic slide" expr="((x + 1) / ((y + 2) - 2) = zero,rewriting,0)" exercise="rew_tuto_op">
-  <p>Conclude by adding 2 on the left and right sides.</p>
+ <div expr="((x + integer 1) / ((y + integer 2) - integer 2) = zero,rewriting,0)" class="pedagogic slide" exercise="rew_tuto_op">
+  <p>Conclude by replacing y+2 in <!--{type="tag" input="s3"}--> by x by <!--{type="tag" input="s0"}-->.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_op_((x + 1) / y = zero,addsub,0)">
- <!--   ((x + 1) / y = zero,addsub,0)
-  by Forward select of (x + 1) / select y = zero (addsub)
+<div key="slide_rew_tuto_op_((x + integer 1) / y = zero,addsub,0)">
+ <!-- 	((x + integer 1) / y = zero,addsub,0)
+	by Forward select of (x + integer 1) / select y = zero (addsub)
  -->
- <div class="pedagogic slide" expr="((x + 1) / y = zero,addsub,0)" exercise="rew_tuto_op">
+ <div expr="((x + integer 1) / y = zero,addsub,0)" class="pedagogic slide" exercise="rew_tuto_op">
   <p>The objective is to get statement
    <!--{type="tag" input="s1"}--> by transforming y at the denominator of
    <!--{type="tag" input="s2"}--> into
@@ -1786,69 +1445,69 @@
    <!--{type="tag" input="s0"}-->.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_simpl2_((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)">
- <!-- 	((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)
+<div key="slide_rew_tuto_simpl2_(((x + integer 1) + integer 2 * (x - integer 2)) /((x + integer 1) * (x - integer 2)) = zero,lrmul,0)">
+ <!-- 	(((x + integer 1) + integer 2 * (x - integer 2)) /((x + integer 1) * (x - integer 2)) = zero,lrmul,0)
 	by Forward lrmul)
  -->
- <div expr="((2 * (x - 2) + (x + 1)) / ((x - 2) * (x + 1)) = zero,lrmul,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
+ <div expr="(((x + integer 1) + integer 2 * (x - integer 2)) /((x + integer 1) * (x - integer 2)) = zero,lrmul,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
  </div>
 </div>
-<div key="slide_rew_tuto_simpl2_((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)">
- <!-- 	((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)
-	by Forward select of select ((x + 2 * (x - 2)) + 1) = zero (linearsimpl)
+<div key="slide_rew_tuto_simpl2_((x + integer 2 * (x - integer 2)) + integer 1 = zero,linearsimpl,0)">
+ <!-- 	((x + integer 2 * (x - integer 2)) + integer 1 = zero,linearsimpl,0)
+	by Forward select of select ((integer 2 * (x - integer 2) + x) + integer 1) = zero (linearsimpl)
  -->
- <div expr="((2 * (x - 2) + x) + 1 = zero,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
+ <div expr="((x + integer 2 * (x - integer 2)) + integer 1 = zero,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
  </div>
 </div>
-<div key="slide_rew_tuto_simpl2_(2 / (x + 1) + 1 / (x - 2) = zero,reducedenom,0)">
- <!--   (2 / (x + 1) + 1 / (x - 2) = zero,reducedenom,0)
-  by Forward select of select (2 / (x + 1) + 1 / (x - 2)) = zero (reducedenom)
+<div key="slide_rew_tuto_simpl2_(integer 2 / (x + integer 1) + integer 1 / (x - integer 2) = zero,reducedenom,0)">
+ <!-- 	(integer 2 / (x + integer 1) + integer 1 / (x - integer 2) = zero,reducedenom,0)
+	by Forward select of select (integer 2 / (x + integer 1) + integer 1 / (x - integer 2)) = zero (reducedenom)
  -->
- <div class="pedagogic slide" expr="(2 / (x + 1) + 1 / (x - 2) = zero,reducedenom,0)" exercise="rew_tuto_simpl2">
+ <div expr="(integer 2 / (x + integer 1) + integer 1 / (x - integer 2) = zero,reducedenom,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
   <p>The goal is to isolate x on the left.</p>
   <p>Start by reducing polynomial fractions to the same denominator,
    <!--{type="expr" input="(x+1)*(x-2)"}--> .</p>
  </div>
 </div>
-<div key="slide_rew_tuto_simpl2_(3 * x - 3 = zero,lradd,0)">
- <!--   (3 * x - 3 = zero,lradd,0)
-  by Forward lradd)
+<div key="slide_rew_tuto_simpl2_(integer 3 * x - integer 3 = zero,lradd,0)">
+ <!-- 	(integer 3 * x - integer 3 = zero,lradd,0)
+	by Forward lradd)
  -->
- <div class="pedagogic slide" expr="(3 * x - 3 = zero,lradd,0)" exercise="rew_tuto_simpl2">
+ <div expr="(integer 3 * x - integer 3 = zero,lradd,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
   <p>The situation is increasingly simple. Use left and right operations to isolate x.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_simpl2_(3 * x = 3,lrdiv,0)">
- <!--   (3 * x = 3,lrdiv,0)
-  by Forward lrdiv)
+<div key="slide_rew_tuto_simpl2_(integer 3 * x = integer 3,lrdiv,0)">
+ <!-- 	(integer 3 * x = integer 3,lrdiv,0)
+	by Forward lrdiv)
  -->
- <div class="pedagogic slide" expr="(3 * x = 3,lrdiv,0)" exercise="rew_tuto_simpl2">
+ <div expr="(integer 3 * x = integer 3,lrdiv,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
   <p>Concluded by dividing by 3 on the left and right sides.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_simpl_(3 * x + 4 = 10,lrsub,0)">
- <!--   (3 * x + 4 = 10,lrsub,0)
-  by Forward lrsub)
+<div key="slide_rew_tuto_simpl_(integer 3 * x + integer 4 = integer 10,lrsub,0)">
+ <!-- 	(integer 3 * x + integer 4 = integer 10,lrsub,0)
+	by Forward lrsub)
  -->
- <div class="pedagogic slide" expr="(3 * x + 4 = 10,lrsub,0)" exercise="rew_tuto_simpl">
+ <div expr="(integer 3 * x + integer 4 = integer 10,lrsub,0)" class="pedagogic slide" exercise="rew_tuto_simpl">
   <p>The objective of isolation of x is achieved with the left and right operations introduced in the previous chapter.</p>
   <p>Subtract 4 on the left and right sides to isolate
    <!--{type="expr" input="3*x"}--> .</p>
  </div>
 </div>
-<div key="slide_rew_tuto_simpl_(3 * x = 6,lrdiv,0)">
- <!--   (3 * x = 6,lrdiv,0)
-  by Forward lrdiv)
+<div key="slide_rew_tuto_simpl_(integer 3 * x = integer 6,lrdiv,0)">
+ <!-- 	(integer 3 * x = integer 6,lrdiv,0)
+	by Forward lrdiv)
  -->
- <div class="pedagogic slide" expr="(3 * x = 6,lrdiv,0)" exercise="rew_tuto_simpl">
+ <div expr="(integer 3 * x = integer 6,lrdiv,0)" class="pedagogic slide" exercise="rew_tuto_simpl">
   <p>Divide by 3 on te left and right sides in order to conclude.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_simpl_(x + (1 + (2 * x + 3)) = 10,linearsimpl,0)">
- <!--   (x + (1 + (2 * x + 3)) = 10,linearsimpl,0)
-  by Forward select of select (((x + 1) + 2 * x) + 3) = 10 (linearsimpl)
+<div key="slide_rew_tuto_simpl_(x + (integer 1 + (integer 2 * x + integer 3)) = integer 10,linearsimpl,0)">
+ <!-- 	(x + (integer 1 + (integer 2 * x + integer 3)) = integer 10,linearsimpl,0)
+	by Forward select of select (((x + integer 1) + integer 2 * x) + integer 3) = integer 10 (linearsimpl)
  -->
- <div class="pedagogic slide" expr="(x + (1 + (2 * x + 3)) = 10,linearsimpl,0)" exercise="rew_tuto_simpl">
+ <div expr="(x + (integer 1 + (integer 2 * x + integer 3)) = integer 10,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_simpl">
   <p>The goal is to isolate x on the left. Note that the left term of assumption
    <!--{type="tag" input="s0"}--> is a sum of first degree polynomial form in x,
    <!--{type="expr" input="x+1"}--> and
@@ -1856,40 +1515,40 @@
   <p>Simplify these terms into a polynomial form.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_varchange_((a - 3) ^ 2 = zero,rewriting,0)">
- <!--   ((a - 3) ^ 2 = zero,rewriting,0)
-  by Forward select of (select a - 3) ^ 2 = zero (rewriting)
+<div key="slide_rew_tuto_varchange_((a - integer 3) ^ integer 2 = zero,rewriting,0)">
+ <!-- 	((a - integer 3) ^ integer 2 = zero,rewriting,0)
+	by Forward select of (select a - integer 3) ^ integer 2 = zero (rewriting)
  -->
- <div class="pedagogic slide" expr="((a - 3) ^ 2 = zero,rewriting,0)" exercise="rew_tuto_varchange">
+ <div expr="((a - integer 3) ^ integer 2 = zero,rewriting,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
   <p>Conclude by replacing a by
    <!--{type="expr" input="pow x 2"}--> .</p>
  </div>
 </div>
-<div key="slide_rew_tuto_varchange_((a ^ 2 - 6 * a) + 9 = zero,polysquare,0)">
- <!--   ((a ^ 2 - 6 * a) + 9 = zero,polysquare,0)
-  by Forward select of select ((a ^ 2 - 6 * a) + 9) = zero (polysquare)
+<div key="slide_rew_tuto_varchange_((a ^ integer 2 - integer 6 * a) + integer 9 = zero,polysquare,0)">
+ <!-- 	((a ^ integer 2 - integer 6 * a) + integer 9 = zero,polysquare,0)
+	by Forward select of select ((a ^ integer 2 - integer 6 * a) + integer 9) = zero (polysquare)
  -->
- <div class="pedagogic slide" expr="((a ^ 2 - 6 * a) + 9 = zero,polysquare,0)" exercise="rew_tuto_varchange">
+ <div expr="((a ^ integer 2 - integer 6 * a) + integer 9 = zero,polysquare,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
   <p>On the left hand side is the square of
    <!--{type="expr" input="a-3"}--> .</p>
  </div>
 </div>
-<div key="slide_rew_tuto_varchange_((x ^ 4 - 6 * a) + 9 = zero,rewriting,1)">
- <!--   ((x ^ 4 - 6 * a) + 9 = zero,rewriting,1)
-  by Forward select of (select (x ^ 4) - 6 * a) + 9 = zero (rewriting)
+<div key="slide_rew_tuto_varchange_((x ^ integer 4 - integer 6 * a) + integer 9 = zero,rewriting,1)">
+ <!-- 	((x ^ integer 4 - integer 6 * a) + integer 9 = zero,rewriting,1)
+	by Forward select of (select (x ^ integer 4) - integer 6 * a) + integer 9 = zero (rewriting)
  -->
- <div class="pedagogic slide" expr="((x ^ 4 - 6 * a) + 9 = zero,rewriting,1)" exercise="rew_tuto_varchange">
+ <div expr="((x ^ integer 4 - integer 6 * a) + integer 9 = zero,rewriting,1)" class="pedagogic slide" exercise="rew_tuto_varchange">
   <p>Replace
    <!--{type="expr" input="pow x 4"}--> by
    <!--{type="expr" input="pow a 2"}--> in
    <!--{type="expr" input="s3"}--> .</p>
  </div>
 </div>
-<div key="slide_rew_tuto_varchange_((x ^ 4 - 6 * x ^ 2) + 9 = zero,varchange,0)">
- <!--   ((x ^ 4 - 6 * x ^ 2) + 9 = zero,varchange,0)
-  by Forward select of (x ^ 4 - 6 * select (x ^ 2)) + 9 = zero (varchange)
+<div key="slide_rew_tuto_varchange_((x ^ integer 4 - integer 6 * x ^ integer 2) + integer 9 = zero,varchange,0)">
+ <!-- 	((x ^ integer 4 - integer 6 * x ^ integer 2) + integer 9 = zero,varchange,0)
+	by Forward select of (x ^ integer 4 - integer 6 * select (x ^ integer 2)) + integer 9 = zero (varchange)
  -->
- <div class="pedagogic slide" expr="((x ^ 4 - 6 * x ^ 2) + 9 = zero,varchange,0)" exercise="rew_tuto_varchange">
+ <div expr="((x ^ integer 4 - integer 6 * x ^ integer 2) + integer 9 = zero,varchange,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
   <p>The objective is to factorize the left-hand side of assumption
    <!--{type="tag" input="s0"}--> .</p>
   <p>At first glance it is just a degree 4 polynomial form, but looking more closely, it is a polynomial form of degree 2 in
@@ -1897,28 +1556,20 @@
   <p>Change variable accordingly.</p>
  </div>
 </div>
-<div key="slide_rew_tuto_varchange_(a = x ^ 2)">
- <!--   (a = x ^ 2)
-  by Backward (replacement)
+<div key="slide_rew_tuto_varchange_(a = x ^ integer 2)">
+ <!-- 	(a = x ^ integer 2)
+	by Backward (replacement)
  -->
- <div class="pedagogic slide" expr="(a = x ^ 2)" exercise="rew_tuto_varchange">
-  <p>slide 5</p>
+ <div expr="(a = x ^ integer 2)" class="pedagogic slide" exercise="rew_tuto_varchange">
  </div>
 </div>
-<div key="slide_rew_tuto_varchange_(a = x ^ 2,app_square,0)">
- <!--   (a = x ^ 2,app_square,0)
-  by Forward app_square)
+<div key="slide_rew_tuto_varchange_(a = x ^ integer 2,app_square,0)">
+ <!-- 	(a = x ^ integer 2,app_square,0)
+	by Forward app_square)
  -->
- <div class="pedagogic slide" expr="(a = x ^ 2,app_square,0)" exercise="rew_tuto_varchange">
+ <div expr="(a = x ^ integer 2,app_square,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
   <p>Definition of a is squareed to get
    <!--{type="expr" input="pow x 4"}--> as a function of a.</p>
- </div>
-</div>
-<div key="slide_rew_tuto_varchange_(a ^ 2 = x ^ 4,linearsimpl,0)">
- <!-- 	(a ^ 2 = x ^ 4,linearsimpl,0)
-	by Forward select of a ^ 2 = select ((x ^ 2) ^ 2) (linearsimpl)
- -->
- <div expr="(a ^ 2 = x ^ 4,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
  </div>
 </div>
 <div class="toolbox-text custom pedagogic confuse" key="text_Antonym1">
@@ -1944,6 +1595,15 @@
 </div>
 <div class="toolbox-text custom pedagogic appdef" key="text_app_def">
  <p>One can apply a function to a value that belongs to its domain, as exampled below: </p>
+</div>
+<div key="text_app_def_rewrite">
+ <!--TODO-->
+</div>
+<div key="text_app_inverse_bounded">
+ <!--TODO-->
+</div>
+<div key="text_app_opposite_bounded">
+ <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic lrapply" key="text_app_sqrt">
  <p>Applies square root, if the value is positive.</p>
@@ -2085,8 +1745,8 @@
   <!--{type="expr" input="R2"}--> a relation on B×C, then composition of
   <!--{type="expr" input="R1"}--> and
   <!--{type="expr" input="R2"}-->, noted
-  <!--{type="expr" input="RComp U U U A B C R1 R2"}-->, is the relation on A×C such that an élément x of A is in relation with an element z of C by
-  <!--{type="expr" input="RComp U U U A B C R1 R2"}-->, if x and z are in relation with an element y of B, respectively on the left y by
+  <!--{type="expr" input="RComp R1 R2"}-->, is the relation on A×C such that an élément x of A is in relation with an element z of C by
+  <!--{type="expr" input="RComp R1 R2"}-->, if x and z are in relation with an element y of B, respectively on the left y by
   <!--{type="expr" input="R1"}--> and on the left by
   <!--{type="expr" input="R2"}--> : </p>
 </div>
@@ -2096,7 +1756,7 @@
 <div class="toolbox-text custom pedagogic" key="text_def_rident">
  <p>The graph of the identity relation on set E, noted
   <!--{type="expr" input="RIdent U E"}--> is all couples
-  <!--{type="expr" input="upair U U x x"}--> where x belongs to E. </p>
+  <!--{type="expr" input="upair x x"}--> where x belongs to E. </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rinj">
  <p>A relation of A×B is injective if an element of B is related to at most one element of A. In other words, an element of B in relation by R, is in relation with only one element of A. In other words again, if two elements of a are in relation with an element of B by an injective relation, then these two elements are the same. </p>
@@ -2172,17 +1832,17 @@
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_scomp">
  <p> The complement of a set A in the universe U, denoted "
-  <!--{type="expr" input="scomp U (sall U) A"}--> " and read "complement of A in U" or simply "complement of A", contains elements that are not in A: </p>
+  <!--{type="expr" input="scomp (sall U) A"}--> " and read "complement of A in U" or simply "complement of A", contains elements that are not in A: </p>
  <span style="position:relative;left:-20px;display:inherit;width:110%;text-align:center;padding-bottom:0px;background-color:rgba(0,172,231,1)"> <img src="./svg/complement.svg" style="width:auto;height:150px;position:relative"> </span>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_sdiff">
  <p> The relative complement of two sets A and B, denoted "
-  <!--{type="expr" input="sdiff U A B"}-->" contains the elements that are in A and not in B: </p>
+  <!--{type="expr" input="sdiff A B"}-->" contains the elements that are in A and not in B: </p>
  <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px;position:relative"> <img src="./svg/diff.svg" style="width:auto;height:150px"> </span>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_sequiv">
  <p>The equivalence class of an element x by a relation R on a set E, denoted
-  <!--{type="expr" input="sequiv U E x R"}--> , is the set of elements related to x by R.</p>
+  <!--{type="expr" input="sequiv x R"}--> , is the set of elements related to x by R.</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_set_lteq">
  <p>A set is included in another if and only if being an element of it implies being element of the other.</p>
@@ -2196,7 +1856,7 @@
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_sinter">
  <p> The intersection of two sets A and B, denoted "
-  <!--{type="expr" input="sinter U A B"}--> " and read "A inter B" contains the elements that are in both A and B: </p>
+  <!--{type="expr" input="sinter A B"}--> " and read "A inter B" contains the elements that are in both A and B: </p>
  <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px;position:relative"> <img src="./svg/inter.svg" style="width:auto;height:150px"> </span>
 </div>
 <div key="text_elim_sis_decreasing">
@@ -2213,14 +1873,14 @@
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_subset">
  <p> <a href="https://fr.wikipedia.org/wiki/Ensemble_des_parties_d%27un_ensemble" target="_blank">The power set</a> of a set A, denoted
-  <!--{type="expr" input="ssubset U A"}--> , is the set of subsets of A. </p>
+  <!--{type="expr" input="ssubset A"}--> , is the set of subsets of A. </p>
  <p> In particular we deduce that
-  <!--{type="prop" sci="true" input="sis_element A (ssubset U A)"}--> since
-  <!--{type="prop" sci="true" input="set_lteq U A A"}--> by definition of inclusion. </p>
+  <!--{type="prop" sci="true" input="sis_element A (ssubset A)"}--> since
+  <!--{type="prop" sci="true" input="set_lteq A A"}--> by definition of inclusion. </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_sunion">
  <p> The union of two sets A and B, denoted "
-  <!--{type="expr" input="sunion U A B"}--> " and read "A union B" contains the elements that either A or B in: </p>
+  <!--{type="expr" input="sunion A B"}--> " and read "A union B" contains the elements that either A or B in: </p>
  <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px;position:relative"> <img src="./svg/union.svg" style="width:auto;height:150px"> </span>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_true_at_rank">
@@ -2255,20 +1915,20 @@
 </div>
 <div class="toolbox-text custom pedagogic" key="text_ex_elim">
  <p> The deduction from an existence
-  <!--{type="prop" sci="true" input="exists x, app_prop U F x"}--> <span class="stress">declares an element</span> x that verifies the proposition
-  <!--{type="prop" sci="true" input="app_prop U F x"}--> . </p>
+  <!--{type="prop" sci="true" input="exists x, app_prop F x"}--> <span class="stress">declares an element</span> x that verifies the proposition
+  <!--{type="prop" sci="true" input="app_prop F x"}--> . </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_ex_intro">
  <p> Proving existence is about <span class="stress">finding an element</span> for which the statement is true. Such an element is called a <span class="stress">witness</span> of the proof
-  <!--{type="prop" sci="true" input="exists (x:O1U), app_prop O1U F x"}--> . </p>
+  <!--{type="prop" sci="true" input="exists (x:O1U), app_prop F x"}--> . </p>
  <!-- <p>Trouver un témoin consiste à trouver une valeur pour l'<span class="stress">inconnue de raisonnement</span> <span class="evar" style="font-size:15px">x?</span> </p> -->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_exists">
  <p> The statement that F is true for an element x is denoted
-  <!--{type="prop" sci="true" input="app_prop U F x"}--> and read "F of x". </p>
+  <!--{type="prop" sci="true" input="app_prop F x"}--> and read "F of x". </p>
  <p> The existence of an element x such that F (x) is true, denoted
-  <!--{type="prop" sci="true" input="exists (x:O1U), app_prop O1U F x"}--> and read "there exists x such that x F" is true if, for a value t, we can prove
-  <!--{type="prop" sci="true" input="app_prop U F t"}--> . The operator ∃ is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Quantificateur_(logique)" target="_blank">existential quantifier</a></span> . </p>
+  <!--{type="prop" sci="true" input="exists (x:O1U), app_prop F x"}--> and read "there exists x such that x F" is true if, for a value t, we can prove
+  <!--{type="prop" sci="true" input="app_prop F t"}--> . The operator ∃ is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Quantificateur_(logique)" target="_blank">existential quantifier</a></span> . </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_expand">
  <p>Full development of product of factors.</p>
@@ -2290,8 +1950,8 @@
 </div>
 <div class="toolbox-text custom pedagogic" key="text_forall">
  <p> The statement that F is true for every value x, denoted
-  <!--{type="prop" sci="true" input="forall (x:O1U), (app_prop O1U F x)"}--> and read "for every x, F x" is true if we can prove
-  <!--{type="prop" sci="true" input="app_prop O1U F x"}--> for any element x. The operator ∀ is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Quantificateur_(logique)" target="_blank">universal quantifier</a></span> . </p>
+  <!--{type="prop" sci="true" input="forall (x:O1U), (app_prop F x)"}--> and read "for every x, F x" is true if we can prove
+  <!--{type="prop" sci="true" input="app_prop F x"}--> for any element x. The operator ∀ is called <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Quantificateur_(logique)" target="_blank">universal quantifier</a></span> . </p>
 </div>
 <div key="text_funop">
  <!--TODO-->
@@ -2329,11 +1989,34 @@
   <!--{type="prop" sci="true" style="vertical-align:-3px;" input="ExprGT b a"}--> . </p>
 </div>
 <div class="toolbox-text custom pedagogic appdef" key="text_ineqapp">
- <p>A function can be applied to the left and right sides of an inequality, without changing its sense, if the left and right sides values belong to the domain of definition of f, and the f is increasing on this domain.</p>
+ <p>A function can be applied to the left and right sides of an inequality, without changing its sense, if the left and right sides values belong to the domain of definition of f, and if f is increasing on this domain.</p>
 </div>
-<div class="toolbox-text custom pedagogic" key="text_ineqbound">
- <p>Double inequality is equivalent to two inequalities. </p>
- <p>Left and right sides operations for inequalities are also available for double inequality.</p>
+<div key="text_ineqbound_application" class="toolbox-text custom pedagogic">
+ <p>A function can be applied to the left, right and center of a double inequality, without changing its sens, if the left and right values belong to the domain of definition of f, and if f is increasing on this domain.</p>
+</div>
+<div key="text_ineqbound_comb_add">
+ <!--TODO-->
+</div>
+<div key="text_ineqbound_comb_mul">
+ <!--TODO-->
+</div>
+<div key="text_ineqbound_comb_sub">
+ <!--TODO-->
+</div>
+<div key="text_ineqbound_combination" class="toolbox-text custom pedagogic">
+ <p>Two double inequalities may be combined by addition subtraction or multiplication.</p>
+</div>
+<div key="text_ineqbound_conversion">
+ <!--TODO-->
+</div>
+<div key="text_ineqbound_operations" class="toolbox-text custom pedagogic">
+ <p>Operations on the left, right and center allow to tranform a double inequality by adding, subtracting, multiplying or dividing by a value. </p>
+</div>
+<div key="text_ineqbound_relation" class="toolbox-text custom pedagogic">
+ <p>The transitivity property of inequality is available for double inequality.</p>
+</div>
+<div key="text_ineqbound_trans">
+ <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_ineqcomb">
  <p>Two inequalities can be combined by addition or subtraction of left and right sides.</p>
@@ -2627,9 +2310,9 @@
 </div>
 <div class="toolbox-text custom pedagogic" key="text_setgraph">
  <p> The set of couples
-  <!--{type="expr" input="upair U U x y"}--> in relation by R is denoted "
-  <!--{type="prop" sci="true" input="gen_app_rel U U A B R x y"}--> ". This set is the <span class="stress">graph</span> of the relation R. The graph is a subset of the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Produit_cart%C3%A9sien" target="_blank">Cartesian product</a></span>
-  <!--{type="expr" input="(pprod U (ExSet U) A B)"}--> . </p>
+  <!--{type="expr" input="upair x y"}--> in relation by R is denoted "
+  <!--{type="prop" sci="true" input="gen_app_rel R x y"}--> ". This set is the <span class="stress">graph</span> of the relation R. The graph is a subset of the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Produit_cart%C3%A9sien" target="_blank">Cartesian product</a></span>
+  <!--{type="expr" input="(pprod A B)"}--> . </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_setops">
  <p>If the universe is the set of points of the plane, a set may be represented by a set of all points inside a closed border, ie by a surface. In this case, set operations may be represented by the blue surfaces below. </p>
