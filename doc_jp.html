@@ -1466,9 +1466,11 @@
   by Section
  -->
  <div class="pedagogic slide" expr="(case (~ A) (or A B))" exercise="logic_connector_tuto_10">
+  <!-- <p> -->
+  <!--  <\!--<span class="light-bulb">ń</span>-\-> When ¬A is true, we prove "A ∨ B" by selecting B, obtained by deduction from obtained ¬A using -->
+  <!--  <\!--{type="tag" input="s0"}-\-> . </p> -->
   <p>
-   <!--<span class="light-bulb">ń</span>--> When ¬A is true, we prove "A ∨ B" by selecting B, obtained by deduction from obtained ¬A using
-   <!--{type="tag" input="s0"}--> . </p>
+   <!--<span class="light-bulb">ń</span>--> ¬Aが真であるとき、Bを選ぶことで"A ∨ B"を証明する。これは¬Aより<!--{type="tag" input="s0"}-->で演繹することで得られる。 </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(case (~ A) (or A B),or A B)">
@@ -1476,9 +1478,11 @@
   by Backward (intro_or_right)
  -->
  <div class="pedagogic slide" expr="(case (~ A) (or A B),or A B)" exercise="logic_connector_tuto_10">
-  <p>
-   <!--<span class="light-bulb">ń</span>--> When ¬A is true, we prove "A ∨ B" by selecting B, obtained by deduction from ¬A using
-   <!--{type="tag" input="s0"}--> . </p>
+  <!-- <p> -->
+  <!--  <\!--<span class="light-bulb">ń</span>-\-> When ¬A is true, we prove "A ∨ B" by selecting B, obtained by deduction from ¬A using -->
+  <!--  <\!--{type="tag" input="s0"}-\-> . </p> -->
+  <!-- <p> -->
+   <!--<span class="light-bulb">ń</span>--> ¬Aが真であるとき、Bを選ぶことで"A ∨ B"を証明する。これは¬Aより<!--{type="tag" input="s0"}-->で演繹することで得られる。 </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(case A (or A B))">
@@ -1486,8 +1490,10 @@
   by Section
  -->
  <div class="pedagogic slide" expr="(case A (or A B))" exercise="logic_connector_tuto_10">
+  <!-- <p> -->
+  <!--  <\!--<span class="light-bulb">ń</span>-\-> If A is true, we prove "A ∨ B" by choosing A. </p> -->
   <p>
-   <!--<span class="light-bulb">ń</span>--> If A is true, we prove "A ∨ B" by choosing A. </p>
+   <!--<span class="light-bulb">ń</span>--> Aが真であるとき、Aを選ぶことで"A ∨ B"を証明する。 </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(case A (or A B),or A B)">
@@ -1495,8 +1501,10 @@
   by Backward (intro_or_left)
  -->
  <div class="pedagogic slide" expr="(case A (or A B),or A B)" exercise="logic_connector_tuto_10">
+  <!-- <p> -->
+  <!--  <\!--<span class="light-bulb">ń</span>-\-> If A is true, we prove "A ∨ B" by choosing A. </p> -->
   <p>
-   <!--<span class="light-bulb">ń</span>--> If A is true, we prove "A ∨ B" by choosing A. </p>
+   <!--<span class="light-bulb">ń</span>--> Aが真であるとき、Aを選ぶことで"A ∨ B"を証明する。 </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(or A B)">
@@ -1504,9 +1512,11 @@
   by Backward (case_base_binary)
  -->
  <div class="pedagogic slide" expr="(or A B)" exercise="logic_connector_tuto_10">
+  <!-- <p> -->
+  <!--  <\!--<span class="light-bulb">ń</span>-\-> The law of <span class="buttontheo">the excluded middle</span> allows to consider two cases to prove -->
+  <!--  <\!--{type="tag" input="s1"}-\-> : if A is true and when ¬ A is true. </p> -->
   <p>
-   <!--<span class="light-bulb">ń</span>--> The law of <span class="buttontheo">the excluded middle</span> allows to consider two cases to prove
-   <!--{type="tag" input="s1"}--> : if A is true and when ¬ A is true. </p>
+   <!--<span class="light-bulb">ń</span>--> <span class="buttontheo">排中律</span>を用いれば<!--{type="tag" input="s1"}-->を証明するためにAが真のときと¬ Aが真でときそれぞれ<!--{type="tag" input="s1"}-->を証明すればよい。 </p>
  </div>
 </div>
 <div key="slide_logic_connector_tuto_10_(~ A -> B,modus_ponens,0)">
@@ -1516,7 +1526,9 @@
  <div class="pedagogic slide" expr="(~ A -> B,modus_ponens,0)" exercise="logic_connector_tuto_10">
   <p>
    <!--<span class="light-bulb">ń</span>--> Implication
-   <!--{type="tag" input="s0"}--> is available to justify B as <span class="buttontheo">local theorem.</span> It is noted that this justification acts here as modus ponens. The only difference is that the notion of local theorem extends the modus ponens to expressions containing quantifiers "for every ..." (see next chapter). </p>
+   <!-- <\!--{type="tag" input="s0"}-\-> is available to justify B as <span class="buttontheo">local theorem.</span> It is noted that this justification acts here as modus ponens. The only difference is that the notion of local theorem extends the modus ponens to expressions containing quantifiers "for every ..." (see next chapter). </p> -->
+  <p>
+   <!--<span class="light-bulb">ń</span>--> <!--{type="tag" input="s0"}-->が<span class="buttontheo">ローカル定理</span>としてBの証明に使える。注意としてこの証明手法はモーダスポネンスとおおよそ同じ機能を果しているが、ローカル定理は全称量化子に対しても使える(詳細は次章にある)。 </p>
  </div>
 </div>
 <div key="slide_rew_tuto_develop_(((x ^ integer 2 + integer 3 * x) + integer 2) + integer 3 * x = x ^ integer 2,lrsub,0)">
@@ -1524,9 +1536,11 @@
 	by Forward lrsub)
  -->
  <div expr="(((x ^ integer 2 + integer 3 * x) + integer 2) + integer 3 * x = x ^ integer 2,lrsub,0)" class="pedagogic slide" exercise="rew_tuto_develop">
-  <p>Note that the term
-   <!--{type="expr" input="pow x 2"}--> is present on the left and right sides of equality.</p>
-  <p>We can therefore eliminate it by left and right subtraction.</p>
+  <!-- <p>Note that the term -->
+  <!--  <\!--{type="expr" input="pow x 2"}-\-> is present on the left and right sides of equality.</p> -->
+  <!-- <p>We can therefore eliminate it by left and right subtraction.</p> -->
+  <p><!--{type="expr" input="pow x 2"}-->が等号の左右両辺に出現しているので、</p>
+  <p>消すことができる(等号左右両辺に同時にこれを引けばよい)。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_develop_((x + integer 1) * (x + integer 2) + integer 3 * x = x ^ integer 2,expand,0)">
@@ -1534,8 +1548,10 @@
 	by Forward select of select ((x + integer 1) * (x + integer 2)) + integer 3 * x = x ^ integer 2 (expand)
  -->
  <div expr="((x + integer 1) * (x + integer 2) + integer 3 * x = x ^ integer 2,expand,0)" class="pedagogic slide" exercise="rew_tuto_develop">
-  <p>The goal is to isolate x on the left.</p>
-  <p>Expand the products of factors to obtain a polynomial form.</p>
+  <!-- <p>The goal is to isolate x on the left.</p> -->
+  <!-- <p>Expand the products of factors to obtain a polynomial form.</p> -->
+  <p>目標は左辺のxを分離することである。</p>
+  <p>式を展開すればxに関する多項式が得られる。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_develop_(integer 6 * x + integer 2 = zero,lrsub,0)">
@@ -1543,8 +1559,10 @@
 	by Forward lrsub)
  -->
  <div expr="(integer 6 * x + integer 2 = zero,lrsub,0)" class="pedagogic slide" exercise="rew_tuto_develop">
-  <p>The situation is now well known : the objective is to isolate, on the left side, the variable of a polynomial form of degree 1.</p>
-  <p>Left and right operations allow to conclude.</p>
+  <!-- <p>The situation is now well known : the objective is to isolate, on the left side, the variable of a polynomial form of degree 1.</p> -->
+  <!-- <p>Left and right operations allow to conclude.</p> -->
+  <p>ここまで来れば状況が明白になっている。つまり左辺の式にある次数が1の変数を分離すればよい。</p>
+  <p>そうすれば方程式の両辺に足したり引いたりすれば完結できる。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_develop_(integer 6 * x = - integer 2,lrdiv,0)">
@@ -1552,7 +1570,8 @@
 	by Forward lrdiv)
  -->
  <div expr="(integer 6 * x = - integer 2,lrdiv,0)" class="pedagogic slide" exercise="rew_tuto_develop">
-  <p>Conclude by division by 6 on left and right sides.</p>
+  <!-- <p>Conclude by division by 6 on left and right sides.</p> -->
+  <p>両辺6で割れば終わる。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_fact1_(x <> zero,lrmul_neq,0)">
@@ -1560,8 +1579,9 @@
 	by Forward lrmul_neq)
  -->
  <div expr="(x <> zero,lrmul_neq,0)" class="pedagogic slide" exercise="rew_tuto_fact1">
-  <p>The objective is to factorize by
-   <!--{type="expr" input="pow x 2"}--> .</p>
+  <!-- <p>The objective is to factorize by -->
+  <!--  <\!--{type="expr" input="pow x 2"}-\-> .</p> -->
+  <p>目標は<!--{type="expr" input="pow x 2"}-->を因数分解することである。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_fact1_(x ^ integer 2 + integer 1 = zero,gen_factorize,0)">
@@ -1576,8 +1596,11 @@
 	by Forward select of E =select  (UIGroup (x + integer 1) *   (UIGroup (integer 2 * x + integer 3) + UIGroup (y - integer 1))) (expand)
  -->
  <div expr="(E = (x + integer 1) * (integer 2 * x + (integer 3 + (y - integer 1))),expand,0)" class="pedagogic slide" exercise="rew_tuto_group">
-  <p>The objective is to expand the right hand side of
-   <!--{type="tag" input="s0"}--> and to keep intact the terms:</p>
+  <!-- <p>The objective is to expand the right hand side of -->
+  <!--  <\!--{type="tag" input="s0"}-\-> and to keep intact the terms:</p> -->
+  <!-- <p>The objective is to expand the right hand side of -->
+  <!--  <\!--{type="tag" input="s0"}-\-> and to keep intact the terms:</p> -->
+  <p>目標はこの項をばらさずに右辺を展開することである<!--{type="tag" input="s0"}-->：</p>
   <ul>
    <li>
     <!--{type="expr" input="plus x 1"}--></li>
@@ -1586,8 +1609,10 @@
    <li>
     <!--{type="expr" input="minus y 1"}--></li>
   </ul>
-  <p>The solution is to specify three groups. You create a group by selecting a term and <span class="stress">pressing the <span style="font-family:'Courier New';font-weight:bold;padding-left:8px;padding-right:8px">g</span> button.</span></p>
-  <p>Once the three groups created, develop in the usual manner.</p>
+  <!-- <p>The solution is to specify three groups. You create a group by selecting a term and <span class="stress">pressing the <span style="font-family:'Courier New';font-weight:bold;padding-left:8px;padding-right:8px">g</span> button.</span></p> -->
+  <!-- <p>Once the three groups created, develop in the usual manner.</p> -->
+  <p>解決法は3つのグループを作ることである。項を選んで<span class="stress"><span style="font-family:'Courier New';font-weight:bold;padding-left:8px;padding-right:8px">g</span>を押せば</span>グループが作れる。</p>
+  <p>グループが作れたら通常通り進めばよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_idrem1_((x ^ integer 2 + integer 2 * x) + integer 1 = integer 4,polysquare,0)">
@@ -1595,7 +1620,8 @@
 	by Forward select of select ((x ^ integer 2 + integer 2 * x) + integer 1) = integer 4 (polysquare)
  -->
  <div expr="((x ^ integer 2 + integer 2 * x) + integer 1 = integer 4,polysquare,0)" class="pedagogic slide" exercise="rew_tuto_idrem1">
-  <p>Conclude by factorising the left hand side with the remarkable formula of polynomial square.</p>
+  <!-- <p>Conclude by factorising the left hand side with the remarkable formula of polynomial square.</p> -->
+  <p>[!!]remarkable formula of polynomial squareで左辺を因数分解して完結すればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_idrem1_(x ^ integer 2 + (integer 2 * x - integer 3) = zero,lradd,0)">
@@ -1603,11 +1629,14 @@
 	by Forward lradd)
  -->
  <div expr="(x ^ integer 2 + (integer 2 * x - integer 3) = zero,lradd,0)" class="pedagogic slide" exercise="rew_tuto_idrem1">
-  <p>The objective is to factorize on the left side.</p>
-  <p>Note that the left-hand side term is almost the development of
-   <!--{type="expr" input="pow (x+1) 2"}--> , according to the remarkable formula.</p>
-  <p>Therefore form the development of the perfect square
-   <!--{type="expr" input="((pow x 2)+(2*x))+1"}--> by adding 4 left and right.</p>
+  <!-- <p>The objective is to factorize on the left side.</p> -->
+  <!-- <p>Note that the left-hand side term is almost the development of -->
+  <!--  <\!--{type="expr" input="pow (x+1) 2"}-\-> , according to the remarkable formula.</p> -->
+  <!-- <p>Therefore form the development of the perfect square -->
+  <!--  <\!--{type="expr" input="((pow x 2)+(2*x))+1"}-\-> by adding 4 left and right.</p> -->
+  <p>目標は左辺を因数分解することである。</p>
+  <p>左辺が[!!]remarkable formulaによれば<!--{type="expr" input="pow (x+1) 2"}-->の[??]展開(development)とほぼ同じであることに注目せよ。</p>
+  <p>なので両辺に4を足し、[??]完全平方<!--{type="expr" input="((pow x 2)+(2*x))+1"}-->の形を作ればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_misc1_((x + integer 3) * ((x + integer 2) * (x + integer 1)) = zero,commutativity,0)">
@@ -1615,8 +1644,9 @@
 	by Forward select of select (((x + integer 3) * (x + integer 2)) * (x + integer 1)) = zero (commutativity)
  -->
  <div expr="((x + integer 3) * ((x + integer 2) * (x + integer 1)) = zero,commutativity,0)" class="pedagogic slide" exercise="rew_tuto_misc1">
-  <p>Select the terms to reorder by commutative operation.</p>
-  <p>Rearrange the term directly in the diagnostics window by dragging and dropping terms of the product.</p>
+  <!-- <p>Select the terms to reorder by commutative operation.</p> -->
+  <!-- <p>Rearrange the term directly in the diagnostics window by dragging and dropping terms of the product.</p> -->
+  <p>順序を変えたい項を選び、[!!]diagnostics windowのなかで項をマウスでドラッグすれば順序が変えられる。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_misc2_(x = integer 2 * (x + integer 1),rewriting,0)">
@@ -1634,6 +1664,9 @@
   <p>Start by selecting <span class="stress"> with the mouse</span> the term
    <!--{type="expr" input="x+1"}--> in
    <!--{type="tag" input="s2"}--> .</p>
+  <p>目標は左辺のxを分離することである。前提<!--{type="tag" input="s2"}-->では右辺の項<!--{type="expr" input="x+1"}-->が前提<!--{type="tag" input="s0"}-->のもと4になっていることに注意せよ。</p>
+  <p>なので<!--{type="expr" input="x+1"}-->を4で書き換えればよい。証明として<!--{type="tag" input="s0"}-->が使える。</p>
+  <p>それをするためにマウスで<!--{type="tag" input="s2"}-->の中の項<!--{type="expr" input="x+1"}-->を選択すればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_op_((x + integer 1) / ((y + integer 2) - integer 2) = zero,rewriting,0)">
@@ -1641,7 +1674,8 @@
 	by Forward select of (x + integer 1) / (select (y + integer 2) - integer 2) = zero (rewriting)
  -->
  <div expr="((x + integer 1) / ((y + integer 2) - integer 2) = zero,rewriting,0)" class="pedagogic slide" exercise="rew_tuto_op">
-  <p>Conclude by replacing y+2 in <!--{type="tag" input="s3"}--> by x by <!--{type="tag" input="s0"}-->.</p>
+  <!-- <p>Conclude by replacing y+2 in <\!--{type="tag" input="s3"}-\-> by x by <\!--{type="tag" input="s0"}-\->.</p> -->
+  <p><!--{type="tag" input="s0"}-->より<!--{type="tag" input="s3"}-->の中のy+2をxで書き換えれば完結できる。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_op_((x + integer 1) / y = zero,addsub,0)">
@@ -1649,16 +1683,18 @@
 	by Forward select of (x + integer 1) / select y = zero (addsub)
  -->
  <div expr="((x + integer 1) / y = zero,addsub,0)" class="pedagogic slide" exercise="rew_tuto_op">
-  <p>The objective is to get statement
-   <!--{type="tag" input="s1"}--> by transforming y at the denominator of
-   <!--{type="tag" input="s2"}--> into
-   <!--{type="expr" input="x-2"}--> .</p>
-  <p>Rewrite
-   <!--{type="expr" input="y"}--> into
-   <!--{type="expr" input="y-2+2"}--> , term in which
-   <!--{type="expr" input="y-2"}--> is then replaced by
-   <!--{type="expr" input="x"}--> according to
-   <!--{type="tag" input="s0"}-->.</p>
+  <!-- <p>The objective is to get statement -->
+  <!--  <\!--{type="tag" input="s1"}-\-> by transforming y at the denominator of -->
+  <!--  <\!--{type="tag" input="s2"}-\-> into -->
+  <!--  <\!--{type="expr" input="x-2"}-\-> .</p> -->
+  <!-- <p>Rewrite -->
+  <!--  <\!--{type="expr" input="y"}-\-> into -->
+  <!--  <\!--{type="expr" input="y-2+2"}-\-> , term in which -->
+  <!--  <\!--{type="expr" input="y-2"}-\-> is then replaced by -->
+  <!--  <\!--{type="expr" input="x"}-\-> according to -->
+  <!--  <\!--{type="tag" input="s0"}-\->.</p> -->
+  <p>目標は<!--{type="tag" input="s2"}-->の分母の中のyを<!--{type="expr" input="x-2"}-->に変形して<!--{type="tag" input="s1"}-->を得ることである。</p>
+  <p><!--{type="expr" input="y"}-->を<!--{type="expr" input="y-2+2"}-->に書き換えればよい。そうすれば<!--{type="tag" input="s0"}-->より<!--{type="expr" input="y-2"}-->が<!--{type="expr" input="x"}-->に書き換えられる。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_simpl2_(((x + integer 1) + integer 2 * (x - integer 2)) /((x + integer 1) * (x - integer 2)) = zero,lrmul,0)">
@@ -1680,9 +1716,11 @@
 	by Forward select of select (integer 2 / (x + integer 1) + integer 1 / (x - integer 2)) = zero (reducedenom)
  -->
  <div expr="(integer 2 / (x + integer 1) + integer 1 / (x - integer 2) = zero,reducedenom,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
-  <p>The goal is to isolate x on the left.</p>
-  <p>Start by reducing polynomial fractions to the same denominator,
-   <!--{type="expr" input="(x+1)*(x-2)"}--> .</p>
+  <!-- <p>The goal is to isolate x on the left.</p> -->
+  <!-- <p>Start by reducing polynomial fractions to the same denominator, -->
+  <!--  <\!--{type="expr" input="(x+1)*(x-2)"}-\-> .</p> -->
+  <p>目標は左辺のxを分離することである。</p>
+  <p>先ずは分母を<!--{type="expr" input="(x+1)*(x-2)"}-->に統一すればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_simpl2_(integer 3 * x - integer 3 = zero,lradd,0)">
@@ -1690,7 +1728,8 @@
 	by Forward lradd)
  -->
  <div expr="(integer 3 * x - integer 3 = zero,lradd,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
-  <p>The situation is increasingly simple. Use left and right operations to isolate x.</p>
+  <!-- <p>The situation is increasingly simple. Use left and right operations to isolate x.</p> -->
+  <p>状況はだんだん簡単になってきた。方程式の変形でxを分離すればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_simpl2_(integer 3 * x = integer 3,lrdiv,0)">
@@ -1698,7 +1737,8 @@
 	by Forward lrdiv)
  -->
  <div expr="(integer 3 * x = integer 3,lrdiv,0)" class="pedagogic slide" exercise="rew_tuto_simpl2">
-  <p>Concluded by dividing by 3 on the left and right sides.</p>
+  <!-- <p>Concluded by dividing by 3 on the left and right sides.</p> -->
+  <p>両辺を3で割れば完結できる。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_simpl_(integer 3 * x + integer 4 = integer 10,lrsub,0)">
@@ -1706,9 +1746,11 @@
 	by Forward lrsub)
  -->
  <div expr="(integer 3 * x + integer 4 = integer 10,lrsub,0)" class="pedagogic slide" exercise="rew_tuto_simpl">
-  <p>The objective of isolation of x is achieved with the left and right operations introduced in the previous chapter.</p>
-  <p>Subtract 4 on the left and right sides to isolate
-   <!--{type="expr" input="3*x"}--> .</p>
+  <!-- <p>The objective of isolation of x is achieved with the left and right operations introduced in the previous chapter.</p> -->
+  <!-- <p>Subtract 4 on the left and right sides to isolate -->
+  <!--  <\!--{type="expr" input="3*x"}-\-> .</p> -->
+  <p>前章で紹介した方程式の変形を使えばxを分離できる。</p>
+  <p>左右両辺を4で引いて<!--{type="expr" input="3*x"}-->を分離すばよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_simpl_(integer 3 * x = integer 6,lrdiv,0)">
@@ -1716,7 +1758,8 @@
 	by Forward lrdiv)
  -->
  <div expr="(integer 3 * x = integer 6,lrdiv,0)" class="pedagogic slide" exercise="rew_tuto_simpl">
-  <p>Divide by 3 on te left and right sides in order to conclude.</p>
+  <!-- <p>Divide by 3 on te left and right sides in order to conclude.</p> -->
+  <p>左右両辺を3で割ればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_simpl_(x + (integer 1 + (integer 2 * x + integer 3)) = integer 10,linearsimpl,0)">
@@ -1724,11 +1767,13 @@
 	by Forward select of select (((x + integer 1) + integer 2 * x) + integer 3) = integer 10 (linearsimpl)
  -->
  <div expr="(x + (integer 1 + (integer 2 * x + integer 3)) = integer 10,linearsimpl,0)" class="pedagogic slide" exercise="rew_tuto_simpl">
-  <p>The goal is to isolate x on the left. Note that the left term of assumption
-   <!--{type="tag" input="s0"}--> is a sum of first degree polynomial form in x,
-   <!--{type="expr" input="x+1"}--> and
-   <!--{type="expr" input="2*x+1"}--> .</p>
-  <p>Simplify these terms into a polynomial form.</p>
+  <!-- <p>The goal is to isolate x on the left. Note that the left term of assumption -->
+  <!--  <\!--{type="tag" input="s0"}-\-> is a sum of first degree polynomial form in x, -->
+  <!--  <\!--{type="expr" input="x+1"}-\-> and -->
+  <!--  <\!--{type="expr" input="2*x+1"}-\-> .</p> -->
+  <!-- <p>Simplify these terms into a polynomial form.</p> -->
+  <p>目標は左辺のxを分離することである。前提<!--{type="tag" input="s0"}-->の左辺は一次式<!--{type="expr" input="x+1"}-->と<!--{type="expr" input="2*x+1"}-->の和であることに注意せよ。</p>
+  <p>これらの項を多項式に簡約すればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_varchange_((a - integer 3) ^ integer 2 = zero,rewriting,0)">
@@ -1736,8 +1781,9 @@
 	by Forward select of (select a - integer 3) ^ integer 2 = zero (rewriting)
  -->
  <div expr="((a - integer 3) ^ integer 2 = zero,rewriting,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
-  <p>Conclude by replacing a by
-   <!--{type="expr" input="pow x 2"}--> .</p>
+  <!-- <p>Conclude by replacing a by -->
+  <!--  <\!--{type="expr" input="pow x 2"}-\-> .</p> -->
+  <p>aを<!--{type="expr" input="pow x 2"}-->で書き換えればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_varchange_((a ^ integer 2 - integer 6 * a) + integer 9 = zero,polysquare,0)">
@@ -1745,8 +1791,9 @@
 	by Forward select of select ((a ^ integer 2 - integer 6 * a) + integer 9) = zero (polysquare)
  -->
  <div expr="((a ^ integer 2 - integer 6 * a) + integer 9 = zero,polysquare,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
-  <p>On the left hand side is the square of
-   <!--{type="expr" input="a-3"}--> .</p>
+  <!-- <p>On the left hand side is the square of -->
+  <!--  <\!--{type="expr" input="a-3"}-\-> .</p> -->
+  <p>左辺は<!--{type="expr" input="a-3"}-->の平方になっている。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_varchange_((x ^ integer 4 - integer 6 * a) + integer 9 = zero,rewriting,1)">
@@ -1754,10 +1801,11 @@
 	by Forward select of (select (x ^ integer 4) - integer 6 * a) + integer 9 = zero (rewriting)
  -->
  <div expr="((x ^ integer 4 - integer 6 * a) + integer 9 = zero,rewriting,1)" class="pedagogic slide" exercise="rew_tuto_varchange">
-  <p>Replace
-   <!--{type="expr" input="pow x 4"}--> by
-   <!--{type="expr" input="pow a 2"}--> in
-   <!--{type="expr" input="s3"}--> .</p>
+  <!-- <p>Replace -->
+  <!--  <\!--{type="expr" input="pow x 4"}-\-> by -->
+  <!--  <\!--{type="expr" input="pow a 2"}-\-> in -->
+  <!--  <\!--{type="expr" input="s3"}-\-> .</p> -->
+  <p><!--{type="expr" input="s3"}-->の中の<!--{type="expr" input="pow x 4"}-->を<!--{type="expr" input="pow a 2"}-->で書き換えればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_varchange_((x ^ integer 4 - integer 6 * x ^ integer 2) + integer 9 = zero,varchange,0)">
@@ -1765,11 +1813,14 @@
 	by Forward select of (x ^ integer 4 - integer 6 * select (x ^ integer 2)) + integer 9 = zero (varchange)
  -->
  <div expr="((x ^ integer 4 - integer 6 * x ^ integer 2) + integer 9 = zero,varchange,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
-  <p>The objective is to factorize the left-hand side of assumption
-   <!--{type="tag" input="s0"}--> .</p>
-  <p>At first glance it is just a degree 4 polynomial form, but looking more closely, it is a polynomial form of degree 2 in
-   <!--{type="expr" input="pow x 2"}--> .</p>
-  <p>Change variable accordingly.</p>
+  <!-- <p>The objective is to factorize the left-hand side of assumption -->
+  <!--  <\!--{type="tag" input="s0"}-\-> .</p> -->
+  <!-- <p>At first glance it is just a degree 4 polynomial form, but looking more closely, it is a polynomial form of degree 2 in -->
+  <!--  <\!--{type="expr" input="pow x 2"}-\-> .</p> -->
+  <!-- <p>Change variable accordingly.</p> -->
+  <p>目標は前提<!--{type="tag" input="s0"}-->の左辺を因数分解することである。</p>
+  <p>一見にして4次式に見えるが、実際<!--{type="expr" input="pow x 2"}-->の2次しきになっている。</p>
+  <p>なので変数変換すればよい。</p>
  </div>
 </div>
 <div key="slide_rew_tuto_varchange_(a = x ^ integer 2)">
@@ -1784,33 +1835,42 @@
 	by Forward app_square)
  -->
  <div expr="(a = x ^ integer 2,app_square,0)" class="pedagogic slide" exercise="rew_tuto_varchange">
-  <p>Definition of a is squareed to get
-   <!--{type="expr" input="pow x 4"}--> as a function of a.</p>
+  <!-- <p>Definition of a is squareed to get -->
+  <!--  <\!--{type="expr" input="pow x 4"}-\-> as a function of a.</p> -->
+  <p><!--{type="expr" input="pow x 4"}-->がaの平方と同値であることが分かる。</p>
  </div>
 </div>
 <div class="toolbox-text custom pedagogic confuse" key="text_Antonym1">
- <p>If a child is the youngest, then he/she is not the oldest. </p>
+ <!-- <p>If a child is the youngest, then he/she is not the oldest. </p> -->
+ <p>もしとある子供が最も年少であれば、この子が最も年長ではない。</p>
 </div>
 <div class="toolbox-text custom pedagogic confuse" key="text_Antonym2">
- <p>If a child is the oldest, then he/she is not the youngest. </p>
+ <!-- <p>If a child is the oldest, then he/she is not the youngest. </p> -->
+ <p>もしとある子供が最も年長であれば、この子が最も年少ではない。</p>
 </div>
 <div class="toolbox-text custom pedagogic confuse" key="text_Superlative1">
- <p>If a child is the youngest, then any other child is not the youngest. </p>
+ <!-- <p>If a child is the youngest, then any other child is not the youngest. </p> -->
+ <p>もしとある子供が最も年少であれば、他のどの子も最も年少ではない。</p>
 </div>
 <div class="toolbox-text custom pedagogic confuse" key="text_Superlative2">
- <p>If a child is the oldest then any other child is not the oldest. </p>
+ <!-- <p>If a child is the oldest then any other child is not the oldest. </p> -->
+ <p>もしとある子供が最も年長であれば、他のどの子も最も年長ではない。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_adabsurdium">
- <p> <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Raisonnement_par_l%27absurde" target="_blank">Reductio ad absurdum</a></span> is proves statement A by showing that, if its negation, ¬ A is true, then we get a contradiction: </p>
- <p> Indeed,
-  <!--{type="prop" sci="true" input="~(~A)"}--> rewrites into
-  <!--{type="prop" sci="true" input="(~A -> False)"}--> by definition of negation. Reduction ad absurdum is thus an elimination rule of double negation. </p>
+ <!-- <p> <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Raisonnement_par_l%27absurde" target="_blank">Reductio ad absurdum</a></span> is -->
+ <!-- proves statement A by showing that, if its negation, ¬ A is true, then we get a contradiction: </p> -->
+ <!-- <p> Indeed, -->
+ <!--  <\!--{type="prop" sci="true" input="~(~A)"}-\-> rewrites into -->
+ <!--  <\!--{type="prop" sci="true" input="(~A -> False)"}-\-> by definition of negation. Reduction ad absurdum is thus an elimination rule of double negation. </p> -->
+ <p> <span class="exturl"><a href="https://ja.wikipedia.org/wiki/%E8%83%8C%E7%90%86%E6%B3%95" target="_blank">背理法</a></span>は¬Aが真であれば矛盾が生じることを示すことで命題Aを証明する手法である。</p>
+ <p>実際<!--{type="prop" sci="true" input="~(~A)"}-->が<!--{type="prop" sci="true" input="(~A -> False)"}-->の意味そのままなので、背理法は二重否定の除去として考えられる。</p>
 </div>
 <div key="text_addsub">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic appdef" key="text_app_def">
- <p>One can apply a function to a value that belongs to its domain, as exampled below: </p>
+ <!-- <p>One can apply a function to a value that belongs to its domain, as exampled below: </p> -->
+ <p>関数がその定義域の値で適用されることができる。例えば：</p>
 </div>
 <div key="text_app_def_rewrite">
  <!--TODO-->
@@ -1822,19 +1882,22 @@
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic lrapply" key="text_app_sqrt">
- <p>Applies square root, if the value is positive.</p>
+ <!-- <p>Applies square root, if the value is positive.</p> -->
+ <p>もし値が正であれば、ルートを取る。</p>
 </div>
 <div key="text_app_sqrt_bounded">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic lrapply" key="text_app_square">
- <p>Squaring left and right.</p>
+ <!-- <p>Squaring left and right.</p> -->
+ <p>左右両辺の平方を取る。</p>
 </div>
 <div key="text_app_square_bounded">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic appdef" key="text_appdef">
- <p>A function is defined by the formula "Let f be defined on ... by f (x) = ...", as in the example below: </p>
+ <!-- <p>A function is defined by the formula "Let f be defined on ... by f (x) = ...", as in the example below: </p> -->
+ <p>関数が「f(x)=...を...の上の関数とする」の様な形で定義されている。例えば：</p>
 </div>
 <div key="text_apply_forall">
  <!--TODO-->
@@ -1867,14 +1930,17 @@
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_back_elim_equiv">
- <p>Several versions of equivalence are available, in deduction and justification:</p>
+ <!-- <p>Several versions of equivalence are available, in deduction and justification:</p> -->
+ <p>証明や演繹を行う時使える同値関係が何通りもある。例えば：</p>
  <p> </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_binrel">
- <p> A binary relation connects two elements of the same set. </p>
+ <!-- <p> A binary relation connects two elements of the same set. </p> -->
+ <p> [??]同じ集合の要素の間の二項関係 </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_bound_conj">
- <p>Double inequaliy is translated to two inequality statements.</p>
+ <!-- <p>Double inequaliy is translated to two inequality statements.</p> -->
+ <p>二重不等式が二つの通常の不等式に相当する。</p>
 </div>
 <div key="text_bound_to_eq">
  <!--TODO-->
@@ -1883,22 +1949,25 @@
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_case_base">
- <p> If "A ∨ B" is true, we just know that one of the two statements is true, without knowing which one. One can not deduce anything directly. However, when we want to prove a statement C knowing that "A ∨ B" is true, it suffices to prove C if A is true, and prove C if B is true. In such a case, we know that C is true in all cases, without knowing which of the two propositions, A or B is true. . </p>
+ <!-- <p> If "A ∨ B" is true, we just know that one of the two statements is true, without knowing which one. One can not deduce anything directly. However, when we want to prove a statement C knowing that "A ∨ B" is true, it suffices to prove C if A is true, and prove C if B is true. In such a case, we know that C is true in all cases, without knowing which of the two propositions, A or B is true. . </p> -->
+ <p> "A ∨ B"が真であるというのはAとBの何方が真であることを意味している。但し、具体的に何方が正しいかは又分からない。なので"A ∨ B"から直接では何も証明できない。しかしもし例えばAのみが真であるときもBのみが真であるときもCが証明できれば"A ∨ B"ならばCが真であることが証明されることになる。つまりCがAとBの何れが真であるとき真であることが証明されることになる。 </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_case_base_binary">
- <p>The excluded middle rule expresses the fact that, whatever the statement A, either A is true or A is false, excluding any other value of A than true and false. </p>
+ <!-- <p>The excluded middle rule expresses the fact that, whatever the statement A, either A is true or A is false, excluding any other value of A than true and false. </p> -->
+ <p>排中律は任意の命題Aが真か偽かの何方かに決まっているということを主張している。全ての命題について真でもなければ偽でもないということが決してないということを意味している。</p>
 </div>
 <div key="text_case_good_or_bad">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_comb_comp_lt">
- <p>Composition preserves the inclusion relation.</p>
+ <p>[!!]Composition preserves the inclusion relation.</p>
 </div>
 <div class="toolbox-text custom pedagogic comb" key="text_combadd">
  <p></p>
 </div>
 <div class="toolbox-text custom pedagogic comb" key="text_combinaison">
- <p>Two equalities can be combined by addition or subtraction of left and right sides.</p>
+ <!-- <p>Two equalities can be combined by addition or subtraction of left and right sides.</p> -->
+ <p>二つの等式が左辺同士と右辺同士をそれぞれ足し合せることで組み合わせることができる。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_combine_cmp_minus">
  <p> </p>
@@ -1910,120 +1979,149 @@
  <p></p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_commutativity">
- <p>Multiplication and addition are commutative operations: you can reorder the terms as necessary.</p>
+ <!-- <p>Multiplication and addition are commutative operations: you can reorder the terms as necessary.</p> -->
+ <p>足し算と掛け算が交換律を満しているので、必要に応じて項の順番を変えることができる。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_conj">
- <p> To prove "A ∧ B" is to provide two proofs: one A and one B. </p>
+ <!-- <p> To prove "A ∧ B" is to provide two proofs: one A and one B. </p> -->
+ <p>"A ∧ B"を証明するためにAとBと両方を証明しなければならない。</p>
 </div>
 <div key="text_conjunction" class="toolbox-text custom pedagogic">
- <p>The conjonction of two statements A and B, noted "A ∧ B" and read "A and B", is true if A is true and B is true.</p>
+ <!-- <p>The conjonction of two statements A and B, noted "A ∧ B" and read "A and B", is true if A is true and B is true.</p> -->
+ <p>命題AとBがあれば「A且つB」という命題が作れる。それはAとBの連言と呼ばれ、"A ∧ B"と書く。"A ∧ B"がAとBが同時に真になるときのみ真になる。</p>
 </div>
 <div key="text_converge">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic appdef" key="text_deduce_not_color">
- <p>Since there are only two white hats, if a hat wearer sees his two friends each carry a white hat, then he/she can infer that he/she is necessarily wearing a black hat.</p>
- <p>By contraposition, if a hat wearer does not know the color of his hat, then at least one of his two comrades is wearing a black hat.</p>
+ <!-- <p>Since there are only two white hats, if a hat wearer sees his two friends each carry a white hat, then he/she can infer that he/she is necessarily wearing a black hat.</p> -->
+ <!-- <p>By contraposition, if a hat wearer does not know the color of his hat, then at least one of his two comrades is wearing a black hat.</p> -->
+ <p>白い帽子が二つしかないので、もし帽子を被ってる人がいて、その人が他の二人が白い帽子を被っていることを見たら、自分が黒い帽子を被っているに違いないことが分かる。</p>
+ <p>逆にもしその人が自分が被っている帽子の色が分からなければ、他の二人に少なくとも一人が黒い帽子を被っていることが分かる。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_fbij">
- <p> A function f of A to B is <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Bijection" target="_blank">bijective</a></span> if it is both injective and surjective: any element of B is the image by f of one and only one element of A. </p>
+ <!-- <p> A function f of A to B is <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Bijection" target="_blank">bijective</a></span> if it is both injective and surjective: any element of B is the image by f of one and only one element of A. </p> -->
+ <p>AからBの関数が<span class="exturl"><a href="https://ja.wikipedia.org/wiki/%E5%85%A8%E5%8D%98%E5%B0%84" target="_blank">全単射</a></span>であることはつまりこの関数は全射でもあり単射でもあることである。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_fcomp">
- <p>The composition of two functions f: A → B and g: B → C, denoted "f ∘ g" and read "f round g", is a function of A to C so that the image of an element x of A is the image under g of the image under f of x. </p>
- <p> The composition operator provides with a function of type (A → C) from two of functions of types (A → B) and (B → C). A form of similarity is noted with the proof of a <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Syllogisme" target="_blank">syllogism</a></span> that provides proof of
-  <!--{type="prop" sci="true" input="A -> C"}--> assuming
-  <!--{type="prop" sci="true" input="A -> B"}--> and
-  <!--{type="prop" sci="true" input="B -> C"}--> ... </p>
+ <!-- <p>The composition of two functions f: A → B and g: B → C, denoted "f ∘ g" and read "f round g", is a function of A to C so that the image of an element x of A is the image under g of the image under f of x. </p> -->
+ <p>[!!]関数f: A → Bとg: B → Cの合成は"g∘f"と書き、「g丸f」と呼ぶ。"g∘f"がAからCの関数であり、"g∘f(x) = g(f(x))"として定まれている。</p>
+ <!-- <p> The composition operator provides with a function of type (A → C) from two of functions of types (A → B) and (B → C). A form of similarity is noted with the proof of a <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Syllogisme" target="_blank">syllogism</a></span> that provides proof of -->
+ <!--  <\!--{type="prop" sci="true" input="A -> C"}-\-> assuming -->
+ <!--  <\!--{type="prop" sci="true" input="A -> B"}-\-> and -->
+ <!--  <\!--{type="prop" sci="true" input="B -> C"}-\-> ... </p> -->
+ <p>関数の合成が<span class="exturl"><a href="https://ja.wikipedia.org/wiki/%E4%B8%89%E6%AE%B5%E8%AB%96%E6%B3%95" target="_blank">三段論法</a></span>と似た様な形をしている。実際三段論法は<!--{type="prop" sci="true" input="A -> B"}-->と<!--{type="prop" sci="true" input="B -> C"}-->が成り立てばば<!--{type="prop" sci="true" input="A -> C"}-->も成り立つことを主張している。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_finj">
- <p> A function is <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Injection_(math%C3%A9matiques)" target="_blank">injective</a></span> if the corresponding relation is injective. Thus the function f of A to B is injective iif an element of B is the image of one and only one element of A. or in other words, if two elements x and z have the same image under f, then these elements are the same. </p>
- <p>Note that to prove that a function f is not injective, just find two distinct elements that have the same image by f. </p>
+ <!-- <p> A function is <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Injection_(math%C3%A9matiques)" target="_blank">injective</a></span> if the corresponding relation is injective. Thus the function f of A to B is injective iif an element of B is the image of one and only one element of A. or in other words, if two elements x and z have the same image under f, then these elements are the same. </p> -->
+ <p>ある関数が<span class="exturl"><a href="https://ja.wikipedia.org/wiki/%E5%8D%98%E5%B0%84" target="_blank">単射</a></span>であるというのは値域の任意の元が高々一つの原像を持つことである。これはつまりもしxとyのfによる像が等しければxとyも等しいということである。</p>
+ <!-- <p>Note that to prove that a function f is not injective, just find two distinct elements that have the same image by f. </p> -->
+ <p>関数fが単射ではないことを証明したければ、単に像が等しくなるような二つの等しくない元を探せばよい。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_finvol">
- <p> If f is a function from E to E, it is <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Involution_(math%C3%A9matiques)" target="_blank">involutive</a></span> if the image of the image of an element x, is x itself. </p>
- <p>Examples:</p>
+ <!-- <p> If f is a function from E to E, it is <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Involution_(math%C3%A9matiques)" target="_blank">involutive</a></span> if the image of the image of an element x, is x itself. </p> -->
+ <!-- <p>Examples:</p> -->
+ <p>EからEの関数fが<span class="exturl"><a href="https://ja.wikipedia.org/wiki/%E5%AF%BE%E5%90%88" target="_blank">対合的</a></span>というのは、任意のxについて"f(f(x)) = x"が満たしているということである。</p>
+ <p>例えば：</p>
  <ul>
-  <li>the symmetry in a mirror</li>
-  <li>in <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Logique_classique" target="_blank">classical logic</a></span> , the negation of a proposition is involutive, allowing the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Raisonnement_par_l%27absurde" target="_blank">reduction ad absurdum</a></span></li>
-  <li>the encryption algorithm <span class="exturl"><a href="https://fr.wikipedia.org/wiki/ROT13" target="_blank">ROT13</a></span></li>
+  <!-- <li>the symmetry in a mirror</li> -->
+  <!-- <li>in <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Logique_classique" target="_blank">classical logic</a></span> , the negation of a proposition is involutive, allowing the <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Raisonnement_par_l%27absurde" target="_blank">reduction ad absurdum</a></span></li> -->
+  <!-- <li>the encryption algorithm <span class="exturl"><a href="https://fr.wikipedia.org/wiki/ROT13" target="_blank">ROT13</a></span></li> -->
+  <li>鏡の写し</li>
+  <li><span class="exturl"><a href="https://ja.wikipedia.org/wiki/%E5%8F%A4%E5%85%B8%E8%AB%96%E7%90%86" target="_blank">古典論理</a></span>では、命題の否定は対合的である。これのお陰で<span class="exturl"><a href="https://ja.wikipedia.org/wiki/%E8%83%8C%E7%90%86%E6%B3%95" target="_blank">背理法</a></span>が成り立っている。</li>
+  <li>暗号<span class="exturl"><a href="https://ja.wikipedia.org/wiki/ROT13" target="_blank">ROT13</a></span></li>
  </ul>
  <p></p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_fsurj">
- <p>A function f of A to B is surjective if all elements of B are the image of at least one element of A. </p>
+ <!-- <p>A function f of A to B is surjective if all elements of B are the image of at least one element of A. </p> -->
+ <p>AからBまでの関数fが全射というのはBの任意の要素がAに一つ以上の原像を持つことである。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rantisym">
- <p>A binary relation on E is antisymmetric if, for any elements x y of E, if the pairs (x, y) and (y, x) belong to the graph of the relationship, then x is the same element as y.</p>
+ <!-- <p>A binary relation on E is antisymmetric if, for any elements x y of E, if the pairs (x, y) and (y, x) belong to the graph of the relationship, then x is the same element as y.</p> -->
+ <p>Eの上の二項関係Rが反対称関係であるというのはEの任意の要素x, yに対してもし xRy 且つ yRx であればxとyが必ず等しいということである。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rcomp">
- <p> If A B and C are sets, if
-  <!--{type="expr" input="R1"}--> a relation on A×B, and if
-  <!--{type="expr" input="R2"}--> a relation on B×C, then composition of
-  <!--{type="expr" input="R1"}--> and
-  <!--{type="expr" input="R2"}-->, noted
-  <!--{type="expr" input="RComp R1 R2"}-->, is the relation on A×C such that an élément x of A is in relation with an element z of C by
-  <!--{type="expr" input="RComp R1 R2"}-->, if x and z are in relation with an element y of B, respectively on the left y by
-  <!--{type="expr" input="R1"}--> and on the left by
-  <!--{type="expr" input="R2"}--> : </p>
+ <!-- <p> If A B and C are sets, if -->
+ <!--  <\!--{type="expr" input="R1"}-\-> a relation on A×B, and if -->
+ <!--  <\!--{type="expr" input="R2"}-\-> a relation on B×C, then composition of -->
+ <!--  <\!--{type="expr" input="R1"}-\-> and -->
+ <!--  <\!--{type="expr" input="R2"}-\->, noted -->
+ <!--  <\!--{type="expr" input="RComp R1 R2"}-\->, is the relation on A×C such that an élément x of A is in relation with an element z of C by -->
+ <!--  <\!--{type="expr" input="RComp R1 R2"}-\->, if x and z are in relation with an element y of B, respectively on the left y by -->
+ <!--  <\!--{type="expr" input="R1"}-\-> and on the left by -->
+ <!--  <\!--{type="expr" input="R2"}-\-> : </p> -->
+ <p>AとBを集合として、もし<!--{type="expr" input="R1"}-->はA×Bの上の関係であり、<!--{type="expr" input="R2"}-->がB×Cの上の関係であれば<!--{type="expr" input="R1"}-->と<!--{type="expr" input="R2"}-->の合成ができる。その合成は<!--{type="expr" input="RComp R1 R2"}-->と書き、(x, z)がこの合成関係に満すということは存在Bの要素y、(x, y)が<!--{type="expr" input="R1"}-->を満し、かつ(y, z)が<!--{type="expr" input="R2"}-->を満していることである。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rfun">
- <p>A relation of A×B is functional if an element of A is related to at most one element of B. </p>
+ <!-- <p>A relation of A×B is functional if an element of A is related to at most one element of B. </p> -->
+ <p>[??]もしとあるA×Bの上の関係が関数であれば、任意のAの要素が高々Bの要素の一つと関係している。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rident">
- <p>The graph of the identity relation on set E, noted
+ <p>[!!]The graph of the identity relation on set E, noted
   <!--{type="expr" input="RIdent U E"}--> is all couples
   <!--{type="expr" input="upair x x"}--> where x belongs to E. </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rinj">
- <p>A relation of A×B is injective if an element of B is related to at most one element of A. In other words, an element of B in relation by R, is in relation with only one element of A. In other words again, if two elements of a are in relation with an element of B by an injective relation, then these two elements are the same. </p>
+ <p>[!!]A relation of A×B is injective if an element of B is related to at most one element of A. In other words, an element of B in relation by R, is in relation with only one element of A. In other words again, if two elements of a are in relation with an element of B by an injective relation, then these two elements are the same. </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rinv">
- <p>The inverse relation of a relation R defined on A×B, denoted R⁻¹, is defined on B × A by: </p>
+ <!-- <p>The inverse relation of a relation R defined on A×B, denoted R⁻¹, is defined on B × A by: </p> -->
+ <p>A×Bの上の関係Rの逆関係R⁻¹はB×Aの上の関係となり、以下の様に定義されている。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rrefl">
- <p>A binary relation on E is reflexive if any element of E is related to itself.</p>
+ <!-- <p>A binary relation on E is reflexive if any element of E is related to itself.</p> -->
+ <p>Eの上の二項関係Rが反射律を満すというのはEの任意の要素xに対して xRx が成り立つということである。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rsurj">
- <p>A relation of A × B is surjective, or right-total, if all elements of B are in relation with an element of A. </p>
+ <p>[!!]A relation of A × B is surjective, or right-total, if all elements of B are in relation with an element of A. </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rsym">
- <p>A binary relation on E is symmetric if, for every elements x and y of E, the pairs (x, y) and (y, x) belong to the graph of the relation.</p>
+ <!-- <p>A binary relation on E is symmetric if, for every elements x and y of E, the pairs (x, y) and (y, x) belong to the graph of the relation.</p> -->
+ <p>Eの上の二項関係Rが対称律を満すというのはEの任意の要素x, yに対して xRy が成り立てば yRx も必ず成り立つということである。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rtotleft">
- <p>A relation on A × B is left-total if all elements of A are in relation with an element of B. </p>
+ <p>[!!]A relation on A × B is left-total if all elements of A are in relation with an element of B. </p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_def_rtrans">
- <p>A binary relation is transitive if:</p>
+ <!-- <p>A binary relation is transitive if:</p> -->
+ <p>二項関係が推移律を満すというのは以下のことである：</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_disjonction">
- <p>The disjunction of two propositions A and B, denoted "A ∨ B" and read "A or B" is true if A is true or B is true.</p>
+ <!-- <p>The disjunction of two propositions A and B, denoted "A ∨ B" and read "A or B" is true if A is true or B is true.</p> -->
+ <p>命題AとBがあれば「A又はB」という命題が作れる。それはAとBの選言と呼ばれ、"A ∨ B"と書く。"A ∨ B"がAとBの何方か、或いは両方が真になるとき真になる。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_distrib">
- <p>The multiplication is distributive over addition.</p>
+ <!-- <p>The multiplication is distributive over addition.</p> -->
+ <p>掛け算は足し算について分配律が成り立っている。</p>
 </div>
 <div key="text_elim_comp">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_conj_left">
- <p> If "A ∧ B" is true, then A is true. </p>
+ <!-- <p> If "A ∧ B" is true, then A is true. </p> -->
+ <p>"A ∧ B"が真であればAが真である。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_conj_right">
- <p>If "A ∧ B" is true, then B is true.</p>
+ <!-- <p>If "A ∧ B" is true, then B is true.</p> -->
+ <p>"A ∧ B"が真であればBが真である。</p>
 </div>
 <div key="text_elim_eqfun">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_eqset">
- <p>Two sets A and B are equal if being element of A involves be element of B, and vice versa; that is to say that A is included in B and conversely B is included in A (by definition of inclusion). Equality is simply noté "A = B". </p>
+ <!-- <p>Two sets A and B are equal if being element of A involves be element of B, and vice versa; that is to say that A is included in B and conversely B is included in A (by definition of inclusion). Equality is simply noté "A = B". </p> -->
+ <p>集合AとBが等しいというのはAの要素が全てBの要素であり、逆にBの要素も全てAの要素であることとして定義されている。これはつまりAがBを含み、かつBがAを含むことである。集合AとBが等しいということは"A = B"と書く。</p>
 </div>
 <div key="text_elim_even_def">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_false_exset">
- <p> By definition, <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Ensemble_vide" target="_blank">the empty set</a></span> , denoted by ∅, is the set that is included in any set. </p>
+ <!-- <p> By definition, <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Ensemble_vide" target="_blank">the empty set</a></span> , denoted by ∅, is the set that is included in any set. </p> -->
+ <p><span class="exturl"><a href="https://ja.wikipedia.org/wiki/%E7%A9%BA%E9%9B%86%E5%90%88" target="_blank">空集合</a></span>というのは一つも要素のない集合として定義されている。空集合は∅と書く。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_gen_app_rel">
- <p> In the following, a relation R is equated with its graph in order to keep formulas and notations simple. </p>
+ <p>[!!]In the following, a relation R is equated with its graph in order to keep formulas and notations simple. </p>
 </div>
 <div key="text_elim_has_finite_limit_decr">
  <!--TODO-->
@@ -2032,36 +2130,43 @@
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_is_elem_universe">
- <p> By definition, the universe, noted U, is the set that contains all elements. The universe is the largest set in the sense of inclusion (any set is included in the universe). </p>
+ <!-- <p> By definition, the universe, noted U, is the set that contains all elements. The universe is the largest set in the sense of inclusion (any set is included in the universe). </p> -->
+ <p>宇宙(universe) Uというのは全ての集合の全ての要素を集った集合として定義されている。宇宙が任意の集合を含むという意味では最も大きい集合である。</p>
 </div>
 <div key="text_elim_multiple">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_negation">
- <p> The negation of a statement A is defined using the constant <span style="font-weight:bold">contradiction</span> as follows: </p>
+ <!-- <p> The negation of a statement A is defined using the constant <span style="font-weight:bold">contradiction</span> as follows: </p> -->
+ <p>命題Aの否定は<span style="font-weight:bold">矛盾</span>という定数を用いて以下の様に定義されている。</p>
 </div>
 <div key="text_elim_pprod">
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_requiv">
  <p>An <span class="exturl"><a href="https://fr.wikipedia.org/wiki/Relation_d%27%C3%A9quivalence" target="_blank">equivalence relation</a></span> is reflexive, symmetric, and transitive. For example, equality and equivalence are equivalence relations. </p>
+ <p><span class="exturl"><a href="https://ja.wikipedia.org/wiki/%E5%90%8C%E5%80%A4%E9%96%A2%E4%BF%82" target="_blank">同値関係</a></span>というのは反射律、対称律、及び推移律を満す二項関係のことである。例えば等号と論理的同値が同値関係である。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_scomp">
- <p> The complement of a set A in the universe U, denoted "
-  <!--{type="expr" input="scomp (sall U) A"}--> " and read "complement of A in U" or simply "complement of A", contains elements that are not in A: </p>
+ <!-- <p> The complement of a set A in the universe U, denoted " -->
+ <!--  <\!--{type="expr" input="scomp (sall U) A"}-\-> " and read "complement of A in U" or simply "complement of A", contains elements that are not in A: </p> -->
+ <p>集合Aの補集合というのは集合Aの要素ではないものを全て集った集合である。この集合は<!--{type="expr" input="scomp (sall U) A"}-->と書く。実際補集合は宇宙(universe) Uに対して定義されており、Aの補集合は全てのAの要素でないUの要素が成す集合を指している。</p>
  <span style="position:relative;left:-20px;display:inherit;width:110%;text-align:center;padding-bottom:0px;background-color:rgba(0,172,231,1)"> <img src="./svg/complement.svg" style="width:auto;height:150px;position:relative"> </span>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_sdiff">
- <p> The relative complement of two sets A and B, denoted "
-  <!--{type="expr" input="sdiff A B"}-->" contains the elements that are in A and not in B: </p>
+ <!-- <p> The relative complement of two sets A and B, denoted " -->
+ <!--  <\!--{type="expr" input="sdiff A B"}-\->" contains the elements that are in A and not in B: </p> -->
+ <p>集合AとBの差集合というのはBの要素ではない全てのAの要素を集った集合である。この集合は<!--{type="expr" input="sdiff A B"}-->と書く。</p>
  <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px;position:relative"> <img src="./svg/diff.svg" style="width:auto;height:150px"> </span>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_sequiv">
- <p>The equivalence class of an element x by a relation R on a set E, denoted
-  <!--{type="expr" input="sequiv x R"}--> , is the set of elements related to x by R.</p>
+ <!-- <p>The equivalence class of an element x by a relation R on a set E, denoted -->
+ <!--  <\!--{type="expr" input="sequiv x R"}-\-> , is the set of elements related to x by R.</p> -->
+ <p>Eの要素xのRによる同値類というのはRによってxと関係が結ばれている全てのEの要素を集った集合である。この集合は<!--{type="expr" input="sequiv x R"}-->と書く。</p>
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_set_lteq">
- <p>A set is included in another if and only if being an element of it implies being element of the other.</p>
+ <!-- <p>A set is included in another if and only if being an element of it implies being element of the other.</p> -->
+ <p>集合Aが集合Bに含まれるというのはAの全ての要素が同時にBの要素でもあるということである。</p>
  <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px"> <img src="./svg/subset.svg" style="width:auto;height:150px"> </span>
 </div>
 <div key="text_elim_shas_lower_bound">
@@ -2071,8 +2176,9 @@
  <!--TODO-->
 </div>
 <div class="toolbox-text custom pedagogic" key="text_elim_sinter">
- <p> The intersection of two sets A and B, denoted "
-  <!--{type="expr" input="sinter A B"}--> " and read "A inter B" contains the elements that are in both A and B: </p>
+ <!-- <p> The intersection of two sets A and B, denoted " -->
+ <!--  <\!--{type="expr" input="sinter A B"}-\-> " and read "A inter B" contains the elements that are in both A and B: </p> -->
+ <p>集合AとBの共通部分が<!--{type="expr" input="sinter A B"}-->と書き、"AキャップB"と呼ぶ。</p>
  <span style="display:inherit;width:100%;text-align:center;padding-bottom:0px;position:relative"> <img src="./svg/inter.svg" style="width:auto;height:150px"> </span>
 </div>
 <div key="text_elim_sis_decreasing">
