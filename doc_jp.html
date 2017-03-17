@@ -3,8 +3,11 @@
 <div class="pedagogic paper" key="exercise_description_demo_bernoulli_1">
  <!--{type="ex_title"}-->
  <p> <span class="txtwrap slide" style="padding-top:15px"> <img src="./img/demo_bernoulli_1.png"> </span> </p>
+ <!-- <p> The powers of two are bound from above by the values of the exponent, i.e. that
+	  <!--{type="expr" input="(pow 2 n) >= (plus n 1)"}-->, as is illustrated in the graph opposite. </p> -->
  <p> The powers of two are bound from above by the values of the exponent, i.e. that
   <!--{type="expr" input="(pow 2 n) >= (plus n 1)"}-->, as is illustrated in the graph opposite. </p>
+ 
  <center>
   <table class="borderblue">
    <colgroup>
@@ -61,47 +64,69 @@
    </tbody>
   </table>
  </center>
- <p> This inequality is a specific example of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality" target="_blank">Bernoulli’s inequalities</a></span>, demonstrated in the following exercise: </p>
+ <!-- <p> This inequality is a specific example of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality" target="_blank">Bernoulli’s inequalities</a></span>, demonstrated in the following exercise: </p> -->
+ <p> これは<span class="exturl"><a href="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality" target="_blank">ベルヌーイ(Bernoulli)の不等式</a></span>の特別な場合であり、以下の練習問題でベルヌーイ不等式が示される: </p>
+ 
  <p>
   <!--{type="exercise" input="demo_bernoulli_2"}--> </p>
- <p> <span class="light-bulb">ń</span> Use reasoning <span class="buttontheo">by induction</span>. </p>
+ <!-- <p> <span class="light-bulb">ń</span> Use reasoning <span class="buttontheo">by induction</span>. </p> -->
+ <p> <span class="light-bulb">ń</span> <span class="buttontheo">帰納法</span> を使う </p>
+ 
 </div>
 <div class="pedagogic paper" key="exercise_description_demo_bernoulli_2">
  <!--{type="ex_title"}-->
- <p> These inequalities generalize the result see previously. They are attributed to the Swiss mathematician, <span class="exturl"><a href="https://en.wikipedia.org/wiki/Jacob_Bernoulli" target="_blank">Jacques Bernoulli</a></span>. We call them the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality" target="_blank">Bernoulli’s inequality</a></span>. </p>
- <p> <span class="light-bulb">ń</span> Use reasoning by induction. </p>
+	<!-- <p> These inequalities generalize the result see previously. They are attributed to the Swiss mathematician, <span class="exturl"><a href="https://en.wikipedia.org/wiki/Jacob_Bernoulli" target="_blank">Jacques Bernoulli</a></span>. We call them the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality" target="_blank">Bernoulli’s inequality</a></span>. </p> -->
+	<p> これらの不等式は前出の結果を一般化するものである。これらはスイスの数学者<span class="exturl"><a href="https://en.wikipedia.org/wiki/Jacob_Bernoulli" target="_blank">ヤコブ ベルヌーイ(Jacques Bernoulli</a></span>によって与えられ、<span class="exturl"><a href="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality" target="_blank">ベルヌーイの不等式</a></span>と呼ばれる。</p>
+	
+	<!-- <p> <span class="light-bulb">ń</span> Use reasoning by induction. </p> -->
+ <p> <span class="light-bulb">ń</span> 帰納法を使う。 </p>
+	
 </div>
 <div class="pedagogic paper" key="exercise_description_ineq_ex_8">
  <!--{type="ex_title"}-->
 </div>
 <div class="pedagogic paper" key="exercise_description_logic_connector_abs_peirce">
  <!--{type="ex_title"}-->
- <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+	<!-- <p><span class="lock">w</span><span class="cons">Constructive logic</span></p> -->
+ <p><span class="lock">w</span><span class="cons">構成的論理</span></p>
+	
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_01">
  <!--{type="ex_title"}-->
- <p>We can demonstrate that disjunction is distributive <span class="stress">over conjunction</span>.</p>
- <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+	<!-- <p>We can demonstrate that disjunction is distributive <span class="stress">over conjunction</span>.</p> -->
+	<p>論理和は<span class="stress">論理積に対して</span>分配的であることが示せる。</p>
+	<!-- <p><span class="lock">w</span><span class="cons">Constructive logic</span></p> -->
+<p><span class="lock">w</span><span class="cons">構成的論理</span></p>
+	
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_02">
- <!--{type="ex_title"}-->
- <p> It can be shown that conjunction is distributive <span class="stress">over disjunction</span>. </p>
- <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
+	<!--{type="ex_title"}-->
+	<!-- <p> It can be shown that conjunction is distributive <span class="stress">over disjunction</span>. </p> -->
+	<p>論理積は <span class="stress">論理和に対して</span>分配的であることが示せる。 </p>
+	
+	
+ <p> <span class="lock">w</span><span class="cons">構成的論理</span> </p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_06">
- <!--{type="ex_title"}-->
- <p> In this exercise, the universe of elements is made up of all <span class="exturl"><a href="https://en.wikipedia.org/wiki/Natural_number" target="_blank">natural numbers</a></span>. </p>
- <p> The formulae are the <span class="stress">propositions defined on ℕ</span>, and the elements are the integers. </p>
- <p> Note "
-  <!--{type="prop" sci="true" input="forall (x:Nvar), app_prop P x"}-->" and "
-  <!--{type="prop" sci="true" input="exists (x:Nvar), app_prop P x"}-->" quantifications on ℕ. </p>
+	<!--{type="ex_title"}-->
+	<!-- <p> In this exercise, the universe of elements is made up of all <span class="exturl"><a href="https://en.wikipedia.org/wiki/Natural_number" target="_blank">natural numbers</a></span>. </p> -->
+ <p> この練習問題では、要素の全体集合(宇宙)は<span class="exturl"><a href="https://en.wikipedia.org/wiki/Natural_number" target="_blank">自然数</a></span>の全てからなるものとする。 </p>
+ <p> また、式は<span class="stress">ℕ上で定義された命題で</span>要素は整数である。 </p>
+ <p> 注意 "
+  <!--{type="prop" sci="true" input="forall (x:Nvar), app_prop P x"}-->" と "
+	 <!--{type="prop" sci="true" input="exists (x:Nvar), app_prop P x"}-->" はℕ上の量化子である。
+
+ </p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_08">
  <!--{type="ex_title"}-->
  <a href="https://en.wikipedia.org/wiki/The_School_of_Athens" target="_blank"><img class="txtwrap" src="./img/aristote-raphael-ecole-d-athenes.jpg" height="30%" width="30%"></a>
- <p> The <span class="exturl"><a href="https://en.wikipedia.org/wiki/Syllogism" target="_blank">syllogism</a></span> is a reasoning formalized in the 4<span class="sup">th</span> Century BC in <span class="exturl"><a href="https://en.wikipedia.org/wiki/Ancient_Greece" target="_blank">Ancient Greece</a></span> par <span class="exturl"><a href="https://en.wikipedia.org/wiki/Aristotle" target="_blank">Aristotle</a></span> who considered it a fundamental element of logic and reasoning. </p>
- <p> The syllogism served, and continues to serve, as a logical foundation to <span class="exturl"><a href="https://en.wikipedia.org/wiki/Law" target="_blank">Legislation</a></span>, born in <span class="exturl"><a href="https://en.wikipedia.org/wiki/Ancient_Rome#Republic" target="_blank">Ancient Rome</a></span>. It is the scheme on which legal judgements are constructed in western tradition. </p>
- <p>Let’s imagine, for example that a tribunal must respond to the question "Is Socrates mortal?". The answer lies in the discovery of un attribute "man". Let’s lay out the definitions:</p>
+ <!-- <p> The <span class="exturl"><a href="https://en.wikipedia.org/wiki/Syllogism" target="_blank">syllogism</a></span> is a reasoning formalized in the 4<span class="sup">th</span> Century BC in <span class="exturl"><a href="https://en.wikipedia.org/wiki/Ancient_Greece" target="_blank">Ancient Greece</a></span> par <span class="exturl"><a href="https://en.wikipedia.org/wiki/Aristotle" target="_blank">Aristotle</a></span> who considered it a fundamental element of logic and reasoning. </p> -->
+ <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Syllogism" target="_blank">三段論法</a></span> は紀元前4世紀に<span class="exturl"><a href="https://en.wikipedia.org/wiki/Ancient_Greece" target="_blank">古代ギリシア</a></span> の <span class="exturl"><a href="https://en.wikipedia.org/wiki/Aristotle" target="_blank">アリストテレス(Aristotle)</a></span>によって公式化された。アリストテレスはこれを論理と証明の基本的要素と考えていた。 </p>
+ <!-- <p> The syllogism served, and continues to serve, as a logical foundation to <span class="exturl"><a href="https://en.wikipedia.org/wiki/Law" target="_blank">Legislation</a></span>, born in <span class="exturl"><a href="https://en.wikipedia.org/wiki/Ancient_Rome#Republic" target="_blank">Ancient Rome</a></span>. It is the scheme on which legal judgements are constructed in western tradition. </p> -->
+  <p> 三段論法は<span class="exturl"><a href="https://en.wikipedia.org/wiki/Ancient_Rome#Republic" target="_blank">Ancient Rome</a></span>で生まれた <span class="exturl"><a href="https://en.wikipedia.org/wiki/Law" target="_blank">立法</a></span>の論理的根幹を支え続けている。, born in .西洋の歴史において立法的判断は三段論法の上で構成された。 </p>
+  <!-- <p>Let’s imagine, for example that a tribunal must respond to the question "Is Socrates mortal?". The answer lies in the discovery of un attribute "man". Let’s lay out the definitions:</p> -->
+   <p>例えば、法定が"ソクラテス(Socrates)は死ぬか。"という問に答えねばならないとよう。それには、"人間"の特性について調べる必要がある。定義を展開していこう:</p>
  <table class="slide">
   <colgroup>
    <col width="150">
@@ -110,23 +135,29 @@
   </colgroup>
   <tbody>
    <tr>
-    <td style="padding-top: 10px; border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">Minor term</td>
+    <td style="padding-top: 10px; border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">小概念</td>
     <td style="padding-top: 10px; border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">A</td>
-    <td style="padding-top: 10px; border-bottom: 1px solid whitesmoke;">Socrates</td>
+    <td style="padding-top: 10px; border-bottom: 1px solid whitesmoke;">ソクラテス</td>
    </tr>
    <tr>
-    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">Middle term</td>
+	   <!-- <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">Middle term</td> -->
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">媒概念</td>
     <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke;">B</td>
-    <td style="border-bottom: 1px solid whitesmoke;">being a man</td>
+    <td style="border-bottom: 1px solid whitesmoke;">人間である</td>
    </tr>
    <tr>
-    <td style="border-right: 1px solid whitesmoke;">Major term</td>
+
+       <!-- <td style="border-right: 1px solid whitesmoke;">Major term</td>
+			<td style="border-right: 1px solid whitesmoke;">C</td>
+			<td>being mortal</td> -->
+    <td style="border-right: 1px solid whitesmoke;">大概念</td>
     <td style="border-right: 1px solid whitesmoke;">C</td>
-    <td>being mortal</td>
+    <td>死ぬ</td>
    </tr>
   </tbody>
  </table>
- <p>It is therefore judged following the schema below:</p>
+ <!-- <p>It is therefore judged following the schema below:</p> -->
+ <p>よって以下の図式が従うことが導かれる:</p>
  <table class="slide">
   <colgroup>
    <col width="200">
@@ -136,168 +167,237 @@
   </colgroup>
   <tbody>
    <tr>
-    <td style="padding-top: 10px; border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Major premise</td>
+       <!-- <td style="padding-top: 10px; border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Major premise</td>
+			<td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">B ⇒ C</td>
+			<td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;"> All men are mortals. (man ⇒ mortal)</td>
+			<td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;">The rule of law</td>
+			</tr>
+			<tr>
+			<td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Minor premise</td>
+			<td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">A ⇒ B</td>
+			<td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Socrates is a man.</td>
+			<td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;"> The legal qualification of the minor term (Socrates), which is subject to the proceedings.</td>
+			</tr>
+			<tr>
+			<td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Conclusion</td>
+			<td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">A ⇒ C</td>
+			<td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Socrates is mortal.</td>
+			<td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;">The judgement</td> -->
+	    <td style="padding-top: 10px; border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">大前提</td>
     <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">B ⇒ C</td>
-    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;"> All men are mortals. (man ⇒ mortal)</td>
-    <td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;">The rule of law</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;"> いかなる人間も死ぬ。 (人間 ⇒ 死ぬ)</td>
+    <td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;">法律</td>
    </tr>
    <tr>
-    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Minor premise</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">小前提</td>
     <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">A ⇒ B</td>
-    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Socrates is a man.</td>
-    <td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;"> The legal qualification of the minor term (Socrates), which is subject to the proceedings.</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">ソクラテスは人間である。</td>
+    <td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;"> 小概念(ソクラテス)の法的な身分。小概念は以下の審判の対象となる。</td>
    </tr>
    <tr>
-    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Conclusion</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">結論</td>
     <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">A ⇒ C</td>
-    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">Socrates is mortal.</td>
-    <td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;">The judgement</td>
+    <td style="border-right: 1px solid whitesmoke; border-bottom: 1px solid whitesmoke; vertical-align: middle;">ソクラテスは死ぬ。</td>
+    <td style="border-bottom: 1px solid whitesmoke; vertical-align: middle;">評決</td>
    </tr>
   </tbody>
  </table>
- <p> The challenge the process presents is therefore qualifying (or not) the minor term (the accused) as a middle term. Learning the spirit of the laws (the meaning given to the laws) allows the judge to decide, by studying <span class="exturl"><a href="https://en.wikipedia.org/wiki/Case_law" target="_blank">case law</a></span> that is the set of court decisions. </p>
+ <!-- <p> The challenge the process presents is therefore qualifying (or not) the minor term (the accused) as a middle term. Learning the spirit of the laws (the meaning given to the laws) allows the judge to decide, by studying <span class="exturl"><a href="https://en.wikipedia.org/wiki/Case_law" target="_blank">case law</a></span> that is the set of court decisions. </p> -->
+ <p> 上のように争われた裁判では小概念(被告)が媒概念として見做せるか否かを判断している。<span class="exturl"><a href="https://en.wikipedia.org/wiki/Case_law" target="_blank">判例</a></span>を研究し、法の精神、すなわちそれぞれの法の意味を理解することで審判をくだすことができる。</p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_12">
  <!--{type="ex_title"}-->
- <p>This implication is only true in classical logic. This poses no problem to its use in electronics : either the current flows or it doesn’t.</p>
+	<!-- <p>This implication is only true in classical logic. This poses no problem to its use in electronics : either the current flows or it doesn’t.</p> -->
+	<p>この導出は古典論理においてのみ正しいが、この結論の電子工学(電流が流れているか否かについての考察)への応用は全く問題がない。</p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_13">
  <!--{type="ex_title"}-->
  <a href="./img/Diopsis.jpg" target="_blank"><img class="txtwrap" src="./img/Diopsis.jpg" height="30%" width="30%"></a>
- <p>The <span class="exturl"><a href="https://en.wikipedia.org/wiki/De_Morgan%27s_laws" target="_blank">De Morgan's laws</a></span> are formulae that allow us to calculate the negation of any mathematical proposition.</p>
- <p>We can demonstrate that the negation of a disjunction is the conjunction of the negations of the operands.</p>
- <p>These laws are used in IT within the conception of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Logic_gate" target="_blank">logical functions</a></span> and and their physical materialization, notably in the form of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Integrated_circuit">integrated circuits</a></span>.</p>
- <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+ <!-- <p>The <span class="exturl"><a href="https://en.wikipedia.org/wiki/De_Morgan%27s_laws" target="_blank">De Morgan's laws</a></span> are formulae that allow us to calculate the negation of any mathematical proposition.</p> -->
+  <p><span class="exturl"><a href="https://en.wikipedia.org/wiki/De_Morgan%27s_laws" target="_blank">ド モルガン(De Morgan)律</a></span> は数学的命題の否定を求めるのに使える。</p>
+  <!-- <p>We can demonstrate that the negation of a disjunction is the conjunction of the negations of the operands.</p> -->
+  <p>論理和の否定は和を構成する命題の否定の論理積である。</p>
+  <!-- <p>These laws are used in IT within the conception of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Logic_gate" target="_blank">logical functions</a></span> and and their physical materialization, notably in the form of <span class="exturl"><a href="https://en.wikipedia.org/wiki/Integrated_circuit">integrated circuits</a></span>.</p> -->
+ <p>これらの法則はITにおいて<span class="exturl"><a href="https://en.wikipedia.org/wiki/Logic_gate" target="_blank">論理回路</a></span>のなかで応用される。製品としては特に<span class="exturl"><a href="https://en.wikipedia.org/wiki/Integrated_circuit">集積回路</a></span>がある。</p>
+ <!-- <p><span class="lock">w</span><span class="cons">Constructive logic</span></p> -->
+ <p><span class="lock">w</span><span class="cons">構成的論理</span></p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_14">
  <!--{type="ex_title"}-->
- <p> A binary <span class="exturl"><a href="https://en.wikipedia.org/wiki/Operator_(mathematics)" target="_blank">operator</a></span> noted, for example, ★, is <span class="exturl"><a href="https://en.wikipedia.org/wiki/Associative_property" target="_blank">associative</a></span> if, whatever the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Operand" target="_blank">operands</a></span> a b c : </p>
- <p>a ★ (b ★ c) = (a ★ b) ★ c</p>
- <p>Since their position is not important; brackets can be omitted. Hence the value above is written a ★ b ★ c. It is, for example, the associativity of addition that allows us to write 3 + 5 + 8 without the need for brackets.</p>
- <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
+	<!-- <p> A binary <span class="exturl"><a href="https://en.wikipedia.org/wiki/Operator_(mathematics)" target="_blank">operator</a></span> noted, for example, ★, is <span class="exturl"><a href="https://en.wikipedia.org/wiki/Associative_property" target="_blank">associative</a></span> if, whatever the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Operand" target="_blank">operands</a></span> a b c : </p> -->
+	<p> 二項 <span class="exturl"><a href="https://en.wikipedia.org/wiki/Operator_(mathematics)" target="_blank">演算子</a></span> (ここでは ★ であらわす)は以下のような性質をもつとき <span class="exturl"><a href="https://en.wikipedia.org/wiki/Associative_property" target="_blank">結合的</a></span> であるという: いかなる<span class="exturl"><a href="https://en.wikipedia.org/wiki/Operand" target="_blank">被演算子</a></span> a b c にたいしても </p>
+ <p>a ★ (b ★ c) = (a ★ b) ★ c が成立</p>
+ <p>かっこのつきかたは重要な意味をもたないため、かっこは省略できる。よって上の値は a ★ b ★ c と書かれる. たとえば加法の結合性により、3 + 5 + 8 とかっこを使わずに書ける。</p>
+ <!-- <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p> -->
+ <p> <span class="lock">w</span><span class="cons">構成的論理</span> </p>
  <div class="slide">
-  <p> <span class="light-bulb">ń</span> By definition, an equivalence is demonstrated by demonstrating two implications. Definition of <span class="buttontheo">equivalence</span> is chosen to demonstrate
-   <!--{type="tag" input="s0"}-->. </p>
+	 <!-- <p> <span class="light-bulb">ń</span> By definition, an equivalence is demonstrated by demonstrating two implications. Definition of <span class="buttontheo">equivalence</span> is chosen to demonstrate
+		  <!--{type="tag" input="s0"}-->. </p> -->
+  <p> <span class="light-bulb">ń</span> 定義により、同値を示すには両方向の論理的包含を示せばよい。<!--{type="tag" input="s0"}--> を示すのに <span class="buttontheo">equivalence</span> の定義を選択する。 </p>
  </div>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_16">
  <!--{type="ex_title"}-->
- <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Contraposition" target="_blank">Contraposition</a></span>, or modus tollens, consists of demonstrating that A implies B, by demonstrating that the negation of B implies the negation of A: if B didn’t stand, A wouldn’t stand, therefore if A stands, then B stands. </p>
- <p> This reasoning only applies within <span class="stress">classical logic</span>. However, the inverse implication,
-  <!--{type="prop" sci="true" input="(A -> B) -> (~B -> ~A)"}--> is true in constructive logic, as demonstrated in the following exercise. </p>
+	<!-- <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Contraposition" target="_blank">Contraposition</a></span>, or modus tollens, consists of demonstrating that A implies B, by demonstrating that the negation of B implies the negation of A: if B didn’t stand, A wouldn’t stand, therefore if A stands, then B stands. </p> -->
+	<p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Contraposition" target="_blank">対偶</a></span>、またはモーダストレンス、は A ならば B を証明する方法の一つで、A ならば B の代りに Bでない ならば Aでない を示す:もしBが成り立たなければAも成り立たないとすれば、Aが成り立つときBも成り立つはずである。 </p>
+	<!-- <p> This reasoning only applies within <span class="stress">classical logic</span>. However, the inverse implication,
+		 <!--{type="prop" sci="true" input="(A -> B) -> (~B -> ~A)"}--> is true in constructive logic, as demonstrated in the following exercise. </p> -->
+ <p> この証明法は<span class="stress">古典論理</span>においてのみ成り立つが、その逆である、
+  <!--{type="prop" sci="true" input="(A -> B) -> (~B -> ~A)"}--> は構成的論理においても正しい。次の練習問題でそれが示される。 </p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_17">
  <!--{type="ex_title"}-->
- <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
- <p>This way, the implication is demonstrated using constructive logic.</p>
+ <p><span class="lock">w</span><span class="cons">構成的論理</span></p>
+ <p>このように、上の結論は構成的論理でも示すことができる。</p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_27">
  <!--{type="ex_title"}-->
- <p>Associativity of conjunction is demonstrated in a similar way to associativity of disjunction.</p>
+ <p>論理積の結合性は論理和のそれと似た手順で示せる。</p>
  <div class="slide">
-  <p> <span class="light-bulb">ń</span> Demonstrating disjunction of
-   <!--{type="prop" sci="true" input="or A B"}--> requires <span class="stress">choosing</span> between the demonstration of A or B. </p>
-  <p>The method consists of choosing as late as possible, and then exploiting all hypotheses (by disjunction of cases) in order to obtain the maximum amount of information that allows us to make the choice.</p>
+	 <!-- <p> <span class="light-bulb">ń</span> Demonstrating disjunction of
+		  <!--{type="prop" sci="true" input="or A B"}--> requires <span class="stress">choosing</span> between the demonstration of A or B. </p> -->
+ <p> <span class="light-bulb">ń</span> 以下の論理和
+	  <!--{type="prop" sci="true" input="or A B"}--> を示すにはAかBのどちらか一方を <span class="stress">選んで</span> 証明すればよい。 </p>
+ <!-- <p>The method consists of choosing as late as possible, and then exploiting all hypotheses (by disjunction of cases) in order to obtain the maximum amount of information that allows us to make the choice.</p> -->
+ <p>この手順では、選択はできるだけ後にまわし、選択のための情報を最大限にとりだす。</p>
  </div>
- <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
+ <p> <span class="lock">w</span><span class="cons">構成的論理</span> </p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_31">
  <!--{type="ex_title"}-->
- <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Reductio_ad_absurdum" target="_blank">Ad absurdium reasoning</a></span> consists of demonstrating a proposition A by showing that if its negation, ¬ A, is true, then we obtain a contradiction: </p>
+	<!-- <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Reductio_ad_absurdum" target="_blank">Ad absurdium reasoning</a></span> consists of demonstrating a proposition A by showing that if its negation, ¬ A, is true, then we obtain a contradiction: </p> -->
+	<p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Reductio_ad_absurdum" target="_blank">背理法</a></span>は証明法の一種である。背理法では命題Aを示すのにまずその否定である ¬ A を仮定し、続いて矛盾を導く: </p>
  <table class="slide">
   <colgroup>
    <col width="100%">
   </colgroup>
   <tbody>
    <tr>
-    <td><span class="def">Ad absurdium reasoning</span>
+    <td><span class="def">背理法</span>
      <!--{type="prop" sci="true" input="forall A:Prop, ((~(~A)) -> A)"}--></td>
    </tr>
   </tbody>
   <tbody>
   </tbody>
  </table>
- <p> In effect,
-  <!--{type="prop" sci="true" input="~(~A)"}--> can be re-written as
-  <!--{type="prop" sci="true" input="(~A -> False)"}--> by definition of negation. Ad absurdium reasoning is therefore a law of elimination of double negation. </p>
- <p>This exercise demonstrates that the excluded middle involves ad absurdium reasoning.</p>
- <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
- <p>Reciprocal implication is demonstrated in the exercise below. As a result, ad absurdium reasoning is equivalent to the excluded middle, and is therefore not acknowledged by constructive logic:</p>
+ <!-- <p> In effect,
+	  <!--{type="prop" sci="true" input="~(~A)"}--> can be re-written as
+ <!--{type="prop" sci="true" input="(~A -> False)"}--> by definition of negation. Ad absurdium reasoning is therefore a law of elimination of double negation. </p> -->
+ <p> しかるに否定の定義より、
+  <!--{type="prop" sci="true" input="~(~A)"}--> は
+  <!--{type="prop" sci="true" input="(~A -> False)"}--> と書き変えられる。すなわち背理法は二重否定の除去である。</p>
+ <!-- <p>This exercise demonstrates that the excluded middle involves ad absurdium reasoning.</p> -->
+ <p>この練習問題では排中律が背理法を導くことを示す。</p>
+ <!-- <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p> -->
+ <p> <span class="lock">w</span><span class="cons">構成的論理</span> </p>
+ <!-- <p>Reciprocal implication is demonstrated in the exercise below. As a result, ad absurdium reasoning is equivalent to the excluded middle, and is therefore not acknowledged by constructive logic:</p> -->
+ <p>逆の導出は以下の練習問題で示される。よって、背理法は排中律と同値であって、構成的論理では認められない:</p>
  <p>
   <!--{type="exercise" input="logic_quantifier_ex_le_48"}--> </p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_32">
  <!--{type="ex_title"}-->
- <p>We can demonstrate that disjunction of two negations is the negation of conjunction of the propositions. This implication is made with constructive logic, but not the inverse implication, as shown in the next exercise.</p>
- <p> <span class="lock">w</span><span class="cons">Constructive logic</span> </p>
+	<!-- <p>We can demonstrate that disjunction of two negations is the negation of conjunction of the propositions. This implication is made with constructive logic, but not the inverse implication, as shown in the next exercise.</p> -->
+ <p>2つの否定命題の論理和からは論理積の否定が導かれるが、これは構成的論理でも可能である。しかし、次の練習問題が示すように逆は不可能である。</p>
+ <p> <span class="lock">w</span><span class="cons">構成的論理</span> </p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_33">
  <!--{type="ex_title"}-->
- <p>It can be demonstrated that disjunction is distributive <span class="stress">over implication</span>.</p>
+	<!-- <p>It can be demonstrated that disjunction is distributive <span class="stress">over implication</span>.</p> -->
+<p>論理和は <span class="stress">論理包含に対し</span>分配的である。</p>
+	
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_ex_easy_34">
  <!--{type="ex_title"}-->
- <p>It can be demonstrated that conjunction is "half distributive" over implication.</p>
+	<!-- <p>It can be demonstrated that conjunction is "half distributive" over implication.</p> -->
+ <p>論理積は論理包含に対して"半分配的"である。</p>
 </div>
 <div class="pedagogic paper" key="exercise_description_logic_connector_peirce_abs_te">
  <!--{type="ex_title"}-->
- <p><span class="lock">w</span><span class="cons">Constructive logic</span></p>
+ <p><span class="lock">w</span><span class="cons">構成的論理</span></p>
 </div>
 <div class="pedagogic paper" key="exercise_description_logic_connector_peirce_law">
  <!--{type="ex_title"}-->
  <a href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce" target="_blank"><img class="txtwrap" src="./img/peirce.jpg" height="30%" width="30%"></a>
- <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Peirce%27s_law" target="_blank">Peirce's law</a></span> is true in classical logic. <span class="exturl"><a href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce" target="_blank">Charles Sanders Peirce</a></span> was an American philosopher, logician and mathematician. </p>
+ <!-- <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Peirce%27s_law" target="_blank">Peirce's law</a></span> is true in classical logic. <span class="exturl"><a href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce" target="_blank">Charles Sanders Peirce</a></span> was an American philosopher, logician and mathematician. </p> -->
+ <p> <span class="exturl"><a href="https://en.wikipedia.org/wiki/Peirce%27s_law" target="_blank">パース(Peirce)の法則</a></span> は構成的論理で正しい。 <span class="exturl"><a href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce" target="_blank">チャールズ・サンダース・パース(Charles Sanders Peirce)</a></span>はアメリカ人で哲学者、論理学者、および数学者である。</p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_connector_tuto_01">
  <!--{type="ex_title"}-->
- <p>What can be deduced from the conjunction "A ∧ B"?</p>
- <p>Follow the instructions to solve the problem.</p>
- <p> <span class="light-bulb">A</span>Each exercise has a conclusion and an initial context, which lays out the variables and the hypothesis. </p>
- <p> <span class="light-bulb">A</span>The conclusion and the hypothesis are <span class="exturl"><a href="https://en.wikipedia.org/wiki/Statement_(logic)" target="_blank">mathematical statements</a></span>. The objective is to come up with a series of statements, which make up the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Mathematical_proof" target="_blank">proof</a></span> that the conclusion is true. </p>
+	<!-- <p>What can be deduced from the conjunction "A ∧ B"?</p> -->
+ <p>論理和 "A ∧ B" から何が導かれるだろうか。</p>
+ <!-- <p>Follow the instructions to solve the problem.</p> -->
+ <p>案内に従って問題を解け。</p>
+ <!-- <p> <span class="light-bulb">A</span>Each exercise has a conclusion and an initial context, which lays out the variables and the hypothesis. </p> -->
+ <p> <span class="light-bulb">A</span>各練習問題は結論と初めの条件、変数についての条件および仮定が与えられている。 </p>
+ <!-- <p> <span class="light-bulb">A</span>The conclusion and the hypothesis are <span class="exturl"><a href="https://en.wikipedia.org/wiki/Statement_(logic)" target="_blank">mathematical statements</a></span>. The objective is to come up with a series of statements, which make up the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Mathematical_proof" target="_blank">proof</a></span> that the conclusion is true. </p> -->
+<p> <span class="light-bulb">A</span>結論と仮定は<span class="exturl"><a href="https://en.wikipedia.org/wiki/Statement_(logic)" target="_blank">数学的言明</a></span>である。目標は言明のならびを作り、それが結論の<span class="exturl"><a href="https://en.wikipedia.org/wiki/Mathematical_proof" target="_blank">証明</a></span>となるようにすることである。 </p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_quantifier_21">
  <!--{type="ex_title"}-->
- <p>In Scotland, a private club has the following rules:</p>
+	<!-- <p>In Scotland, a private club has the following rules:</p>
+		 <ul>
+		 <li>Every non-Scottish member wears red socks.</li>
+		 <li>Every member wears a kilt or doesn't wear red socks.</li>
+		 <li>The married members don't go out on Sunday.</li>
+		 <li>A member goes out on Sunday if and only if he is Scottish.</li>
+		 <li>Every member who wears a kilt is Scottish and married.</li>
+		 <li>Every Scottish member wears a kilt.</li>
+		 </ul>
+		 <p>Now, we show that these rules are so strict that no one can be accepted!</p> -->
+ <p>スコットランドのある個人クラブは以下のような規則をもつ:</p>
  <ul>
-  <li>Every non-Scottish member wears red socks.</li>
-  <li>Every member wears a kilt or doesn't wear red socks.</li>
-  <li>The married members don't go out on Sunday.</li>
-  <li>A member goes out on Sunday if and only if he is Scottish.</li>
-  <li>Every member who wears a kilt is Scottish and married.</li>
-  <li>Every Scottish member wears a kilt.</li>
+  <li>いかなるスコットランド人会員も赤い靴下をはいている。</li>
+  <li>いかなる会員もキルトスカートをきているまたは赤い靴下をはいていないかである。</li>
+  <li>結婚している会員は日曜日には外出しない。</li>
+  <li>日曜日に出歩くのはスコットランド人であり、その逆も成り立つ。</li>
+  <li>キルトスカートを着ている会員はスコットランド人であり既婚である。</li>
+  <li>いかなるスコットランド人会員もキルトスカートを着ている。</li>
  </ul>
- <p>Now, we show that these rules are so strict that no one can be accepted!</p>
+ <p>さて、上の規則は厳しすぎ、誰も入ることができないことを示せ!</p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_03">
  <!--{type="ex_title"}-->
- <p>It is demonstrated that the complement of a union is the intersection of the complements.</p>
- <p>We call this formula a De Morgan law by analogy with the De Morgan laws established for conjunctions and disjunctions. There are indeed similarities between the properties (distributivity, associativity, commutativity) of the union, of the intersection and of the complement, and those of the disjunction, the conjunction and the negation respectively.</p>
- <p>This is a consequence of the definition of the set operators: belonging to a union of two sets is the disjunction of membership to each of the two sets.</p>
+	<!-- <p>It is demonstrated that the complement of a union is the intersection of the complements.</p>l -->
+	<p>合併集合の補集合は補集合の交わりであることが示せる。</p>
+	<!-- <p>We call this formula a De Morgan law by analogy with the De Morgan laws established for conjunctions and disjunctions. There are indeed similarities between the properties (distributivity, associativity, commutativity) of the union, of the intersection and of the complement, and those of the disjunction, the conjunction and the negation respectively.</p> -->
+	<p>この公式もド・モルガン律といい、論理積と論理和についてのド・モルガン律の類似である。実際に合併集合、交わり、補集合がそれぞれ論理和、論理積、否定に対応し、類似の性質(分配性、結合性、交換性)が成り立つ。</p>
+	<!-- <p>This is a consequence of the definition of the set operators: belonging to a union of two sets is the disjunction of membership to each of the two sets.</p> -->
+ <p>これは集合作用素の定義による帰結である: 2つの集合の合併に属すことは各集合へ属することの論理和となる</p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_07">
  <!--{type="ex_title"}-->
- <p>The demonstration of the distributivity of the existential quantifier over disjunction is concluded.</p>
+	<!-- <p>The demonstration of the distributivity of the existential quantifier over disjunction is concluded.</p> -->
+ <p>存在量化子の論理和に対する分配律が結論される。</p>
+ <!-- <p> <span class="light-bulb">ń</span> It is necessary to generate the unknown witness variable <span class="button" style="font-family: 'Times New Roman'; font-weight: bold; font-size: 14px; padding: 3px;">x?</span> within the scope (or a sub-scope) that contains the variable(s) allowing us to figure out this unknown witness value. In this example, the witness value is provided within the scopes created <span class="buttontheo">by using disjunction of cases</span>. This reasoning is therefore used before reasoning <span class="buttontheo">by construction</span>. </p> -->
  <p> <span class="light-bulb">ń</span> It is necessary to generate the unknown witness variable <span class="button" style="font-family: 'Times New Roman'; font-weight: bold; font-size: 14px; padding: 3px;">x?</span> within the scope (or a sub-scope) that contains the variable(s) allowing us to figure out this unknown witness value. In this example, the witness value is provided within the scopes created <span class="buttontheo">by using disjunction of cases</span>. This reasoning is therefore used before reasoning <span class="buttontheo">by construction</span>. </p>
 </div>
 <div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_09">
  <!--{type="ex_title"}-->
- <p>It can be shown that the empty set <span class="exturl"><a href="https://en.wikipedia.org/wiki/Subset" target="_blank">subset</a></span> of any set.</p>
+	<!-- <p>It can be shown that the empty set <span class="exturl"><a href="https://en.wikipedia.org/wiki/Subset" target="_blank">subset</a></span> of any set.</p> -->
+ <p>空集合は任意の集合の <span class="exturl"><a href="https://en.wikipedia.org/wiki/Subset" target="_blank">部分集合</a></span>となることが示される。</p>
 </div>
 <div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_easy_08">
  <!--{type="ex_title"}-->
- <p>What is the logical negation of a universal quantification?</p>
- <p>The negation of "for every x, F (x)" is not "for every x, not F (x)", but "there exists x such that F (x)".</p>
- <p>Here, one of the two implications is demonstrated.</p>
+	<!-- <p>What is the logical negation of a universal quantification?</p> -->
+ <p>全称量化の否定はなにか?</p>
+ <!-- <p>The negation of "for every x, F (x)" is not "for every x, not F (x)", but "there exists x such that F (x)".</p> -->
+ <p>"任意のxについて、F(x)" の否定は"任意のxについて、F(x)でない"ではなく、"あるxが存在してF(x)でない".</p>
+ <!-- <p>Here, one of the two implications is demonstrated.</p> -->
+ <p>ここで2つの論理包含のうち一方が示される。</p>
 </div>
 <div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_easy_09">
  <!--{type="ex_title"}-->
- <p>What is the logical negation of an existential quantification?</p>
- <p>The negation of "there exists x, such that F (x)" is not "there exists x, such that not F (x)", but “for every value x, not F (x)".</p>
+	<!-- <p>What is the logical negation of an existential quantification?</p> -->
+	<p>存在量化の否定はなにか?</p>
+	<!-- <p>The negation of "there exists x, such that F (x)" is not "there exists x, such that not F (x)", but “for every value x, not F (x)".</p> -->
+ <p>"あるxが存在し、F(x)"の否定は"あるxが存在しF(x)でない"ではなく"任意のxについてF(x)でない"。</p>
 </div>
 <div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_le_01">
  <!--{type="ex_title"}-->
- <p>The binary relation on ℕ "is less than", noted
-  <!--{type="prop" sci="true" input="app_rel rel_le x y"}-->, is defined in these exercises by an existential formula:</p>
+	<!-- <p>The binary relation on ℕ "is less than", noted
+		 <!--{type="prop" sci="true" input="app_rel rel_le x y"}-->, is defined in these exercises by an existential formula:</p> -->
+<p> <!--{type="prop" sci="true" input="app_rel rel_le x y"}-->で表されるℕ上の二項関係 "以下である(Is less than)"は、これらの練習問題のなかで存在命題を使って定義される:</p>
  <table class="slide">
   <colgroup>
    <col width="100%">
@@ -311,15 +411,18 @@
   <tbody>
   </tbody>
  </table>
- <p>We can demonstrate that addition is increasing for this relation.</p>
- <p>"Is less than" exercises:</p>
+ <!-- <p>We can demonstrate that addition is increasing for this relation.</p> -->
+ <p>この関係ついて加法は値を増加させることが示せる。</p>
+ <!-- <p>"Is less than" exercises:</p> -->
+ <p>"Is less than" 練習問題:</p>
  <p>
   <!--{type="exercise" input="logic_quantifier_ex_le_02"}-->
   <!--{type="exercise" input="logic_quantifier_ex_le_03"}--></p>
 </div>
 <div class="pedagogic paper" key="exercise_description_logic_quantifier_ex_le_02">
  <!--{type="ex_title"}-->
- <p>"Is less than" Exercises:</p>
+<!-- <p>"Is less than" Exercises:</p> -->
+ <p>"Is less than" 練習問題:</p>
  <p>
   <!--{type="exercise" input="logic_quantifier_ex_le_01"}-->
   <!--{type="exercise" input="logic_quantifier_ex_le_03"}--> </p>
@@ -327,9 +430,12 @@
 <div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_04">
  <!--{type="ex_title"}-->
  <p> <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 1 Eléments de logique</a></span></span> </p>
- <p>There are two kinds of people on a mysterious island. There are so-called honestants who always speak the truth, and the others are swindlecants who always lie.</p>
- <p> Show that if <span style="font-weight: bold">a</span> and <span style="font-weight: bold">b</span> are two people on the island and that if <span style="font-weight: bold">a</span> says that <span style="font-weight: bold">b</span> is lying, at least one of the two is a swindlecant. </p>
- <p> <span class="light-bulb">ń</span> The axiom <span class="buttontheo">speaking the truth or lying</span> is used to generate two cases: either <span style="font-weight: bold">a</span> is honestant, or <span style="font-weight: bold">a</span> is swindlecant. The theory "Honestants and Swindlecants" is made up of the following axioms: </p>
+ <!-- <p>There are two kinds of people on a mysterious island. There are so-called honestants who always speak the truth, and the others are swindlecants who always lie.</p> -->
+ <p>ある神秘の島には正直者とうそつきの二種類の人間がいる。正直者は常に真実をいい、またうそつきは常に嘘をつく。</p>
+ <!-- <p> Show that if <span style="font-weight: bold">a</span> and <span style="font-weight: bold">b</span> are two people on the island and that if <span style="font-weight: bold">a</span> says that <span style="font-weight: bold">b</span> is lying, at least one of the two is a swindlecant. </p> -->
+<p> もし <span style="font-weight: bold">a</span> と <span style="font-weight: bold">b</span> の2人が、この島の住人であり <span style="font-weight: bold">a</span> が <span style="font-weight: bold">b</span> はうそつきだと言っていた場合、少くとも1人はうそつきであることを示せ。 </p>
+<!-- <p> <span class="light-bulb">ń</span> The axiom <span class="buttontheo">speaking the truth or lying</span> is used to generate two cases: either <span style="font-weight: bold">a</span> is honestant, or <span style="font-weight: bold">a</span> is swindlecant. The theory "Honestants and Swindlecants" is made up of the following axioms: </p> -->
+ <p> <span class="light-bulb">ń</span>  <span class="buttontheo">真実または嘘を話す</span>という公理は2つの場合を生みだす: <span style="font-weight: bold">a</span> は正直者である、または <span style="font-weight: bold">a</span> はうそつきである"正直者とうそつき"という理論は以下の公理によって作られる: </p>
  <table class="slide">
   <colgroup>
    <col width="25%">
@@ -339,17 +445,18 @@
    <tr>
    </tr>
    <tr>
-    <td style="vertical-align: top"><span class="def" style="padding-top: 20px">Honestants and Swindlecants</span></td>
+       <!-- <td style="vertical-align: top"><span class="def" style="padding-top: 20px">Honestants and Swindlecants</span></td> -->
+    <td style="vertical-align: top"><span class="def" style="padding-top: 20px">正直者とうそつき</span></td>
     <td style="padding-top: 24px;">
      <!--{type="prop" input="forall (a:gbmember), (or (is_good a) (is_bad a))"}--></td>
    </tr>
    <tr>
-    <td style="vertical-align: top; padding-top: 8px"><span class="def">The truth told by the honestant</span></td>
+    <td style="vertical-align: top; padding-top: 8px"><span class="def">真実は正直者が語る</span></td>
     <td>
      <!--{type="prop" style="padding-top: 20px" input="forall (a:gbmember) (P:Prop), (is_good a) -> (say a P) -> P"}--></td>
    </tr>
    <tr>
-    <td style="vertical-align: top; padding-top: 8px"><span class="def">The lie told by the swindlecant</span></td>
+    <td style="vertical-align: top; padding-top: 8px"><span class="def">嘘はうそつきがつく</span></td>
     <td>
      <!--{type="prop" input="forall (a:gbmember) (P:Prop), (is_bad a) -> (say a P) -> (~ P)"}--></td>
    </tr>
@@ -361,8 +468,10 @@
 <div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_05">
  <!--{type="ex_title"}-->
  <p> <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 1 Eléments de logique</a></span></span> </p>
- <p> Show that if <span style="font-weight: bold">a</span> says that <span style="font-weight: bold">a</span> and <span style="font-weight: bold">b</span> are both swindlecants, then <span style="font-weight: bold">a</span> is a swindlecant. </p>
- <p> "Honestants and Swindlecants" exercises: </p>
+ <!-- <p> Show that if <span style="font-weight: bold">a</span> says that <span style="font-weight: bold">a</span> and <span style="font-weight: bold">b</span> are both swindlecants, then <span style="font-weight: bold">a</span> is a swindlecant. </p> -->
+ <p> もし <span style="font-weight: bold">a</span> が <span style="font-weight: bold">a</span> と <span style="font-weight: bold">b</span> はともにうそつきだと言ったら <span style="font-weight: bold">a</span> はうそつきであることを示せ </p>
+ <!-- <p> "Honestants and Swindlecants" exercises: </p> -->
+ <p> "正直者とうそつき" 練習問題: </p>
  <!--{type="exercise" input="logic_quantifier_ex_le_04"}-->
  <!--{type="exercise" input="logic_quantifier_ex_le_05"}-->
  <!--{type="exercise" input="logic_quantifier_ex_le_06"}-->
@@ -371,9 +480,10 @@
 <div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_06">
  <!--{type="ex_title"}-->
  <p> <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 1 Eléments de logique</a></span></span> </p>
- <p> Show that if <span style="font-weight: bold">a</span> says
-  <!--{type="expr" input="False"}--> then he is a swindlecant. </p>
- <p></p> Exercises "Honestants and Swindlecants" :
+ <p> もし <span style="font-weight: bold">a</span> が
+  <!--{type="expr" input="False"}--> と言ったら彼はうそつきであることを示せ。 </p>
+ <!-- <p></p> Exercises "Honestants and Swindlecants" : -->
+ <p></p>  練習問題 "正直者とうそつき" :
  <p></p>
  <!--{type="exercise" input="logic_quantifier_ex_le_04"}-->
  <!--{type="exercise" input="logic_quantifier_ex_le_05"}-->
@@ -383,8 +493,10 @@
 <div class="custom pedagogic" key="exercise_description_logic_quantifier_ex_le_07">
  <!--{type="ex_title"}-->
  <p> <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 1 Eléments de logique</a></span></span> </p>
- <p>Show that a person living on the island cannot say that he himself is a swindlecant.</p>
- <p></p> Exercises "Honestants and Swindlecants" :
+ <!-- <p>Show that a person living on the island cannot say that he himself is a swindlecant.</p> -->
+ <p>この島の住人は自らをうそつきとは言えないことを示せ。</p>
+ <!-- <p></p> Exercises "Honestants and Swindlecants" : -->
+ <p></p> 練習問題 "正直者とうそつき" :
  <p></p>
  <!--{type="exercise" input="logic_quantifier_ex_le_04"}-->
  <!--{type="exercise" input="logic_quantifier_ex_le_05"}-->
@@ -395,9 +507,12 @@
  <!--{type="ex_title"}-->
  <!--  <a href="https://fr.wikipedia.org/wiki/Principe_des_tiroirs" target="_blank"><img class="txtwrap" src="http://img.1.im6.fr/03E8000007913469-photo-dressing-tiroir-casiers-chaussettes.jpg" height="30%" width="30%"></img></a> -->
  <span class="def">source : <span class="exturl"><a href="http://www.lri.fr/~paulin/MathInfo" target="_blank">TP 2 Relations et fonctions</a></span></span>
- <p> In 1834, the German mathematician <span class="exturl"><a href="https://en.wikipedia.org/wiki/Peter_Gustav_Lejeune_Dirichlet" target="_blank">Johann Dirichlet</a></span> announced the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Pigeonhole_principle" target="_blank">pigeonhole principle</a></span>, which applies to the case in which n pigeons occupy m holes: </p>
- <p style="align: center; font-style: italic">If n &gt; m, then at least one hole must contain strictly more than one pigeon.</p>
- <p> In other words, by <span class="exturl"><a href="https://en.wikipedia.org/wiki/Contraposition" target="_blank">contraposition</a></span>, if each hole contains at the most one pigeon, then n &lt;= m. </p>
+ <!-- <p> In 1834, the German mathematician <span class="exturl"><a href="https://en.wikipedia.org/wiki/Peter_Gustav_Lejeune_Dirichlet" target="_blank">Johann Dirichlet</a></span> announced the <span class="exturl"><a href="https://en.wikipedia.org/wiki/Pigeonhole_principle" target="_blank">pigeonhole principle</a></span>, which applies to the case in which n pigeons occupy m holes: </p> -->
+ <p> 1834年、ドイツの数学者である<span class="exturl"><a href="https://en.wikipedia.org/wiki/Peter_Gustav_Lejeune_Dirichlet" target="_blank">ヨハン ディリクレ(Johann Dirichlet)</a></span> は <span class="exturl"><a href="https://en.wikipedia.org/wiki/Pigeonhole_principle" target="_blank">鳩の巣原理</a></span>を発表した。これはn羽の鳩がm個の巣を占めるといった問題に適用される: </p>
+ <!-- <p style="align: center; font-style: italic">If n &gt; m, then at least one hole must contain strictly more than one pigeon.</p> -->
+ <p style="align: center; font-style: italic">もし n &gt; m であれば2羽以上の鳩を含む巣が少くとも1つはある。</p>
+ <!-- <p> In other words, by <span class="exturl"><a href="https://en.wikipedia.org/wiki/Contraposition" target="_blank">contraposition</a></span>, if each hole contains at the most one pigeon, then n &lt;= m. </p> -->
+ <p>  <span class="exturl"><a href="https://en.wikipedia.org/wiki/Contraposition" target="_blank">対偶</a></span>を使っていいかえると、もし各巣が高々1羽の鳩しか含まない場合、n &lt;= mとなる。 </p>
  <p> Let’s consider <span class="stress">the storage function</span> of n+1 pigeons, indexed from 0 to n, in holes: this function takes the index of a pigeon as argument, and returns an index of a hole. The assumption that a hole contains at the most one pigeon, translates into f being an <span class="stress">injective function</span> (the fiber of a hole has at most one element). Furthermore, given that by hypothesis, m holes contain the pigeons, there is one pigeon, indexed x, such that f(x)=m. </p>
  <p>Demonstrating the pigeonhole principle therefore consists of demonstrating that if the function f is injective over the set [0 ... n], then there is one pigeon numbered x, such that its hole, f(x), is greater or equal to n.</p>
  <p>To simplify this, we can reason with a notion stronger than injectivity and consider strictly increasing functions:</p>
